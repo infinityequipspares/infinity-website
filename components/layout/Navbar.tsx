@@ -13,7 +13,8 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+      {/* 🌟 FIX: Changed z-50 to z-[999] so Header is always on top */}
+      <header className="sticky top-0 z-[999] bg-white border-b border-gray-200 shadow-sm">
         
         <div className="max-w-[1400px] mx-auto px-4 lg:px-8">
           
@@ -93,7 +94,8 @@ export default function Navbar() {
       
       {/* 🌟 UPGRADED COMPACT MOBILE MENU 🌟 */}
       {menuOpen && (
-        <div className="fixed inset-0 z-50 bg-black/50 lg:hidden backdrop-blur-sm transition-opacity">
+        /* 🌟 FIX: Changed z-50 to z-[999] so Mobile Menu is always on top */
+        <div className="fixed inset-0 z-[999] bg-black/50 lg:hidden backdrop-blur-sm transition-opacity">
           {/* Width reduced from 320px to 260px for a sleeker look */}
           <div className="absolute right-0 top-0 h-full w-[260px] max-w-full bg-white shadow-2xl overflow-y-auto">
             

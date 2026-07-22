@@ -198,7 +198,7 @@ export default function SearchForm() {
   };
 
   return (
-    <div className="relative w-full" ref={wrapperRef}>
+    <div className="relative z-50 w-full" ref={wrapperRef}>
       <div className="flex items-center gap-2">
         <input
           type="text"
