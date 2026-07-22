@@ -1,0 +1,827 @@
+[
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "1230ES",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "1532R",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "E2",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "E300AJP",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "1930ES",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "2030ES",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "2630ES",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "2646ES",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "3246ES",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "3369LE",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "4069LE",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "260MRT",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "3394RT",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "4394RT",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "530LRT",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "340AJ",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "450A",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "450AJ",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "510AJ",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "600A",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "600AJ",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "1250AJP",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "1500AJP",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "E300AJP",
+    "Machine Type": "Electric Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "E400AJP",
+    "Machine Type": "Electric Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "E450AJ",
+    "Machine Type": "Electric Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "E600JP",
+    "Machine Type": "Electric Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "X430AJ",
+    "Machine Type": "Crawler Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "X600AJ",
+    "Machine Type": "Crawler Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "400S",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "400SC",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "400SJ",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "460SJ",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "600S",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "600SJ",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "660SJ",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "800S",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "800SJ",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "860SJ",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "100SX",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "110SX",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "110SXJ",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "120SXJ",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "1200SJP",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "1350SJP",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "1500SJ",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "1850SJ",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "40H",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "40HT",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "60H",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "66H",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "70H",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "80H",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "80HX",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "80HX+6",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "80HXJ",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "100HX",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "100HX+10",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "110HX",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "110HXER",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "120HX",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "JLG",
+    "Machine Model": "150HAX",
+    "Machine Type": "Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-1330m E-Drive",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-1432m E-Drive",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-1530",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-1930",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-1932m E-Drive",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-2032",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-2046",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-2632",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-2646",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-3232",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-3246",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-4047",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-4655",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-2669 DC",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-3369 DC",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-4069 DC",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-2669 RT",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-3369 RT",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-4069 RT",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-4390 RT",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "GS-5390 RT",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-40",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-45",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-45 XC",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-60",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-60 FE",
+    "Machine Type": "Hybrid Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-60 XC",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-65",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-65 XC",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-80",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-80 XC",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-85",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-85 XC",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-100",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-105",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-120",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "S-125",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "SX-105 XC",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "SX-125 XC",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "SX-135 XC",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "SX-150",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "SX-180",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "Z-30/20 N",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "Z-30N RJ",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "Z-34",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "Z-34/22 N",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "Z-34/22 IC",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "Z-40/23 N RJ",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "Z-45/25J RT",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "Z-45 XC",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "Z-45 FE",
+    "Machine Type": "Hybrid Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "Z-51/30J RT",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "Z-60/37 DC",
+    "Machine Type": "Electric Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "Z-60 FE",
+    "Machine Type": "Hybrid Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "Z-62/40",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "Z-80/60",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Genie",
+    "Machine Model": "ZX-135/70",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "Compact 8",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "Compact 8N",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "Compact 10",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "Compact 10N",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "Compact 10 DX",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "Compact 12",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "Compact 12 DX",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "Compact 14",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "Compact 14 DUAL",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "Compact DX",
+    "Machine Type": "Rough Terrain Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "Optimum 8",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "C12",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HS15 E",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HS15 E PRO",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HS18 E",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HS18 E PRO",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HS21 E",
+    "Machine Type": "Electric Scissor Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA12 CJ",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA12 CJ+",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA15 IP",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA16 E",
+    "Machine Type": "Electric Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA16 E PRO",
+    "Machine Type": "Electric Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA16 RTJ",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA16 RTJ O",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA16 RTJ PRO",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA18 PX",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA20 E",
+    "Machine Type": "Electric Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA20 E PRO",
+    "Machine Type": "Electric Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA20 LE",
+    "Machine Type": "Electric Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA20 LE PRO",
+    "Machine Type": "Electric Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA20 RTJ",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA20 RTJ PRO",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA26 RTJ",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA26 RTJ PRO",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA32 PX",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA32 RTJ PRO",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HA41 RTJ PRO",
+    "Machine Type": "Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HT16 RTJ PRO",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HT23 RTJ O",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HT23 RTJ PRO",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HT28 RTJ O",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HT28 RTJ PRO",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "HT43 RTJ PRO",
+    "Machine Type": "Telescopic Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "Sigma 16",
+    "Machine Type": "Electric Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "Sigma 16 PRO",
+    "Machine Type": "Electric Articulating Boom Lift"
+  },
+  {
+    "Brand Name": "Haulotte",
+    "Machine Model": "Sigma 16 PRO E",
+    "Machine Type": "Electric Articulating Boom Lift"
+  }
+]

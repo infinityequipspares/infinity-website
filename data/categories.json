@@ -1,0 +1,146 @@
+[
+  {
+    "Category Name": "Joysticks",
+    "Category Slug": "joysticks",
+    "Category Image": "joysticks.png",
+    "Display Order": "1"
+  },
+  {
+    "Category Name": "Switches",
+    "Category Slug": "switches",
+    "Category Image": "switches.png",
+    "Display Order": "2"
+  },
+  {
+    "Category Name": "Connectors",
+    "Category Slug": "connectors",
+    "Category Image": "connectors.png",
+    "Display Order": "3"
+  },
+  {
+    "Category Name": "Relays",
+    "Category Slug": "relays",
+    "Category Image": "relays.png",
+    "Display Order": "4"
+  },
+  {
+    "Category Name": "Safety Maintenance",
+    "Category Slug": "safety-maintenance",
+    "Category Image": "safety-maintenance.png",
+    "Display Order": "5"
+  },
+  {
+    "Category Name": "Sensors",
+    "Category Slug": "sensors",
+    "Category Image": "sensors.png",
+    "Display Order": "6"
+  },
+  {
+    "Category Name": "Angle Sensors",
+    "Category Slug": "angle-sensors",
+    "Category Image": "angle-sensors.png",
+    "Display Order": "7"
+  },
+  {
+    "Category Name": "Engine Parts",
+    "Category Slug": "engine-parts",
+    "Category Image": "engine-parts.png",
+    "Display Order": "8"
+  },
+  {
+    "Category Name": "Electronic Modules",
+    "Category Slug": "electronic-modules",
+    "Category Image": "electronic-modules.png",
+    "Display Order": "9"
+  },
+  {
+    "Category Name": "Valves",
+    "Category Slug": "valves",
+    "Category Image": "valves.png",
+    "Display Order": "10"
+  },
+  {
+    "Category Name": "Solenoid Coils",
+    "Category Slug": "solenoid-coils",
+    "Category Image": "solenoid-coils.png",
+    "Display Order": "11"
+  },
+  {
+    "Category Name": "Actuators",
+    "Category Slug": "actuators",
+    "Category Image": "actuators.png",
+    "Display Order": "12"
+  },
+  {
+    "Category Name": "Starters & Alternators",
+    "Category Slug": "starters-alternators",
+    "Category Image": "starters-alternators.png",
+    "Display Order": "13"
+  },
+  {
+    "Category Name": "Genie Parts",
+    "Category Slug": "genie-parts",
+    "Category Image": "genie-parts.png",
+    "Display Order": "14"
+  },
+  {
+    "Category Name": "Boom Length Sensors",
+    "Category Slug": "boom-length-sensors",
+    "Category Image": "boom-length-sensors.png",
+    "Display Order": "15"
+  },
+  {
+    "Category Name": "Load Pin Sensors",
+    "Category Slug": "load-pin-sensors",
+    "Category Image": "load-pin-sensors.png",
+    "Display Order": "16"
+  },
+  {
+    "Category Name": "Scissor Lift Parts",
+    "Category Slug": "scissor-lift-parts",
+    "Category Image": "scissor-lift-parts.png",
+    "Display Order": "17"
+  },
+  {
+    "Category Name": "Filters",
+    "Category Slug": "filters",
+    "Category Image": "filters.png",
+    "Display Order": "18"
+  },
+  {
+    "Category Name": "Harnesses",
+    "Category Slug": "harnesses",
+    "Category Image": "harnesses.png",
+    "Display Order": "19"
+  },
+  {
+    "Category Name": "SANY Parts",
+    "Category Slug": "sany-parts",
+    "Category Image": "sany-parts.png",
+    "Display Order": "20"
+  },
+  {
+    "Category Name": "XCMG Parts",
+    "Category Slug": "xcmg-parts",
+    "Category Image": "xcmg-parts.png",
+    "Display Order": "21"
+  },
+  {
+    "Category Name": "JCB Parts",
+    "Category Slug": "jcb-parts",
+    "Category Image": "jcb-parts.png",
+    "Display Order": "22"
+  },
+  {
+    "Category Name": "LiuGong Parts",
+    "Category Slug": "liugong-parts",
+    "Category Image": "liugong-parts.png",
+    "Display Order": "23"
+  },
+  {
+    "Category Name": "Zoomlion Parts",
+    "Category Slug": "zoomlion-parts",
+    "Category Image": "zoomlion-parts.png",
+    "Display Order": "24"
+  }
+]
