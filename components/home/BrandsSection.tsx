@@ -1,5 +1,18 @@
 import brands from "@/data/brands.json";
 
+// Yeh map exactly unhi names se match karta hai jo aapke folder mein hain
+// Isse baaki kisi code ya json file par koi asar nahi padega
+const brandImageMap: { [key: string]: string } = {
+  jlg: "JLG.png",
+  genie: "Genie.png",
+  haulotte: "Haulotte.png",
+  sany: "Sany.png",
+  xcmg: "XCMG.png",
+  jcb: "JCB.png",
+  liugong: "Liugong.png",
+  zoomlion: "Zoomlion.png",
+};
+
 export default function BrandsSection() {
   return (
     // Padding py-16 md:py-24 se kam karke py-10 md:py-16 kar di gayi hai
@@ -25,19 +38,25 @@ export default function BrandsSection() {
 
         {/* Brands Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-          {brands.map((brand: any, index: number) => (
-            <div
-              key={index}
-              className="group relative flex h-28 md:h-36 items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 md:px-8 md:py-6 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-red-200 hover:shadow-xl overflow-hidden"
-            >
-              <img
-                src={`/images/brands/${brand["Brand Name"].toLowerCase()}.png`}
-                alt={`${brand["Brand Name"]} aftermarket parts`}
-                className="h-full w-full object-contain select-none transition-all duration-500 ease-out md:filter md:grayscale md:opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105"
-                draggable={false}
-              />
-            </div>
-          ))}
+          {brands.map((brand: any, index: number) => {
+            // Yahan hum Vercel ko strict file name pass kar rahe hain taaki image na toote
+            const brandKey = brand["Brand Name"].toLowerCase();
+            const exactFileName = brandImageMap[brandKey] || `${brand["Brand Name"]}.png`;
+
+            return (
+              <div
+                key={index}
+                className="group relative flex h-28 md:h-36 items-center justify-center rounded-2xl border border-slate-200 bg-white p-4 md:px-8 md:py-6 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-red-200 hover:shadow-xl overflow-hidden"
+              >
+                <img
+                  src={`/images/brands/${exactFileName}`}
+                  alt={`${brand["Brand Name"]} aftermarket parts`}
+                  className="h-full w-full object-contain select-none transition-all duration-500 ease-out md:filter md:grayscale md:opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105"
+                  draggable={false}
+                />
+              </div>
+            );
+          })}
         </div>
 
       </div>
