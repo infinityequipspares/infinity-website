@@ -7,6 +7,10 @@ import Footer from "@/components/layout/Footer";
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 import ScrollToTop from "@/components/ScrollToTop";
 
+// 🌟 Correct path for app/context/EnquiryContext
+import { EnquiryProvider } from "@/app/context/EnquiryContext";
+import EnquiryDrawer from "@/components/common/EnquiryDrawer";
+
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
@@ -29,18 +33,24 @@ export default function RootLayout({
       className={`${outfit.variable} h-full antialiased`}
     >
       <body className="min-h-screen flex flex-col bg-white font-sans">
+        
+        <EnquiryProvider>
 
-        <ScrollToTop />
+          <ScrollToTop />
 
-        <Navbar />
+          <Navbar />
 
-        <main className="flex-1">
-          {children}
-        </main>
+          <main className="flex-1">
+            {children}
+          </main>
 
-        <Footer />
+          <Footer />
 
-        <FloatingWhatsApp />
+          <FloatingWhatsApp />
+
+          <EnquiryDrawer />
+
+        </EnquiryProvider>
 
       </body>
     </html>

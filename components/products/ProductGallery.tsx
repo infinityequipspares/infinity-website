@@ -37,7 +37,6 @@ export default function ProductGallery({
     // Only apply on desktop (Tailwind lg breakpoint is 1024px)
     if (typeof window !== "undefined" && window.innerWidth < 1024) return;
 
-    // Use nativeEvent.offsetX/Y to get coordinates strictly within the unscaled image bounds
     const target = e.currentTarget;
     const x = (e.nativeEvent.offsetX / target.offsetWidth) * 100;
     const y = (e.nativeEvent.offsetY / target.offsetHeight) * 100;
@@ -51,7 +50,7 @@ export default function ProductGallery({
   };
 
   return (
-    <div className="flex flex-col-reverse gap-3 lg:flex-row">
+    <div className="flex flex-col-reverse gap-2.5 lg:flex-row">
       {/* Thumbnails */}
       <div className="flex gap-2 overflow-x-auto pb-1 lg:w-[72px] lg:flex-col lg:overflow-visible">
         {imageList.map((image, index) => (
@@ -59,7 +58,7 @@ export default function ProductGallery({
             key={index}
             type="button"
             onClick={() => setSelectedImage(image)}
-            className={`h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg border-2 bg-white transition-all duration-300 ${
+            className={`h-14 w-14 sm:h-16 sm:w-16 flex-shrink-0 overflow-hidden rounded-lg border-2 bg-white transition-all duration-300 ${
               selectedImage === image
                 ? "border-red-600 shadow-md"
                 : "border-gray-200 hover:border-red-400"
@@ -80,12 +79,13 @@ export default function ProductGallery({
       </div>
 
       {/* Main Image */}
-      <div className="relative flex h-[300px] lg:h-[470px] flex-1 items-center justify-center overflow-hidden rounded-xl border border-gray-200 bg-white">
-        <span className="absolute left-4 top-4 z-10 rounded-md bg-red-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
+      {/* 🌟 FIX: Mobile height h-[300px] se kam karke h-[210px] (sm:h-[250px]) kar di gayi hai taaki extra safed space hate */}
+      <div className="relative flex h-[210px] sm:h-[250px] lg:h-[470px] flex-1 items-center justify-center overflow-hidden rounded-xl border border-gray-200 bg-white">
+        <span className="absolute left-3 top-3 lg:left-4 lg:top-4 z-10 rounded-md bg-red-600 px-2.5 py-0.5 lg:px-3 lg:py-1 text-[10px] lg:text-[11px] font-bold uppercase tracking-wider text-white">
           Product Image
         </span>
 
-        <div className="flex h-full w-full items-center justify-center p-4 sm:p-5">
+        <div className="flex h-full w-full items-center justify-center p-3 sm:p-4">
           <Image
             src={selectedImage}
             alt={productName}
