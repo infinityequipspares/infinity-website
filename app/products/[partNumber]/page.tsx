@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import products from "@/data/products.json";
@@ -6,6 +7,68 @@ import RelatedProducts from "@/components/products/RelatedProducts";
 import ShareButton from "@/components/products/ShareButton";
 import AddToEnquiryButton from "@/components/products/AddToEnquiryButton";
 
+// 🌟 NEW INVISIBLE SEO & LINK PREVIEW CODE (Safe for UI) 🌟
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ partNumber: string }>;
+}): Promise<Metadata> {
+  const { partNumber } = await params;
+  const normalize = (value: any) => String(value || "").trim();
+
+  const product: any = products.find((item: any) => {
+    const allPartNumbers = [
+      normalize(item.partNumber),
+      normalize(item.alternatePartNumbers1),
+      normalize(item.alternatePartNumbers2),
+      normalize(item.alternatePartNumbers3),
+    ].filter(Boolean);
+
+    return (
+      allPartNumbers.includes(normalize(partNumber)) ||
+      normalize(item.slug) === normalize(partNumber)
+    );
+  });
+
+  if (!product) {
+    return {
+      title: "Product Not Found | Infinity Equipments And Spares",
+    };
+  }
+
+  // Find the exact image for WhatsApp/Facebook preview
+  const ogImage =
+    product.images && Array.isArray(product.images) && product.images.length > 0
+      ? product.images[0].startsWith("/")
+        ? product.images[0]
+        : `/images/products/${product.images[0]}`
+      : product.image
+      ? product.image.startsWith("/")
+        ? product.image
+        : `/images/products/${product.image}`
+      : "/images/products/no-image.jpg";
+
+  return {
+    title: `${product.name} - ${product.partNumber} | Infinity Equipments And Spares`,
+    description: product.description || `Buy ${product.name} (${product.partNumber}) for your heavy machinery. Genuine and aftermarket spare parts available.`,
+    openGraph: {
+      title: `${product.name} | ${product.partNumber}`,
+      description: product.description || `Check out this spare part: ${product.name}`,
+      images: [
+        {
+          url: ogImage,
+          width: 800,
+          height: 800,
+          alt: product.name,
+        },
+      ],
+    },
+  };
+}
+// 🌟 END OF INVISIBLE SEO CODE 🌟
+
+
+// 👇 YAHAN SE AAPKA SAME PURANA DESIGN CODE HAI (NO CHANGES) 👇
 export default async function ProductPage({
   params,
 }: {
