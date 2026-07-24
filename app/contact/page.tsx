@@ -65,8 +65,10 @@ export default function ContactPage() {
                   Email Address
                 </h3>
                 <div className="flex flex-col space-y-2">
-                  <a href="mailto:infinityequipmentsandspares@gmail.com" className="break-all text-[14px] font-semibold text-gray-800 transition-colors hover:text-red-600">infinityequipmentsandspares@gmail.com</a>
-                  <a href="mailto:infinityequipspares@gmail.com" className="break-all text-[14px] font-semibold text-gray-800 transition-colors hover:text-red-600">infinityequipspares@gmail.com</a>
+                  {/* UPDATE: Yahan bas ek official email rakhi gayi hai */}
+                  <a href="mailto:contact@infinityequipspares.com" className="break-all text-[14px] font-semibold text-gray-800 transition-colors hover:text-red-600">
+                    contact@infinityequipspares.com
+                  </a>
                 </div>
               </div>
             </div>

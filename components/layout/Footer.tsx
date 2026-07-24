@@ -57,8 +57,11 @@ export default function Footer() {
               <p>+91 916 786 7476</p>
               <p>+91 916 786 7176</p>
               <p>+91 916 786 7472</p>
-              <p className="mt-1 text-slate-400 break-all">infinityequipmentsandspares@gmail.com</p>
-              <p className="text-slate-400 break-all">infinityequipspares@gmail.com</p>
+              <p className="mt-1 break-all">
+                <a href="mailto:contact@infinityequipspares.com" className="text-slate-400 hover:text-red-600 transition-colors">
+                  contact@infinityequipspares.com
+                </a>
+              </p>
             </div>
           </div>
         </div>

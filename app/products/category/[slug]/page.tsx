@@ -29,8 +29,15 @@ export default async function CategoryPage({
     <section className="mx-auto max-w-[1400px] px-4 py-6 md:py-10">
 
       {/* Breadcrumb (FIX: Reduced bottom margin for mobile) */}
-      <div className="mb-4 text-[12px] md:text-sm text-gray-500 md:mb-8">
-        Home / Products /{" "}
+      <div className="mb-4 flex flex-wrap items-center gap-1.5 md:gap-2 text-[12px] md:text-sm text-gray-500 md:mb-8">
+        <Link href="/" className="hover:text-red-600 transition">
+          Home
+        </Link>
+        <span>/</span>
+        <Link href="/products" className="hover:text-red-600 transition">
+          Products
+        </Link>
+        <span>/</span>
         <span className="font-semibold text-red-600">
           {category["Category Name"]}
         </span>
