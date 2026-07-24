@@ -54,9 +54,21 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start">
             <h3 className="mb-3 text-[12px] font-extrabold uppercase tracking-wider text-slate-900">Contact Us</h3>
             <div className="text-[12px] text-slate-500 font-medium flex flex-col gap-1 text-center md:text-left">
-              <p>+91 916 786 7476</p>
-              <p>+91 916 786 7176</p>
-              <p>+91 916 786 7472</p>
+              <p>
+                <a href="tel:+919167867476" className="hover:text-red-600 transition-colors">
+                  +91 916 786 7476
+                </a>
+              </p>
+              <p>
+                <a href="tel:+919167867176" className="hover:text-red-600 transition-colors">
+                  +91 916 786 7176
+                </a>
+              </p>
+              <p>
+                <a href="tel:+919167867472" className="hover:text-red-600 transition-colors">
+                  +91 916 786 7472
+                </a>
+              </p>
               <p className="mt-1 break-all">
                 <a href="mailto:contact@infinityequipspares.com" className="text-slate-400 hover:text-red-600 transition-colors">
                   contact@infinityequipspares.com
