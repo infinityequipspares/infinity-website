@@ -7,7 +7,7 @@ import RelatedProducts from "@/components/products/RelatedProducts";
 import ShareButton from "@/components/products/ShareButton";
 import AddToEnquiryButton from "@/components/products/AddToEnquiryButton";
 
-// 🌟 NEW INVISIBLE SEO & LINK PREVIEW CODE (Safe for UI) 🌟
+// 🌟 DYNAMIC SEO & WHATSAPP PREVIEW METADATA 🌟
 export async function generateMetadata({
   params,
 }: {
@@ -36,7 +36,6 @@ export async function generateMetadata({
     };
   }
 
-  // Find the exact image for WhatsApp/Facebook preview
   const ogImage =
     product.images && Array.isArray(product.images) && product.images.length > 0
       ? product.images[0].startsWith("/")
@@ -65,10 +64,8 @@ export async function generateMetadata({
     },
   };
 }
-// 🌟 END OF INVISIBLE SEO CODE 🌟
 
-
-// 👇 YAHAN SE AAPKA SAME PURANA DESIGN CODE HAI (NO CHANGES) 👇
+// 🌟 MAIN PRODUCT PAGE DISPLAY 🌟
 export default async function ProductPage({
   params,
 }: {
@@ -207,13 +204,29 @@ Product: ${product.name}`;
             </div>
           )}
 
-          {/* Description */}
+          {/* 🌟 INTERACTIVE READ MORE / SHOW LESS DESCRIPTION 🌟 */}
           {product.description && (
             <div className="mt-2.5 sm:mt-3">
               <h3 className="mb-1 text-[12px] sm:text-[13px] font-bold text-gray-900">Description</h3>
-              <p className="text-[12.5px] sm:text-[13.5px] leading-relaxed text-gray-700 line-clamp-3 sm:line-clamp-4 hover:line-clamp-none transition-all duration-300">
-                {product.description}
-              </p>
+              <details className="group [&_summary::-webkit-details-marker]:hidden">
+                <summary className="cursor-pointer list-none">
+                  {/* Collapsed 3 Lines */}
+                  <div className="text-[12.5px] sm:text-[13.5px] leading-relaxed text-gray-700 line-clamp-3 group-open:hidden">
+                    {product.description}
+                  </div>
+                  {/* Expanded Full Text */}
+                  <div className="text-[12.5px] sm:text-[13.5px] leading-relaxed text-gray-700 hidden group-open:block">
+                    {product.description}
+                  </div>
+                  {/* Toggle Triggers */}
+                  <span className="text-red-600 text-[11px] font-bold mt-1 inline-block group-open:hidden">
+                    Read more...
+                  </span>
+                  <span className="text-red-600 text-[11px] font-bold mt-1 hidden group-open:inline-block">
+                    Show less
+                  </span>
+                </summary>
+              </details>
             </div>
           )}
 
