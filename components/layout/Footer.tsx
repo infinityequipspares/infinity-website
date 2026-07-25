@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col items-center text-center mb-6">
           <Link href="/" className="inline-block mb-2">
             <img
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="Infinity Equipments And Spares"
               className="w-[120px] h-auto object-contain"
             />

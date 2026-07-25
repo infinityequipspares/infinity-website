@@ -12,7 +12,7 @@ export default function Hero() {
         <div 
           className="absolute inset-0 z-0 opacity-40"
           style={{
-            backgroundImage: "url('/images/hero-bg.png')",
+            backgroundImage: "url('/images/hero-bg.webp')",
             backgroundSize: "cover",
             backgroundPosition: "left 10%" 
           }}

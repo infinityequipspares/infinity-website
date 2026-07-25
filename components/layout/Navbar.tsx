@@ -25,7 +25,7 @@ export default function Navbar() {
               className="flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]"
             >
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt="Infinity Equipments And Spares"
                 width={105}
                 height={105}
