@@ -1765,24 +1765,6 @@
   },
   {
     "id": "99",
-    "partNumber": "75473",
-    "alternatePartNumbers1": "75473GT",
-    "alternatePartNumbers2": "",
-    "alternatePartNumbers3": "",
-    "brand": "Genie",
-    "name": "OIL PRESSURE SENSOR",
-    "category": "Sensors",
-    "machines": "S-105, S-120, S-125, S-80, S-85",
-    "type": "Aftermarket",
-    "stock": "In Stock",
-    "image": "75473.jpeg",
-    "description": "Engine health is paramount when deploying heavy-duty lifting machinery on active sites. This specialized oil pressure sensor diligently monitors internal engine lubrication levels, providing the vital data necessary to keep your Genie access equipment running at optimal efficiency. When utilized within a boom lift or aerial work platform, it acts as a primary defense against catastrophic engine failure by instantly signaling any drop in pressure. The component exhibits outstanding durability, designed specifically to withstand the aggressive thermal changes and heavy vibrations of rigorous industrial applications. Outstanding precision and reliability are the hallmarks of its quality construction, securing a dependably long service life under tough conditions. Fleet technicians will value the hassle-free diagnostic capabilities that promote easy maintenance and lead directly to reduced downtime. Ensure your construction equipment remains perfectly calibrated by sourcing trusted industrial machinery components from Infinity Equipments And Spares.",
-    "seoKeywords": "75473, 75473GT, Genie, OIL PRESSURE SENSOR, Genie pressure sensor, Genie oil sensor, boom lift parts, aerial work platform components, construction equipment parts, access equipment sensors, Infinity Equipments And Spares",
-    "slug": "75473",
-    "": ""
-  },
-  {
-    "id": "100",
     "partNumber": "70024513",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -1800,7 +1782,7 @@
     "": ""
   },
   {
-    "id": "101",
+    "id": "100",
     "partNumber": "60618",
     "alternatePartNumbers1": "60618GT",
     "alternatePartNumbers2": "",
@@ -1818,7 +1800,7 @@
     "": ""
   },
   {
-    "id": "102",
+    "id": "101",
     "partNumber": "1001117990",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -1836,7 +1818,7 @@
     "": ""
   },
   {
-    "id": "103",
+    "id": "102",
     "partNumber": "1001117991",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -1854,7 +1836,7 @@
     "": ""
   },
   {
-    "id": "104",
+    "id": "103",
     "partNumber": "4000008",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -1872,7 +1854,7 @@
     "": ""
   },
   {
-    "id": "105",
+    "id": "104",
     "partNumber": "7024932",
     "alternatePartNumbers1": "70000803",
     "alternatePartNumbers2": "",
@@ -1890,7 +1872,7 @@
     "": ""
   },
   {
-    "id": "106",
+    "id": "105",
     "partNumber": "281006053",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -1908,7 +1890,7 @@
     "": ""
   },
   {
-    "id": "107",
+    "id": "106",
     "partNumber": "21531072",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -1926,7 +1908,7 @@
     "": ""
   },
   {
-    "id": "108",
+    "id": "107",
     "partNumber": "7026031",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -1944,7 +1926,7 @@
     "": ""
   },
   {
-    "id": "109",
+    "id": "108",
     "partNumber": "4360502",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -1962,7 +1944,7 @@
     "": ""
   },
   {
-    "id": "110",
+    "id": "109",
     "partNumber": "1001135479",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -1980,7 +1962,7 @@
     "": ""
   },
   {
-    "id": "111",
+    "id": "110",
     "partNumber": "1001120104",
     "alternatePartNumbers1": "1001285878",
     "alternatePartNumbers2": "",
@@ -1998,7 +1980,7 @@
     "": ""
   },
   {
-    "id": "112",
+    "id": "111",
     "partNumber": "70028538",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2016,7 +1998,7 @@
     "": ""
   },
   {
-    "id": "113",
+    "id": "112",
     "partNumber": "1001099926",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2034,7 +2016,7 @@
     "": ""
   },
   {
-    "id": "114",
+    "id": "113",
     "partNumber": "4213707",
     "alternatePartNumbers1": "DTZ04213707",
     "alternatePartNumbers2": "",
@@ -2052,7 +2034,7 @@
     "": ""
   },
   {
-    "id": "115",
+    "id": "114",
     "partNumber": "1001253593",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2070,7 +2052,7 @@
     "": ""
   },
   {
-    "id": "116",
+    "id": "115",
     "partNumber": "7021619",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2088,7 +2070,7 @@
     "": ""
   },
   {
-    "id": "117",
+    "id": "116",
     "partNumber": "70004614",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2106,7 +2088,7 @@
     "": ""
   },
   {
-    "id": "118",
+    "id": "117",
     "partNumber": "1001151895",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2124,7 +2106,7 @@
     "": ""
   },
   {
-    "id": "119",
+    "id": "118",
     "partNumber": "1001157084",
     "alternatePartNumbers1": "1001157084S",
     "alternatePartNumbers2": "",
@@ -2142,7 +2124,7 @@
     "": ""
   },
   {
-    "id": "120",
+    "id": "119",
     "partNumber": "1001133759",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2160,7 +2142,7 @@
     "": ""
   },
   {
-    "id": "121",
+    "id": "120",
     "partNumber": "1001196517",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2178,7 +2160,7 @@
     "": ""
   },
   {
-    "id": "122",
+    "id": "121",
     "partNumber": "4360517",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2196,7 +2178,7 @@
     "": ""
   },
   {
-    "id": "123",
+    "id": "122",
     "partNumber": "2420191",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2214,7 +2196,7 @@
     "": ""
   },
   {
-    "id": "124",
+    "id": "123",
     "partNumber": "1001094400",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2232,7 +2214,7 @@
     "": ""
   },
   {
-    "id": "125",
+    "id": "124",
     "partNumber": "4360544",
     "alternatePartNumbers1": "1001135114",
     "alternatePartNumbers2": "",
@@ -2250,7 +2232,7 @@
     "": ""
   },
   {
-    "id": "126",
+    "id": "125",
     "partNumber": "1001147479",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2268,7 +2250,7 @@
     "": ""
   },
   {
-    "id": "127",
+    "id": "126",
     "partNumber": "4360505",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2286,7 +2268,7 @@
     "": ""
   },
   {
-    "id": "128",
+    "id": "127",
     "partNumber": "43605051",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2304,7 +2286,7 @@
     "": ""
   },
   {
-    "id": "129",
+    "id": "128",
     "partNumber": "1001118971",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2322,7 +2304,7 @@
     "": ""
   },
   {
-    "id": "130",
+    "id": "129",
     "partNumber": "1660261",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2340,7 +2322,7 @@
     "": ""
   },
   {
-    "id": "131",
+    "id": "130",
     "partNumber": "1001191020",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2358,7 +2340,7 @@
     "": ""
   },
   {
-    "id": "132",
+    "id": "131",
     "partNumber": "70000916",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2376,7 +2358,7 @@
     "": ""
   },
   {
-    "id": "133",
+    "id": "132",
     "partNumber": "70030554",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2394,7 +2376,7 @@
     "": ""
   },
   {
-    "id": "134",
+    "id": "133",
     "partNumber": "70001128",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2412,7 +2394,7 @@
     "": ""
   },
   {
-    "id": "135",
+    "id": "134",
     "partNumber": "70002831",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2430,7 +2412,7 @@
     "": ""
   },
   {
-    "id": "136",
+    "id": "135",
     "partNumber": "7020414",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2448,7 +2430,7 @@
     "": ""
   },
   {
-    "id": "137",
+    "id": "136",
     "partNumber": "",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2466,7 +2448,7 @@
     "": ""
   },
   {
-    "id": "138",
+    "id": "137",
     "partNumber": "",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2484,7 +2466,7 @@
     "": ""
   },
   {
-    "id": "139",
+    "id": "138",
     "partNumber": "70400239",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2502,7 +2484,7 @@
     "": ""
   },
   {
-    "id": "140",
+    "id": "139",
     "partNumber": "4132014",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2520,7 +2502,7 @@
     "": ""
   },
   {
-    "id": "141",
+    "id": "140",
     "partNumber": "70005726",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2538,7 +2520,7 @@
     "": ""
   },
   {
-    "id": "142",
+    "id": "141",
     "partNumber": "",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2556,7 +2538,7 @@
     "": ""
   },
   {
-    "id": "143",
+    "id": "142",
     "partNumber": "4102478",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2574,7 +2556,7 @@
     "": ""
   },
   {
-    "id": "144",
+    "id": "143",
     "partNumber": "4123831",
     "alternatePartNumbers1": "70400237",
     "alternatePartNumbers2": "",
@@ -2592,7 +2574,7 @@
     "": ""
   },
   {
-    "id": "145",
+    "id": "144",
     "partNumber": "4124263",
     "alternatePartNumbers1": "70031474",
     "alternatePartNumbers2": "",
@@ -2610,7 +2592,7 @@
     "": ""
   },
   {
-    "id": "146",
+    "id": "145",
     "partNumber": "7024579",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2628,7 +2610,7 @@
     "": ""
   },
   {
-    "id": "147",
+    "id": "146",
     "partNumber": "7020208",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2646,7 +2628,7 @@
     "": ""
   },
   {
-    "id": "148",
+    "id": "147",
     "partNumber": "7020477",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2664,7 +2646,7 @@
     "": ""
   },
   {
-    "id": "149",
+    "id": "148",
     "partNumber": "70025153",
     "alternatePartNumbers1": "1001225430",
     "alternatePartNumbers2": "",
@@ -2682,7 +2664,7 @@
     "": ""
   },
   {
-    "id": "150",
+    "id": "149",
     "partNumber": "",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2700,7 +2682,7 @@
     "": ""
   },
   {
-    "id": "151",
+    "id": "150",
     "partNumber": "7021616",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2718,7 +2700,7 @@
     "": ""
   },
   {
-    "id": "152",
+    "id": "151",
     "partNumber": "",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2736,7 +2718,7 @@
     "": ""
   },
   {
-    "id": "153",
+    "id": "152",
     "partNumber": "7027795",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2754,7 +2736,7 @@
     "": ""
   },
   {
-    "id": "154",
+    "id": "153",
     "partNumber": "70004515",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2772,7 +2754,7 @@
     "": ""
   },
   {
-    "id": "155",
+    "id": "154",
     "partNumber": "7010924",
     "alternatePartNumbers1": "3600184",
     "alternatePartNumbers2": "",
@@ -2790,7 +2772,7 @@
     "": ""
   },
   {
-    "id": "156",
+    "id": "155",
     "partNumber": "1001163631",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2808,7 +2790,7 @@
     "": ""
   },
   {
-    "id": "157",
+    "id": "156",
     "partNumber": "70008366",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2826,7 +2808,7 @@
     "": ""
   },
   {
-    "id": "158",
+    "id": "157",
     "partNumber": "70001056",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2844,7 +2826,7 @@
     "": ""
   },
   {
-    "id": "159",
+    "id": "158",
     "partNumber": "",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2862,7 +2844,7 @@
     "": ""
   },
   {
-    "id": "160",
+    "id": "159",
     "partNumber": "4103939",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2880,7 +2862,7 @@
     "": ""
   },
   {
-    "id": "161",
+    "id": "160",
     "partNumber": "70026210",
     "alternatePartNumbers1": "281002742",
     "alternatePartNumbers2": "",
@@ -2898,7 +2880,7 @@
     "": ""
   },
   {
-    "id": "162",
+    "id": "161",
     "partNumber": "1001112927",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2916,7 +2898,7 @@
     "": ""
   },
   {
-    "id": "163",
+    "id": "162",
     "partNumber": "1001166393",
     "alternatePartNumbers1": "1001166393S",
     "alternatePartNumbers2": "",
@@ -2934,7 +2916,7 @@
     "": ""
   },
   {
-    "id": "164",
+    "id": "163",
     "partNumber": "70400236",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2952,7 +2934,7 @@
     "": ""
   },
   {
-    "id": "165",
+    "id": "164",
     "partNumber": "1270278",
     "alternatePartNumbers1": "1270278GT",
     "alternatePartNumbers2": "",
@@ -2970,7 +2952,7 @@
     "": ""
   },
   {
-    "id": "166",
+    "id": "165",
     "partNumber": "3600424",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -2988,7 +2970,7 @@
     "": ""
   },
   {
-    "id": "167",
+    "id": "166",
     "partNumber": "70001395",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3006,7 +2988,7 @@
     "": ""
   },
   {
-    "id": "168",
+    "id": "167",
     "partNumber": "1001171095",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3024,7 +3006,7 @@
     "": ""
   },
   {
-    "id": "169",
+    "id": "168",
     "partNumber": "70445",
     "alternatePartNumbers1": "70445GT",
     "alternatePartNumbers2": "",
@@ -3042,7 +3024,7 @@
     "": ""
   },
   {
-    "id": "170",
+    "id": "169",
     "partNumber": "1001112758",
     "alternatePartNumbers1": "100136079",
     "alternatePartNumbers2": "",
@@ -3060,7 +3042,7 @@
     "": ""
   },
   {
-    "id": "171",
+    "id": "170",
     "partNumber": "1001103667",
     "alternatePartNumbers1": "1001277840",
     "alternatePartNumbers2": "",
@@ -3078,7 +3060,7 @@
     "": ""
   },
   {
-    "id": "172",
+    "id": "171",
     "partNumber": "1001112757",
     "alternatePartNumbers1": "1001227960",
     "alternatePartNumbers2": "",
@@ -3096,7 +3078,7 @@
     "": ""
   },
   {
-    "id": "173",
+    "id": "172",
     "partNumber": "1001141138",
     "alternatePartNumbers1": "1001261322",
     "alternatePartNumbers2": "1001110701",
@@ -3114,7 +3096,7 @@
     "": ""
   },
   {
-    "id": "174",
+    "id": "173",
     "partNumber": "1001109498",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3132,7 +3114,7 @@
     "": ""
   },
   {
-    "id": "175",
+    "id": "174",
     "partNumber": "1001119509",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3150,7 +3132,7 @@
     "": ""
   },
   {
-    "id": "176",
+    "id": "175",
     "partNumber": "1001278007",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3168,7 +3150,7 @@
     "": ""
   },
   {
-    "id": "177",
+    "id": "176",
     "partNumber": "1001106938",
     "alternatePartNumbers1": "1001261321",
     "alternatePartNumbers2": "",
@@ -3186,7 +3168,7 @@
     "": ""
   },
   {
-    "id": "178",
+    "id": "177",
     "partNumber": "1001119262",
     "alternatePartNumbers1": "1001306080",
     "alternatePartNumbers2": "",
@@ -3204,7 +3186,7 @@
     "": ""
   },
   {
-    "id": "179",
+    "id": "178",
     "partNumber": "1001281100",
     "alternatePartNumbers1": "1001110084",
     "alternatePartNumbers2": "1001277844",
@@ -3222,7 +3204,7 @@
     "": ""
   },
   {
-    "id": "180",
+    "id": "179",
     "partNumber": "1001149676",
     "alternatePartNumbers1": "1001277848",
     "alternatePartNumbers2": "",
@@ -3240,7 +3222,7 @@
     "": ""
   },
   {
-    "id": "181",
+    "id": "180",
     "partNumber": "1600377",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3258,7 +3240,7 @@
     "": ""
   },
   {
-    "id": "182",
+    "id": "181",
     "partNumber": "1600293",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3276,7 +3258,7 @@
     "": ""
   },
   {
-    "id": "183",
+    "id": "182",
     "partNumber": "2920154",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3294,7 +3276,7 @@
     "": ""
   },
   {
-    "id": "184",
+    "id": "183",
     "partNumber": "1001142736",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3312,7 +3294,7 @@
     "": ""
   },
   {
-    "id": "185",
+    "id": "184",
     "partNumber": "1001109497",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3330,7 +3312,7 @@
     "": ""
   },
   {
-    "id": "186",
+    "id": "185",
     "partNumber": "7023922",
     "alternatePartNumbers1": "SP0847D",
     "alternatePartNumbers2": "",
@@ -3348,7 +3330,7 @@
     "": ""
   },
   {
-    "id": "187",
+    "id": "186",
     "partNumber": "4641234",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3366,7 +3348,7 @@
     "": ""
   },
   {
-    "id": "188",
+    "id": "187",
     "partNumber": "7026022",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3384,7 +3366,7 @@
     "": ""
   },
   {
-    "id": "189",
+    "id": "188",
     "partNumber": "7007496",
     "alternatePartNumbers1": "7007474",
     "alternatePartNumbers2": "MCV116A3204",
@@ -3402,7 +3384,7 @@
     "": ""
   },
   {
-    "id": "190",
+    "id": "189",
     "partNumber": "4641260",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3420,7 +3402,7 @@
     "": ""
   },
   {
-    "id": "191",
+    "id": "190",
     "partNumber": "7024570",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3438,7 +3420,7 @@
     "": ""
   },
   {
-    "id": "192",
+    "id": "191",
     "partNumber": "7024573",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3456,7 +3438,7 @@
     "": ""
   },
   {
-    "id": "193",
+    "id": "192",
     "partNumber": "7023923",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3474,7 +3456,7 @@
     "": ""
   },
   {
-    "id": "194",
+    "id": "193",
     "partNumber": "70239231",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3492,7 +3474,7 @@
     "": ""
   },
   {
-    "id": "195",
+    "id": "194",
     "partNumber": "107753",
     "alternatePartNumbers1": "107753GT",
     "alternatePartNumbers2": "",
@@ -3510,7 +3492,7 @@
     "": ""
   },
   {
-    "id": "196",
+    "id": "195",
     "partNumber": "7024924",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3528,7 +3510,7 @@
     "": ""
   },
   {
-    "id": "197",
+    "id": "196",
     "partNumber": "7012941",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3546,7 +3528,7 @@
     "": ""
   },
   {
-    "id": "198",
+    "id": "197",
     "partNumber": "70129411",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3564,7 +3546,7 @@
     "": ""
   },
   {
-    "id": "199",
+    "id": "198",
     "partNumber": "7017452",
     "alternatePartNumbers1": "SV0847D",
     "alternatePartNumbers2": "",
@@ -3582,7 +3564,7 @@
     "": ""
   },
   {
-    "id": "200",
+    "id": "199",
     "partNumber": "70004601",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3600,7 +3582,7 @@
     "": ""
   },
   {
-    "id": "201",
+    "id": "200",
     "partNumber": "70006125",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3618,7 +3600,7 @@
     "": ""
   },
   {
-    "id": "202",
+    "id": "201",
     "partNumber": "70006124",
     "alternatePartNumbers1": "R934000657",
     "alternatePartNumbers2": "OD143758440000",
@@ -3636,7 +3618,7 @@
     "": ""
   },
   {
-    "id": "203",
+    "id": "202",
     "partNumber": "7021612",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3654,7 +3636,7 @@
     "": ""
   },
   {
-    "id": "204",
+    "id": "203",
     "partNumber": "7023912",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3672,7 +3654,7 @@
     "": ""
   },
   {
-    "id": "205",
+    "id": "204",
     "partNumber": "4640509",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3690,7 +3672,7 @@
     "": ""
   },
   {
-    "id": "206",
+    "id": "205",
     "partNumber": "7024925",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3708,7 +3690,7 @@
     "": ""
   },
   {
-    "id": "207",
+    "id": "206",
     "partNumber": "70003019",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3726,7 +3708,7 @@
     "": ""
   },
   {
-    "id": "208",
+    "id": "207",
     "partNumber": "7024899",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3744,7 +3726,7 @@
     "": ""
   },
   {
-    "id": "209",
+    "id": "208",
     "partNumber": "7017454",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3762,7 +3744,7 @@
     "": ""
   },
   {
-    "id": "210",
+    "id": "209",
     "partNumber": "7017421",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3780,7 +3762,7 @@
     "": ""
   },
   {
-    "id": "211",
+    "id": "210",
     "partNumber": "4640858",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3798,7 +3780,7 @@
     "": ""
   },
   {
-    "id": "212",
+    "id": "211",
     "partNumber": "101057",
     "alternatePartNumbers1": "101057GT",
     "alternatePartNumbers2": "",
@@ -3816,7 +3798,7 @@
     "": ""
   },
   {
-    "id": "213",
+    "id": "212",
     "partNumber": "4640452",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3834,7 +3816,7 @@
     "": ""
   },
   {
-    "id": "214",
+    "id": "213",
     "partNumber": "70003027",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3852,7 +3834,7 @@
     "": ""
   },
   {
-    "id": "215",
+    "id": "214",
     "partNumber": "7017479",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3870,7 +3852,7 @@
     "": ""
   },
   {
-    "id": "216",
+    "id": "215",
     "partNumber": "70003021",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3888,7 +3870,7 @@
     "": ""
   },
   {
-    "id": "217",
+    "id": "216",
     "partNumber": "111703",
     "alternatePartNumbers1": "111703GT",
     "alternatePartNumbers2": "",
@@ -3906,7 +3888,7 @@
     "": ""
   },
   {
-    "id": "218",
+    "id": "217",
     "partNumber": "7012995",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3924,7 +3906,7 @@
     "": ""
   },
   {
-    "id": "219",
+    "id": "218",
     "partNumber": "4640862",
     "alternatePartNumbers1": "4640862S",
     "alternatePartNumbers2": "",
@@ -3942,7 +3924,7 @@
     "": ""
   },
   {
-    "id": "220",
+    "id": "219",
     "partNumber": "4640902",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3960,7 +3942,7 @@
     "": ""
   },
   {
-    "id": "221",
+    "id": "220",
     "partNumber": "70000804",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3978,7 +3960,7 @@
     "": ""
   },
   {
-    "id": "222",
+    "id": "221",
     "partNumber": "7012944",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -3996,7 +3978,7 @@
     "": ""
   },
   {
-    "id": "223",
+    "id": "222",
     "partNumber": "7018991",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4014,7 +3996,7 @@
     "": ""
   },
   {
-    "id": "224",
+    "id": "223",
     "partNumber": "7024571",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4032,7 +4014,7 @@
     "": ""
   },
   {
-    "id": "225",
+    "id": "224",
     "partNumber": "7012943",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4050,7 +4032,7 @@
     "": ""
   },
   {
-    "id": "226",
+    "id": "225",
     "partNumber": "7017451",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4068,7 +4050,7 @@
     "": ""
   },
   {
-    "id": "227",
+    "id": "226",
     "partNumber": "7024885",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4086,7 +4068,7 @@
     "": ""
   },
   {
-    "id": "228",
+    "id": "227",
     "partNumber": "70004460",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4104,7 +4086,7 @@
     "": ""
   },
   {
-    "id": "229",
+    "id": "228",
     "partNumber": "70003026",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4122,7 +4104,7 @@
     "": ""
   },
   {
-    "id": "230",
+    "id": "229",
     "partNumber": "70004595",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4140,7 +4122,7 @@
     "": ""
   },
   {
-    "id": "231",
+    "id": "230",
     "partNumber": "70004588",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4158,7 +4140,7 @@
     "": ""
   },
   {
-    "id": "232",
+    "id": "231",
     "partNumber": "7027792",
     "alternatePartNumbers1": "70400229",
     "alternatePartNumbers2": "4286363",
@@ -4176,7 +4158,7 @@
     "": ""
   },
   {
-    "id": "233",
+    "id": "232",
     "partNumber": "7020458",
     "alternatePartNumbers1": "4281525",
     "alternatePartNumbers2": "04271797",
@@ -4194,7 +4176,7 @@
     "": ""
   },
   {
-    "id": "234",
+    "id": "233",
     "partNumber": "7027251",
     "alternatePartNumbers1": "04287583",
     "alternatePartNumbers2": "",
@@ -4212,7 +4194,7 @@
     "": ""
   },
   {
-    "id": "235",
+    "id": "234",
     "partNumber": "12948677954",
     "alternatePartNumbers1": "1503ES12S5SUC11S",
     "alternatePartNumbers2": "",
@@ -4230,7 +4212,7 @@
     "": ""
   },
   {
-    "id": "236",
+    "id": "235",
     "partNumber": "7020479",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4248,7 +4230,7 @@
     "": ""
   },
   {
-    "id": "237",
+    "id": "236",
     "partNumber": "7016332",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4266,7 +4248,7 @@
     "": ""
   },
   {
-    "id": "238",
+    "id": "237",
     "partNumber": "70031144",
     "alternatePartNumbers1": "4131602",
     "alternatePartNumbers2": "",
@@ -4284,7 +4266,7 @@
     "": ""
   },
   {
-    "id": "239",
+    "id": "238",
     "partNumber": "7000872",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4302,7 +4284,7 @@
     "": ""
   },
   {
-    "id": "240",
+    "id": "239",
     "partNumber": "4124784",
     "alternatePartNumbers1": "DTZ01184028",
     "alternatePartNumbers2": "",
@@ -4320,7 +4302,7 @@
     "": ""
   },
   {
-    "id": "241",
+    "id": "240",
     "partNumber": "3423208",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4338,7 +4320,7 @@
     "": ""
   },
   {
-    "id": "242",
+    "id": "241",
     "partNumber": "3422933",
     "alternatePartNumbers1": "3423194",
     "alternatePartNumbers2": "3423194S",
@@ -4356,7 +4338,7 @@
     "": ""
   },
   {
-    "id": "243",
+    "id": "242",
     "partNumber": "1001146896",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4374,7 +4356,7 @@
     "": ""
   },
   {
-    "id": "244",
+    "id": "243",
     "partNumber": "3423209",
     "alternatePartNumbers1": "3423209S",
     "alternatePartNumbers2": "",
@@ -4392,7 +4374,7 @@
     "": ""
   },
   {
-    "id": "245",
+    "id": "244",
     "partNumber": "4360543",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4410,7 +4392,7 @@
     "": ""
   },
   {
-    "id": "246",
+    "id": "245",
     "partNumber": "1001150999",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4428,7 +4410,7 @@
     "": ""
   },
   {
-    "id": "247",
+    "id": "246",
     "partNumber": "4360552",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -4446,7 +4428,7 @@
     "": ""
   },
   {
-    "id": "248",
+    "id": "247",
     "partNumber": "122515",
     "alternatePartNumbers1": "122515GT",
     "alternatePartNumbers2": "",
@@ -4464,7 +4446,7 @@
     "": ""
   },
   {
-    "id": "249",
+    "id": "248",
     "partNumber": "88054",
     "alternatePartNumbers1": "88054GT",
     "alternatePartNumbers2": "",
@@ -4482,7 +4464,7 @@
     "": ""
   },
   {
-    "id": "250",
+    "id": "249",
     "partNumber": "106509",
     "alternatePartNumbers1": "106509GT",
     "alternatePartNumbers2": "50810",
@@ -4500,7 +4482,7 @@
     "": ""
   },
   {
-    "id": "251",
+    "id": "250",
     "partNumber": "62399",
     "alternatePartNumbers1": "62399GT",
     "alternatePartNumbers2": "",
@@ -4518,7 +4500,7 @@
     "": ""
   },
   {
-    "id": "252",
+    "id": "251",
     "partNumber": "89997",
     "alternatePartNumbers1": "89997GT",
     "alternatePartNumbers2": "89996GT",
@@ -4536,7 +4518,7 @@
     "": ""
   },
   {
-    "id": "253",
+    "id": "252",
     "partNumber": "121615",
     "alternatePartNumbers1": "121615GT",
     "alternatePartNumbers2": "",
@@ -4554,7 +4536,7 @@
     "": ""
   },
   {
-    "id": "254",
+    "id": "253",
     "partNumber": "114678",
     "alternatePartNumbers1": "114678GT",
     "alternatePartNumbers2": "T114678",
@@ -4572,7 +4554,7 @@
     "": ""
   },
   {
-    "id": "255",
+    "id": "254",
     "partNumber": "50811",
     "alternatePartNumbers1": "50811GT",
     "alternatePartNumbers2": "",
@@ -4590,7 +4572,7 @@
     "": ""
   },
   {
-    "id": "256",
+    "id": "255",
     "partNumber": "75031",
     "alternatePartNumbers1": "75031GT",
     "alternatePartNumbers2": "",
@@ -4608,7 +4590,7 @@
     "": ""
   },
   {
-    "id": "257",
+    "id": "256",
     "partNumber": "34052",
     "alternatePartNumbers1": "34052GT",
     "alternatePartNumbers2": "",
@@ -4626,7 +4608,7 @@
     "": ""
   },
   {
-    "id": "258",
+    "id": "257",
     "partNumber": "121765",
     "alternatePartNumbers1": "121765GT",
     "alternatePartNumbers2": "",
@@ -4644,7 +4626,7 @@
     "": ""
   },
   {
-    "id": "259",
+    "id": "258",
     "partNumber": "19274",
     "alternatePartNumbers1": "19274GT",
     "alternatePartNumbers2": "",
@@ -4662,7 +4644,7 @@
     "": ""
   },
   {
-    "id": "260",
+    "id": "259",
     "partNumber": "227615",
     "alternatePartNumbers1": "227615GT",
     "alternatePartNumbers2": "227618GT",
@@ -4680,7 +4662,7 @@
     "": ""
   },
   {
-    "id": "261",
+    "id": "260",
     "partNumber": "106510",
     "alternatePartNumbers1": "106510GT",
     "alternatePartNumbers2": "",
@@ -4698,7 +4680,7 @@
     "": ""
   },
   {
-    "id": "262",
+    "id": "261",
     "partNumber": "13038",
     "alternatePartNumbers1": "13038S",
     "alternatePartNumbers2": "13038SGT",
@@ -4716,7 +4698,7 @@
     "": ""
   },
   {
-    "id": "263",
+    "id": "262",
     "partNumber": "50161",
     "alternatePartNumbers1": "50161GT",
     "alternatePartNumbers2": "",
@@ -4734,7 +4716,7 @@
     "": ""
   },
   {
-    "id": "264",
+    "id": "263",
     "partNumber": "146138",
     "alternatePartNumbers1": "146138GT",
     "alternatePartNumbers2": "",
@@ -4752,7 +4734,7 @@
     "": ""
   },
   {
-    "id": "265",
+    "id": "264",
     "partNumber": "18202",
     "alternatePartNumbers1": "18202GT",
     "alternatePartNumbers2": "",
@@ -4770,7 +4752,7 @@
     "": ""
   },
   {
-    "id": "266",
+    "id": "265",
     "partNumber": "37950",
     "alternatePartNumbers1": "37950GT",
     "alternatePartNumbers2": "",
@@ -4788,25 +4770,7 @@
     "": ""
   },
   {
-    "id": "267",
-    "partNumber": "72355",
-    "alternatePartNumbers1": "72355GT",
-    "alternatePartNumbers2": "",
-    "alternatePartNumbers3": "",
-    "brand": "Genie",
-    "name": "OIL TEM SENSOR",
-    "category": "Genie Parts",
-    "machines": "Z-80/60 RT, S-85, S-105, S-125",
-    "type": "Aftermarket",
-    "stock": "In Stock",
-    "image": "72355.jpeg",
-    "description": "Monitor hydraulic or engine oil thermal thresholds accurately with the Genie Oil Temperature Sensor (Part Numbers: 72355, 72355GT). This sensor provides critical real-time temperature telemetry to prevent overheating during continuous heavy-duty cycles.",
-    "seoKeywords": "Genie 72355, Genie 72355GT, Genie oil temperature sensor, Genie hydraulic oil temp switch, heavy equipment thermal monitoring part, industrial machinery spares, Genie replacement parts",
-    "slug": "72355",
-    "": ""
-  },
-  {
-    "id": "268",
+    "id": "266",
     "partNumber": "109426",
     "alternatePartNumbers1": "T109426GT",
     "alternatePartNumbers2": "109430",
@@ -4824,7 +4788,7 @@
     "": ""
   },
   {
-    "id": "269",
+    "id": "267",
     "partNumber": "62376",
     "alternatePartNumbers1": "62376GT",
     "alternatePartNumbers2": "",
@@ -4842,7 +4806,7 @@
     "": ""
   },
   {
-    "id": "270",
+    "id": "268",
     "partNumber": "119613",
     "alternatePartNumbers1": "119613GT",
     "alternatePartNumbers2": "",
@@ -4860,7 +4824,7 @@
     "": ""
   },
   {
-    "id": "271",
+    "id": "269",
     "partNumber": "217803",
     "alternatePartNumbers1": "217803GT",
     "alternatePartNumbers2": "",
@@ -4878,7 +4842,7 @@
     "": ""
   },
   {
-    "id": "272",
+    "id": "270",
     "partNumber": "88057",
     "alternatePartNumbers1": "88057GT",
     "alternatePartNumbers2": "",
@@ -4896,7 +4860,7 @@
     "": ""
   },
   {
-    "id": "273",
+    "id": "271",
     "partNumber": "217571",
     "alternatePartNumbers1": "217571GT",
     "alternatePartNumbers2": "",
@@ -4914,7 +4878,7 @@
     "": ""
   },
   {
-    "id": "274",
+    "id": "272",
     "partNumber": "99163",
     "alternatePartNumbers1": "99163GT",
     "alternatePartNumbers2": "",
@@ -4932,7 +4896,7 @@
     "": ""
   },
   {
-    "id": "275",
+    "id": "273",
     "partNumber": "128201",
     "alternatePartNumbers1": "128201GT",
     "alternatePartNumbers2": "",
@@ -4950,7 +4914,7 @@
     "": ""
   },
   {
-    "id": "276",
+    "id": "274",
     "partNumber": "101957",
     "alternatePartNumbers1": "101957GT",
     "alternatePartNumbers2": "",
@@ -4968,7 +4932,7 @@
     "": ""
   },
   {
-    "id": "277",
+    "id": "275",
     "partNumber": "75094",
     "alternatePartNumbers1": "75094GT",
     "alternatePartNumbers2": "",
@@ -4986,7 +4950,7 @@
     "": ""
   },
   {
-    "id": "278",
+    "id": "276",
     "partNumber": "75032",
     "alternatePartNumbers1": "75032GT",
     "alternatePartNumbers2": "",
@@ -5004,7 +4968,7 @@
     "": ""
   },
   {
-    "id": "279",
+    "id": "277",
     "partNumber": "",
     "alternatePartNumbers1": "0140026GT",
     "alternatePartNumbers2": "",
@@ -5022,7 +4986,7 @@
     "": ""
   },
   {
-    "id": "280",
+    "id": "278",
     "partNumber": "226673",
     "alternatePartNumbers1": "226673GT",
     "alternatePartNumbers2": "",
@@ -5040,7 +5004,7 @@
     "": ""
   },
   {
-    "id": "281",
+    "id": "279",
     "partNumber": "88150",
     "alternatePartNumbers1": "88150GT",
     "alternatePartNumbers2": "",
@@ -5058,7 +5022,7 @@
     "": ""
   },
   {
-    "id": "282",
+    "id": "280",
     "partNumber": "146198",
     "alternatePartNumbers1": "146198GT",
     "alternatePartNumbers2": "",
@@ -5073,6 +5037,456 @@
     "description": "Safeguard your equipment against out-of-bounds structural movements with the Genie Safety Limit Switch (Part Numbers: 146198, 146198GT). Engineered for extreme outdoor durability, this switch ensures dependable electrical circuit interruption when triggered.",
     "seoKeywords": "Genie 146198, Genie 146198GT, Genie safety limit switch, Genie boom lift travel limit switch, AWP electrical safety component, industrial machinery limit spares, Genie replacement parts",
     "slug": "146198",
+    "": ""
+  },
+  {
+    "id": "281",
+    "partNumber": "50154",
+    "alternatePartNumbers1": "50154GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "CONTROL BOX, ASSY, DRIVE CHASIS",
+    "category": "Genie Parts",
+    "machines": "S-125",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "50154.jpeg",
+    "description": "Restore lower-station command integrity and housing protection with the Genie Drive Chassis Control Box Assembly (Part Numbers: 50154, 50154GT). Engineered to house critical electrical switchgear and wiring terminals, this robust enclosure safeguards internal components against moisture, dust, and physical impact on job sites.",
+    "seoKeywords": "Genie 50154, Genie 50154GT, Genie drive chassis control box, Genie lower control enclosure, AWP chassis electrical box, heavy equipment control housing, Genie replacement parts",
+    "slug": "50154",
+    "": ""
+  },
+  {
+    "id": "282",
+    "partNumber": "146199",
+    "alternatePartNumbers1": "146199GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "LIMIT SWITCH, SAFETY",
+    "category": "Genie Parts",
+    "machines": "Z-135, ZX-135",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "146199.jpeg",
+    "description": "Ensure accurate position detection and mechanical limit monitoring with the Genie Safety Limit Switch (Part Numbers: 146199, 146199GT). Built with a heavy-duty actuator mechanism and sealed electrical contacts, this switch prevents over-travel and maintains safe operating boundaries for aerial lifts.",
+    "seoKeywords": "Genie 146199, Genie 146199GT, Genie safety limit switch, Genie boom position switch, AWP electrical safety component, industrial machinery limit spares, Genie replacement parts",
+    "slug": "146199",
+    "": ""
+  },
+  {
+    "id": "283",
+    "partNumber": "146154",
+    "alternatePartNumbers1": "146154GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "PCB, ASSEMBLY, ECM, SB TCON V212",
+    "category": "Genie Parts",
+    "machines": "S-125",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "146154.jpeg",
+    "description": "Manage advanced upper-station electronic functions with the Genie SB TCON V212 Platform ECM PCB Assembly (Part Numbers: 146154, 146154GT). This specialized firmware circuit board governs upper system telemetry, joystick communication loops, and safety interlocks for precise basket operations.",
+    "seoKeywords": "Genie 146154, Genie 146154GT, Genie SB TCON V212 board, Genie platform ECM assembly, AWP upper electronic module, industrial lift control PCB, Genie replacement spares",
+    "slug": "146154",
+    "": ""
+  },
+  {
+    "id": "284",
+    "partNumber": "13091",
+    "alternatePartNumbers1": "13091GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "SWITCH, TOGGLE, DPST, 2POS MAINT",
+    "category": "Genie Parts",
+    "machines": "All Genie Models",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "13091.jpeg",
+    "description": "Control on-off electrical circuits securely with the Genie 2-Position DPST Main Toggle Switch (Part Numbers: 13091, 13091GT). Built with heavy-duty metal bats and weather-sealed boots, this switch delivers reliable manual circuit selection on control consoles.",
+    "seoKeywords": "Genie 13091, Genie 13091GT, Genie DPST toggle switch, Genie 2 position main switch, AWP console toggle replacement, heavy equipment electrical switch, Genie parts",
+    "slug": "13091",
+    "": ""
+  },
+  {
+    "id": "285",
+    "partNumber": "107867",
+    "alternatePartNumbers1": "107867GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "KIT,SERVICE,STEER SENSOR",
+    "category": "Genie Parts",
+    "machines": "S-105, S-125",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "107867.jpeg",
+    "description": "Restore precise wheel alignment and steering feedback with the Genie Steering Sensor Service Kit (Part Numbers: 107867, 107867GT). This comprehensive replacement kit includes a high-accuracy sensor and hardware designed to correct tracking errors and ensure responsive maneuverability.",
+    "seoKeywords": "Genie 107867, Genie 107867GT, Genie steering sensor kit, Genie wheel alignment sensor, AWP steering control spares, heavy equipment electronic parts, Genie replacement kit",
+    "slug": "107867",
+    "": ""
+  },
+  {
+    "id": "286",
+    "partNumber": "34059",
+    "alternatePartNumbers1": "34059GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "SENDING UNIT,OIL TEMP.",
+    "category": "Genie Parts",
+    "machines": "GS-3390 RT, GS-5390 RT, Z-45/25 JRT, Z-60/34 RT, S-65, S-85",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "34059.jpeg",
+    "description": "Monitor engine or hydraulic oil thermal levels accurately with the Genie Oil Temperature Sending Unit (Part Numbers: 34059, 34059GT). This reliable sensor provides critical real-time temperature telemetry to prevent overheating and system degradation during continuous heavy-duty cycles.",
+    "seoKeywords": "Genie 34059, Genie 34059GT, Genie oil temperature sending unit, Genie hydraulic oil temp sensor, heavy equipment thermal monitoring part, industrial machinery spares, Genie replacement parts",
+    "slug": "34059",
+    "": ""
+  },
+  {
+    "id": "287",
+    "partNumber": "1287986",
+    "alternatePartNumbers1": "1287986GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "SWITCH, PRESSURE, #6SAE, 600PSI",
+    "category": "Genie Parts",
+    "machines": "Z-30/20 N, Z-34/22 N, Z-45/25 JDC",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "1287986.jpeg",
+    "description": "Ensure strict hydraulic pressure threshold monitoring with the Genie #6 SAE 600 PSI Pressure Switch (Part Numbers: 1287986, 1287986GT). Built for rigorous fluid systems, this switch triggers safety interlocks or warnings when system pressures reach designated operating limits.",
+    "seoKeywords": "Genie 1287986, Genie 1287986GT, Genie 600 PSI pressure switch, Genie SAE hydraulic pressure switch, AWP system pressure sensor, industrial machinery control parts, Genie replacement spares",
+    "slug": "1287986",
+    "": ""
+  },
+  {
+    "id": "288",
+    "partNumber": "75769",
+    "alternatePartNumbers1": "75769GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "LIMIT SWITCH, OPERATION, LSB2RO",
+    "category": "Genie Parts",
+    "machines": "S-120, S-125",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "75769.jpeg",
+    "description": "Maintain precise movement boundaries with the Genie LSB2RO Operational Limit Switch (Part Numbers: 75769, 75769GT). Engineered for high mechanical durability in outdoor work environments, this switch ensures dependable electrical circuit interruption during boom movement.",
+    "seoKeywords": "Genie 75769, Genie 75769GT, Genie LSB2RO limit switch, Genie operational position switch, AWP safety component, industrial machinery limit spares, Genie replacement parts",
+    "slug": "75769",
+    "": ""
+  },
+  {
+    "id": "289",
+    "partNumber": "50813",
+    "alternatePartNumbers1": "50813GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "SENSOR, TILT, PCON",
+    "category": "Genie Parts",
+    "machines": "S-135/70 RT, S-105, ZX-135/70 RT, S-125, SX-180",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "50813.jpeg",
+    "description": "Protect your machine from dangerous slope angles with the Genie PCON Turntable Tilt Sensor (Part Numbers: 50813, 50813GT). This essential safety device detects chassis inclination accurately, triggering alarms and restricting unsafe platform motions on uneven terrain.",
+    "seoKeywords": "Genie 50813, Genie 50813GT, Genie PCON tilt sensor, Genie turntable level sensor, AWP slope safety switch, heavy equipment inclination monitor, Genie replacement parts",
+    "slug": "50813",
+    "": ""
+  },
+  {
+    "id": "290",
+    "partNumber": "72355",
+    "alternatePartNumbers1": "72355GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "OIL TEMP SENSOR",
+    "category": "Genie Parts",
+    "machines": "Z-80/60 RT, S-85, S-105, S-125",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "72355.jpeg",
+    "description": "Keep track of fluid operating temperatures efficiently using the Genie Oil Temperature Sensor (Part Numbers: 72355, 72355GT). This high-precision sensor delivers stable resistance signals to your control system, ensuring timely thermal alerts during strenuous operations.",
+    "seoKeywords": "Genie 72355, Genie 72355GT, Genie oil temperature sensor, Genie hydraulic fluid temp switch, heavy equipment thermal sensor, industrial machinery spares, Genie replacement parts",
+    "slug": "72355",
+    "": ""
+  },
+  {
+    "id": "291",
+    "partNumber": "43601",
+    "alternatePartNumbers1": "43601GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "SOLENOID VLV,10V W/ DIODE",
+    "category": "Genie Parts",
+    "machines": "Z-34/22 RT, Z-60/34 RT, S-65, S-85",
+    "type": "OEM",
+    "stock": "In Stock",
+    "image": "43601.jpeg",
+    "description": "Ensure smooth electromagnetic fluid control and prevent electrical voltage spikes with the Genie 10V Solenoid Valve featuring an integrated diode (Part Numbers: 43601, 43601GT). Built for reliable hydraulic manifold integration, it guarantees responsive flow routing.",
+    "seoKeywords": "Genie 43601, Genie 43601GT, Genie 10V solenoid valve, Genie valve with diode, AWP hydraulic manifold valve, heavy equipment electrical solenoid, Genie replacement parts",
+    "slug": "43601",
+    "": ""
+  },
+  {
+    "id": "292",
+    "partNumber": "61225",
+    "alternatePartNumbers1": "61225GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "RELAY, 12VDC, 70AMP, SEALED",
+    "category": "Genie Parts",
+    "machines": "GS-5390 RT, S-65, S-85, SX-180",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "61225.jpeg",
+    "description": "Handle high-current power distribution safely with the Genie 12VDC 70-Amp Sealed Relay (Part Numbers: 61225, 61225GT). Engineered with weather-sealed housing to prevent moisture and dust corrosion, this heavy-duty relay ensures reliable circuit switching under heavy electrical loads.",
+    "seoKeywords": "Genie 61225, Genie 61225GT, Genie 12VDC 70A relay, Genie sealed heavy duty relay, AWP electrical switching component, industrial machinery relay spares, Genie electrical parts",
+    "slug": "61225",
+    "": ""
+  },
+  {
+    "id": "293",
+    "partNumber": "75033",
+    "alternatePartNumbers1": "75033GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "LIMIT SWITCH, OPERATIONAL",
+    "category": "Genie Parts",
+    "machines": "S-100, S-105, S-120, S-125",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "75033.jpeg",
+    "description": "Ensure accurate tracking of functional movement boundaries with the Genie Operational Limit Switch (Part Numbers: 75033, 75033GT). Built for rugged job-site conditions, this switch delivers dependable mechanical actuation and long electrical lifespan.",
+    "seoKeywords": "Genie 75033, Genie 75033GT, Genie operational limit switch, Genie boom movement switch, AWP safety component, industrial machinery electrical spares, Genie replacement parts",
+    "slug": "75033",
+    "": ""
+  },
+  {
+    "id": "294",
+    "partNumber": "40413",
+    "alternatePartNumbers1": "40413GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "COIL,SOLENOID,W/D,20V SGL SPADE",
+    "category": "Genie Parts",
+    "machines": "Z-20/8 N, Z-30/20 N, Z-34/22 N, Z-45/22 DC",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "40413.jpeg",
+    "description": "Power your hydraulic control valves efficiently with the Genie 20V Single Spade Solenoid Coil equipped with an integrated diode (Part Numbers: 40413, 40413GT). This specialized coil protects circuit boards from inductive voltage kicks while delivering steady magnetic flux.",
+    "seoKeywords": "Genie 40413, Genie 40413GT, Genie 20V solenoid coil, Genie single spade coil with diode, AWP hydraulic valve coil, heavy equipment electrical spares, Genie parts",
+    "slug": "40413",
+    "": ""
+  },
+  {
+    "id": "295",
+    "partNumber": "122495",
+    "alternatePartNumbers1": "122495GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "PUMP,2 SEC,29CC, X 19CC,FE",
+    "category": "Genie Parts",
+    "machines": "S-105, S-125, S-3200",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "122495.jpeg",
+    "description": "Restore high-pressure fluid delivery and multi-circuit flow capabilities with the Genie Dual-Section Hydraulic Pump featuring 29CC and 19CC displacements (Part Numbers: 122495, 122495GT). Precision-engineered for heavy lifting and steering demands, this pump delivers exceptional volumetric efficiency.",
+    "seoKeywords": "Genie 122495, Genie 122495GT, Genie dual section hydraulic pump, Genie 29CC 19CC pump, heavy equipment hydraulic pump replacement, industrial pump spares, Genie parts India",
+    "slug": "122495",
+    "": ""
+  },
+  {
+    "id": "296",
+    "partNumber": "75030",
+    "alternatePartNumbers1": "75030GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "LIMIT SWITCH, SAFETY",
+    "category": "Genie Parts",
+    "machines": "S-100, S-105, S-120, S-125",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "75030.jpeg",
+    "description": "Protect machine structural boundaries and enforce safety protocols with the Genie Safety Limit Switch (Part Numbers: 75030, 75030GT). This rugged mechanical switch provides reliable circuit interrrupt feedback during critical lift movements.",
+    "seoKeywords": "Genie 75030, Genie 75030GT, Genie safety limit switch, Genie position limit switch, AWP electrical safety component, industrial machinery spares, Genie replacement parts",
+    "slug": "75030",
+    "": ""
+  },
+  {
+    "id": "297",
+    "partNumber": "89109",
+    "alternatePartNumbers1": "89109GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "LIMIT SWITCH,OPERATIONAL",
+    "category": "Genie Parts",
+    "machines": "S-105, S-125",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "89109.jpeg",
+    "description": "Ensure smooth sequencing of lift functions using the Genie Operational Limit Switch (Part Numbers: 89109, 89109GT). Designed to endure high physical contact cycles, this switch maintains precise electrical contact integrity in harsh environments.",
+    "seoKeywords": "Genie 89109, Genie 89109GT, Genie operational limit switch, Genie boom limit switch, AWP safety sensor, industrial machinery electrical spares, Genie replacement parts",
+    "slug": "89109",
+    "": ""
+  },
+  {
+    "id": "298",
+    "partNumber": "110910",
+    "alternatePartNumbers1": "110910GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "SWITCH ASSY,LIMIT LSS1RS",
+    "category": "Genie Parts",
+    "machines": "Z-135/70 RT, ZX-135/70 RT",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "110910.jpeg",
+    "description": "Ensure accurate position signaling with the Genie LSS1RS Limit Switch Assembly (Part Numbers: 110910, 110910GT). This pre-configured assembly provides reliable mechanical actuation and secure wiring terminals for quick field installation.",
+    "seoKeywords": "Genie 110910, Genie 110910GT, Genie LSS1RS limit switch assembly, Genie position switch unit, AWP safety component, industrial machinery electrical spares, Genie replacement parts",
+    "slug": "110910",
+    "": ""
+  },
+  {
+    "id": "299",
+    "partNumber": "110909",
+    "alternatePartNumbers1": "110909GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "SWITCH ASSY, LIMIT LSS1RO",
+    "category": "Genie Parts",
+    "machines": "Z-135/70 RT, ZX-135/70 RT",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "110909.jpeg",
+    "description": "Maintain proper movement constraints with the Genie LSS1RO Limit Switch Assembly (Part Numbers: 110909, 110909GT). Engineered for precise mechanical response, this switch unit protects equipment by cutting or routing signals at structural limits.",
+    "seoKeywords": "Genie 110909, Genie 110909GT, Genie LSS1RO limit switch assembly, Genie mechanical position unit, AWP safety component, industrial machinery electrical spares, Genie replacement parts",
+    "slug": "110909",
+    "": ""
+  },
+  {
+    "id": "300",
+    "partNumber": "19506",
+    "alternatePartNumbers1": "19506GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "HOUR METER, 10-80 VOLTS",
+    "category": "Genie Parts",
+    "machines": "All Genie Models",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "19506.jpeg",
+    "description": "Track machine operational hours accurately for maintenance scheduling with the Genie Hour Meter operating across 10-80 Volts (Part Numbers: 19506, 19506GT). Built with a weather-sealed digital/analog display, it resists vibration and voltage fluctuations.",
+    "seoKeywords": "Genie 19506, Genie 19506GT, Genie hour meter 10-80V, Genie machine runtime gauge, AWP maintenance timer, heavy equipment hour counter, Genie replacement parts",
+    "slug": "19506",
+    "": ""
+  },
+  {
+    "id": "301",
+    "partNumber": "122514",
+    "alternatePartNumbers1": "122514GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "KIT,ESTOP SVC BB&SM BOOM",
+    "category": "Genie Parts",
+    "machines": "S-45, S-65, S-85, Z-45/25 JDC",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "122514.jpeg",
+    "description": "Ensure rapid emergency shutdown capabilities on big box and stick/mast booms with the Genie E-Stop Service Kit (Part Numbers: 122514, 122514GT). This kit includes heavy-duty push-button switches and hardware to restore critical safety cutoffs.",
+    "seoKeywords": "Genie 122514, Genie 122514GT, Genie emergency stop service kit, Genie E-stop switch replacement, AWP safety shutdown parts, heavy equipment electrical spares, Genie parts",
+    "slug": "122514",
+    "": ""
+  },
+  {
+    "id": "302",
+    "partNumber": "75473",
+    "alternatePartNumbers1": "75473GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "SENSOR, OIL PRS KIT",
+    "category": "Genie Parts",
+    "machines": "Z-80/60 RT, S-85, S-105, S-125",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "75473.jpeg",
+    "description": "Monitor engine lubrication pressure reliably and prevent catastrophic engine failure with the Genie Oil Pressure Sensor Kit (Part Numbers: 75473, 75473GT). This complete kit provides accurate pressure monitoring and stable electrical signaling.",
+    "seoKeywords": "Genie 75473, Genie 75473GT, Genie oil pressure sensor kit, Genie engine lube pressure switch, heavy equipment monitoring spares, industrial diesel parts, Genie replacement spares",
+    "slug": "75473",
+    "": ""
+  },
+  {
+    "id": "303",
+    "partNumber": "52907",
+    "alternatePartNumbers1": "52907GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "VALVE, CHECK, #4 SAE, 5 PSI",
+    "category": "Genie Parts",
+    "machines": "GS-2669 DC, GS-4069 RT, Z-45/25 JRT, Z-60/34 RT, S-105, S-125",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "52907.jpeg",
+    "description": "Prevent backflow and maintain directional hydraulic control with the Genie #4 SAE 5 PSI Check Valve (Part Numbers: 52907, 52907GT). Engineered to open at a precise 5 PSI cracking pressure, this valve ensures one-way fluid movement in complex circuits.",
+    "seoKeywords": "Genie 52907, Genie 52907GT, Genie 5 PSI check valve, Genie SAE hydraulic check valve, AWP fluid control components, heavy equipment hydraulic spares, Genie replacement parts",
+    "slug": "52907",
+    "": ""
+  },
+  {
+    "id": "304",
+    "partNumber": "62262",
+    "alternatePartNumbers1": "62262GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "VALVE,SOLENOID N/O (LONG)",
+    "category": "Genie Parts",
+    "machines": "S-40, S-45, Z-60/34, S-80, S-85",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "62262.jpeg",
+    "description": "Manage fluid bypass and hydraulic routing effectively with the Genie Long Normally-Open Solenoid Valve (Part Numbers: 62262, 62262GT). Built for rigorous industrial hydraulic manifolds, this valve ensures reliable open-circuit flow until energized.",
+    "seoKeywords": "Genie 62262, Genie 62262GT, Genie normally open solenoid valve, Genie long hydraulic valve, AWP manifold valve spares, heavy equipment hydraulic components, Genie replacement parts",
+    "slug": "62262",
+    "": ""
+  },
+  {
+    "id": "305",
+    "partNumber": "27807",
+    "alternatePartNumbers1": "27807GT",
+    "alternatePartNumbers2": "",
+    "alternatePartNumbers3": "",
+    "brand": "Genie",
+    "name": "VALVE, CHECK",
+    "category": "Genie Parts",
+    "machines": "Z-45/25 JRT, Z-60/34RT, Z-80/60 RT, S-65, S-125",
+    "type": "Aftermarket",
+    "stock": "In Stock",
+    "image": "27807.jpeg",
+    "description": "Ensure reliable one-way fluid blocking and prevent pressure loss in hydraulic lines with the Genie Check Valve (Part Numbers: 27807, 27807GT). Manufactured to strict OEM tolerances, it withstands high pressure surges and maintains system integrity.",
+    "seoKeywords": "Genie 27807, Genie 27807GT, Genie hydraulic check valve, Genie one-way fluid valve, AWP hydraulic system spares, heavy equipment valve parts, Genie replacement components",
+    "slug": "27807",
     "": ""
   }
 ]
