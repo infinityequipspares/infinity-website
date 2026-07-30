@@ -9,6 +9,7 @@ const TABS = [
   "Products",
   "Brands",
   "Machine Models",
+  "Machine Sales" // <-- Yeh naya tab add kar diya gaya hai
 ];
 
 async function sync() {
