@@ -36,7 +36,7 @@ export default function MachineSales() {
       {/* Reduced Top Heading Space & Size */}
       <div className="text-center mb-6 md:mb-12">
         <span className="inline-flex items-center rounded-full bg-red-50 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-red-700 border border-red-200 shadow-sm">
-          CORP INVENTORY & ASSETS
+          MACHINE SALES & SERVICES
         </span>
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight mt-2.5">
           New & Used <span className="text-red-600">Aerial Work Platforms</span>

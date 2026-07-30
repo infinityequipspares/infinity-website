@@ -69,7 +69,7 @@ export default function MachineDetail({ params }: { params: Promise<{ id: string
     description: rawMachine.description || rawMachine.Description || 'No detailed description available for this machine.',
   };
 
-  const whatsappMessage = `Hi Infinity Equipments Corporate Team, I am inquiring about the commercial asset: ${machine.brand} ${machine.model} (${machine.year} Model). Please share formal commercial quotation and availability.`;
+  const whatsappMessage = `Hello Infinity Equipments And Spares, I would like to inquire about the following equipment: ${machine.brand} ${machine.model} (${machine.year} Model). Please share formal commercial quotation and availability.`;
 
   const handleShare = async () => {
     const shareData = {
