@@ -83,70 +83,78 @@ export default async function CategoryPage({
 
         <div className="grid grid-cols-2 gap-3 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
 
-          {filteredProducts.map((product: any) => (
+          {filteredProducts.map((product: any) => {
+            // YAHAN LOGIC ADD KIYA HAI: Saare part numbers ko ek sath combine karne ke liye
+            const allPartNumbers = [
+              product.partNumber,
+              product.alternatePartNumbers1,
+              product.alternatePartNumbers2,
+              product.alternatePartNumbers3
+            ].filter(Boolean).join(" / ");
 
-            // YAHAN SE NAYA CARD DESIGN START HOTA HAI (Same as Main Products Page)
-            <Link
-              key={product.id || product.partNumber}
-              href={`/products/${product.partNumber}`}
-              className="group flex flex-col justify-between rounded-xl border border-slate-200 bg-[#fbfbfb] p-3 shadow-sm transition-all duration-300 hover:border-slate-300 hover:shadow-md sm:p-4"
-            >
+            return (
+              // YAHAN SE NAYA CARD DESIGN START HOTA HAI
+              <Link
+                key={product.id || product.partNumber}
+                href={`/products/${product.partNumber}`}
+                className="group flex flex-col justify-between rounded-xl border border-slate-200 bg-[#fbfbfb] p-3 shadow-sm transition-all duration-300 hover:border-slate-300 hover:shadow-md sm:p-4"
+              >
 
-              {/* 1. Image Container (Grey background) */}
-              <div className="relative mb-4 flex h-32 w-full items-center justify-center overflow-hidden rounded-lg bg-slate-100 sm:h-40 md:h-48">
-                <Image
-                  src={
-                    product.image
-                      ? `/images/products/${product.image}`
-                      : "/images/products/no-image.jpg"
-                  }
-                  alt={product.name || "Product"}
-                  width={250}
-                  height={250}
-                  className="h-full w-full mix-blend-multiply object-contain p-2 transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
+                {/* 1. Image Container (Grey background) */}
+                <div className="relative mb-4 flex h-32 w-full items-center justify-center overflow-hidden rounded-lg bg-slate-100 sm:h-40 md:h-48">
+                  <Image
+                    src={
+                      product.image
+                        ? `/images/products/${product.image}`
+                        : "/images/products/no-image.jpg"
+                    }
+                    alt={product.name || "Product"}
+                    width={250}
+                    height={250}
+                    className="h-full w-full mix-blend-multiply object-contain p-2 transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
 
-              {/* 2. Category Pill */}
-              <div className="mb-2 flex">
-                <span className="inline-flex items-center rounded-full border border-red-100/50 bg-red-50 px-2 py-0.5 text-[10px] font-bold tracking-wider text-red-600">
-                  {category["Category Name"]}
-                </span>
-              </div>
+                {/* 2. Category Pill */}
+                <div className="mb-2 flex">
+                  <span className="inline-flex items-center rounded-full border border-red-100/50 bg-red-50 px-2 py-0.5 text-[10px] font-bold tracking-wider text-red-600">
+                    {category["Category Name"]}
+                  </span>
+                </div>
 
-              {/* 3. Product Title */}
-              <h3 className="mb-3 min-h-[36px] text-[12px] font-extrabold leading-tight tracking-tight text-slate-800 line-clamp-2 sm:text-[13px] md:text-sm md:tracking-normal">
-                {product.name}
-              </h3>
+                {/* 3. Product Title */}
+                <h3 className="mb-3 min-h-[36px] text-[12px] font-extrabold leading-tight tracking-tight text-slate-800 line-clamp-2 sm:text-[13px] md:text-sm md:tracking-normal">
+                  {product.name}
+                </h3>
 
-              {/* 4. Part Number Section */}
-              <div className="mb-2 flex flex-col">
-                <span className="text-[9px] font-semibold uppercase tracking-wider text-slate-500 sm:text-[10px]">
-                  Part Number
-                </span>
-                <span className="text-[12px] font-bold text-slate-800 sm:text-[13px] md:text-sm">
-                  {product.partNumber}
-                </span>
-              </div>
+                {/* 4. Part Number Section (UPDATED) */}
+                <div className="mb-2 flex flex-col">
+                  <span className="text-[9px] font-semibold uppercase tracking-wider text-slate-500 sm:text-[10px]">
+                    Part Number
+                  </span>
+                  <span className="text-[12px] font-bold text-slate-800 sm:text-[13px] md:text-sm">
+                    {allPartNumbers}
+                  </span>
+                </div>
 
-              {/* Spacer - Button ko hamesha bottom par align karne ke liye */}
-              <div className="flex-grow"></div>
+                {/* Spacer - Button ko hamesha bottom par align karne ke liye */}
+                <div className="flex-grow"></div>
 
-              {/* 5. Compatibility Info */}
-              <div className="mb-3 mt-3 sm:mt-4">
-                <p className="text-[10px] text-slate-500 sm:text-[11px] md:text-xs">
-                  Compatible with <span className="font-bold text-slate-700">{product.brand}</span>
-                </p>
-              </div>
+                {/* 5. Compatibility Info */}
+                <div className="mb-3 mt-3 sm:mt-4">
+                  <p className="text-[10px] text-slate-500 sm:text-[11px] md:text-xs">
+                    Compatible with <span className="font-bold text-slate-700">{product.brand}</span>
+                  </p>
+                </div>
 
-              {/* 6. View Details Button (Solid Red) */}
-              <div className="flex w-full items-center justify-center rounded-md bg-[#c00000] py-2 text-[11px] font-bold text-white transition-colors duration-300 group-hover:bg-[#a00000] sm:text-[12px] md:text-[13px]">
-                View Details &rarr;
-              </div>
+                {/* 6. View Details Button (Solid Red) */}
+                <div className="flex w-full items-center justify-center rounded-md bg-[#c00000] py-2 text-[11px] font-bold text-white transition-colors duration-300 group-hover:bg-[#a00000] sm:text-[12px] md:text-[13px]">
+                  View Details &rarr;
+                </div>
 
-            </Link>
-
-          ))}
+              </Link>
+            );
+          })}
 
         </div>
 
