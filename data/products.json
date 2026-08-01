@@ -6211,24 +6211,6 @@
   },
   {
     "id": "346",
-    "partNumber": "",
-    "alternatePartNumbers1": "DL00000706",
-    "alternatePartNumbers2": "00000898",
-    "alternatePartNumbers3": "",
-    "brand": "Chinese",
-    "name": "PLATFORM CONTROL BOX",
-    "category": "Scissor Lift Parts",
-    "machines": "All Chinese Scissor Lift Models",
-    "type": "Aftermarket",
-    "stock": "In Stock",
-    "image": "00000706.jpeg",
-    "description": "Protect upper-station switches, joysticks, and electronic boards efficiently with the Chinese Platform Control Box (Part Numbers: 00000706, 00000898). Molded from robust, weather-resistant polymer materials, this replacement enclosure safeguards internal control components against impact, moisture, and dust on job sites.",
-    "seoKeywords": "Chinese platform control box, 00000706, 00000898, AWP upper control enclosure, heavy equipment plastic control housing, industrial scissor lift box, replacement control console",
-    "slug": "",
-    "": ""
-  },
-  {
-    "id": "347",
     "partNumber": "4360500",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -6246,7 +6228,7 @@
     "": ""
   },
   {
-    "id": "348",
+    "id": "347",
     "partNumber": "137692",
     "alternatePartNumbers1": "137692GT",
     "alternatePartNumbers2": "1256792GT",
@@ -6264,7 +6246,7 @@
     "": ""
   },
   {
-    "id": "349",
+    "id": "348",
     "partNumber": "55193",
     "alternatePartNumbers1": "55193GT",
     "alternatePartNumbers2": "",
@@ -6282,7 +6264,7 @@
     "": ""
   },
   {
-    "id": "350",
+    "id": "349",
     "partNumber": "105295",
     "alternatePartNumbers1": "105295GT",
     "alternatePartNumbers2": "",
@@ -6300,7 +6282,7 @@
     "": ""
   },
   {
-    "id": "351",
+    "id": "350",
     "partNumber": "40836",
     "alternatePartNumbers1": "40836GT",
     "alternatePartNumbers2": "",
@@ -6318,7 +6300,7 @@
     "": ""
   },
   {
-    "id": "352",
+    "id": "351",
     "partNumber": "4360518",
     "alternatePartNumbers1": "1001313989",
     "alternatePartNumbers2": "",
@@ -6336,7 +6318,7 @@
     "": ""
   },
   {
-    "id": "353",
+    "id": "352",
     "partNumber": "4360437",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -6354,7 +6336,7 @@
     "": ""
   },
   {
-    "id": "354",
+    "id": "353",
     "partNumber": "4360401",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -6372,7 +6354,7 @@
     "": ""
   },
   {
-    "id": "355",
+    "id": "354",
     "partNumber": "4640382",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -6390,7 +6372,7 @@
     "": ""
   },
   {
-    "id": "356",
+    "id": "355",
     "partNumber": "123994",
     "alternatePartNumbers1": "SJ123994",
     "alternatePartNumbers2": "123994AB",
@@ -6408,7 +6390,7 @@
     "": ""
   },
   {
-    "id": "357",
+    "id": "356",
     "partNumber": "1001215013",
     "alternatePartNumbers1": "1001215013S",
     "alternatePartNumbers2": "",
@@ -6426,7 +6408,7 @@
     "": ""
   },
   {
-    "id": "358",
+    "id": "357",
     "partNumber": "108664",
     "alternatePartNumbers1": "T108664GT",
     "alternatePartNumbers2": "",
@@ -6444,7 +6426,7 @@
     "": ""
   },
   {
-    "id": "359",
+    "id": "358",
     "partNumber": "96257",
     "alternatePartNumbers1": "96257GT",
     "alternatePartNumbers2": "",
@@ -6462,7 +6444,7 @@
     "": ""
   },
   {
-    "id": "360",
+    "id": "359",
     "partNumber": "96417",
     "alternatePartNumbers1": "96417GT",
     "alternatePartNumbers2": "",
@@ -6480,7 +6462,7 @@
     "": ""
   },
   {
-    "id": "361",
+    "id": "360",
     "partNumber": "104781",
     "alternatePartNumbers1": "104781GT",
     "alternatePartNumbers2": "",
@@ -6498,7 +6480,7 @@
     "": ""
   },
   {
-    "id": "362",
+    "id": "361",
     "partNumber": "78222",
     "alternatePartNumbers1": "78222GT",
     "alternatePartNumbers2": "",
@@ -6516,7 +6498,7 @@
     "": ""
   },
   {
-    "id": "363",
+    "id": "362",
     "partNumber": "137636",
     "alternatePartNumbers1": "G137636GT",
     "alternatePartNumbers2": "",
@@ -6534,7 +6516,7 @@
     "": ""
   },
   {
-    "id": "364",
+    "id": "363",
     "partNumber": "1256702",
     "alternatePartNumbers1": "G1256702GT",
     "alternatePartNumbers2": "",
@@ -6552,7 +6534,7 @@
     "": ""
   },
   {
-    "id": "365",
+    "id": "364",
     "partNumber": "30391",
     "alternatePartNumbers1": "30391GT",
     "alternatePartNumbers2": "",
@@ -6570,7 +6552,7 @@
     "": ""
   },
   {
-    "id": "366",
+    "id": "365",
     "partNumber": "1001096707",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -6588,7 +6570,7 @@
     "": ""
   },
   {
-    "id": "367",
+    "id": "366",
     "partNumber": "1001096706",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -6606,7 +6588,7 @@
     "": ""
   },
   {
-    "id": "368",
+    "id": "367",
     "partNumber": "235464",
     "alternatePartNumbers1": "235464GT",
     "alternatePartNumbers2": "",
@@ -6624,7 +6606,7 @@
     "": ""
   },
   {
-    "id": "369",
+    "id": "368",
     "partNumber": "144065",
     "alternatePartNumbers1": "144065GT",
     "alternatePartNumbers2": "",
@@ -6642,7 +6624,7 @@
     "": ""
   },
   {
-    "id": "370",
+    "id": "369",
     "partNumber": "96019",
     "alternatePartNumbers1": "96019GT",
     "alternatePartNumbers2": "",
@@ -6660,7 +6642,7 @@
     "": ""
   },
   {
-    "id": "371",
+    "id": "370",
     "partNumber": "62162",
     "alternatePartNumbers1": "62162GT",
     "alternatePartNumbers2": "",
@@ -6678,7 +6660,7 @@
     "": ""
   },
   {
-    "id": "372",
+    "id": "371",
     "partNumber": "105289",
     "alternatePartNumbers1": "105289GT",
     "alternatePartNumbers2": "",
@@ -6696,7 +6678,7 @@
     "": ""
   },
   {
-    "id": "373",
+    "id": "372",
     "partNumber": "100840",
     "alternatePartNumbers1": "100840GT",
     "alternatePartNumbers2": "",
