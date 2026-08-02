@@ -78,69 +78,57 @@
     "Display Order": "13"
   },
   {
-    "Category Name": "Genie Parts",
-    "Category Slug": "genie-parts",
-    "Category Image": "genie-parts.png",
-    "Display Order": "14"
-  },
-  {
     "Category Name": "Boom Length Sensors",
     "Category Slug": "boom-length-sensors",
     "Category Image": "boom-length-sensors.png",
-    "Display Order": "15"
+    "Display Order": "14"
   },
   {
     "Category Name": "Load Pin Sensors",
     "Category Slug": "load-pin-sensors",
     "Category Image": "load-pin-sensors.png",
-    "Display Order": "16"
-  },
-  {
-    "Category Name": "Scissor Lift Parts",
-    "Category Slug": "scissor-lift-parts",
-    "Category Image": "scissor-lift-parts.png",
-    "Display Order": "17"
+    "Display Order": "15"
   },
   {
     "Category Name": "Filters",
     "Category Slug": "filters",
     "Category Image": "filters.png",
-    "Display Order": "18"
+    "Display Order": "16"
   },
   {
     "Category Name": "Harnesses",
     "Category Slug": "harnesses",
     "Category Image": "harnesses.png",
-    "Display Order": "19"
+    "Display Order": "17"
   },
   {
     "Category Name": "SANY Parts",
     "Category Slug": "sany-parts",
     "Category Image": "sany-parts.png",
-    "Display Order": "20"
+    "Display Order": "18"
   },
   {
     "Category Name": "XCMG Parts",
     "Category Slug": "xcmg-parts",
     "Category Image": "xcmg-parts.png",
-    "Display Order": "21"
+    "Display Order": "19"
   },
   {
     "Category Name": "JCB Parts",
     "Category Slug": "jcb-parts",
     "Category Image": "jcb-parts.png",
-    "Display Order": "22"
+    "Display Order": "20"
   },
   {
     "Category Name": "LiuGong Parts",
     "Category Slug": "liugong-parts",
     "Category Image": "liugong-parts.png",
-    "Display Order": "23"
+    "Display Order": "21"
   },
   {
     "Category Name": "Zoomlion Parts",
     "Category Slug": "zoomlion-parts",
     "Category Image": "zoomlion-parts.png",
-    "Display Order": "24"
+    "Display Order": "22"
   }
 ]
