@@ -4,24 +4,24 @@ import { parse } from "csv-parse/sync";
 
 const SHEET_ID = "1TbJxkn_ru-MqlmC0hyMYQ4VgX2QwLI6zmNw6H7U7c1k";
 
+// Har tab ka apna exact GID yahan set ho gaya hai
 const TABS = [
-  "Categories",
-  "Products",
-  "Brands",
-  "Machine Models",
-  "Machine Sales" // <-- Yeh naya tab add kar diya gaya hai
+  { name: "Products", gid: "0" },
+  { name: "Categories", gid: "377256535" },
+  { name: "Brands", gid: "656070453" },
+  { name: "Machine Models", gid: "1884521252" },
+  { name: "Machine Sales", gid: "1974906098" }
 ];
 
 async function sync() {
-  for (const tabName of TABS) {
-    const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(
-      tabName
-    )}`;
+  for (const tab of TABS) {
+    // Direct raw CSV export API bina kisi data format change (zero gayab kiye bina) ke
+    const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${tab.gid}`;
 
     const response = await fetch(url);
 
     if (!response.ok) {
-      throw new Error(`Failed to fetch sheet: ${tabName}`);
+      throw new Error(`Failed to fetch sheet: ${tab.name}`);
     }
 
     const csvData = await response.text();
@@ -33,31 +33,12 @@ async function sync() {
       relax_quotes: true,
     });
 
-    // ===== DEBUG TEST =====
-    if (tabName === "Products") {
-      const test = result.find(
-        (row: any) => String(row.partNumber).trim() === "1600318"
-      );
-
-      console.log("========== TEST ==========");
-      console.log(test);
-      console.log("==========================");
-    }
-    // ===== END DEBUG TEST =====
-
-    const fileName = tabName
-      .toLowerCase()
-      .replace(/\s+/g, "-");
-
-    const filePath = path.join(
-      process.cwd(),
-      "data",
-      `${fileName}.json`
-    );
+    const fileName = tab.name.toLowerCase().replace(/\s+/g, "-");
+    const filePath = path.join(process.cwd(), "data", `${fileName}.json`);
 
     fs.writeFileSync(filePath, JSON.stringify(result, null, 2));
 
-    console.log(`✅ Synced ${tabName} -> ${fileName}.json`);
+    console.log(`✅ Synced ${tab.name} -> ${fileName}.json`);
   }
 }
 
