@@ -86,7 +86,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* 🌟 FIX: Mobile Menu Button made finger-friendly with proper touch target & sizing */}
+            {/* Mobile Menu Button */}
             <button
               onClick={() => setMenuOpen(true)}
               className="lg:hidden flex items-center justify-center w-11 h-11 rounded-lg text-gray-700 hover:text-red-600 hover:bg-red-50 transition-colors flex-shrink-0"
@@ -120,7 +120,8 @@ export default function Navbar() {
             </div>
 
             <div className="px-4 py-3 border-b">
-              <SearchForm />
+              {/* 🌟 FIX: Yahan 'onComplete' trigger add kar diya jo search hone par menu band kar dega */}
+              <SearchForm onComplete={() => setMenuOpen(false)} />
             </div>
 
             <nav className="flex flex-col p-3">

@@ -34,7 +34,8 @@ const escapeRegExp = (str: string) =>
 const normalize = (str: string) =>
   String(str || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 
-export default function SearchForm() {
+// 🌟 FIX: Yahan 'onComplete' prop add kiya gaya hai
+export default function SearchForm({ onComplete }: { onComplete?: () => void }) {
   const router = useRouter();
 
   const [search, setSearch] = useState("");
@@ -129,8 +130,10 @@ export default function SearchForm() {
       setIsOpen(false);
       setActiveIndex(-1);
       setImageErrors({});
+      // 🌟 FIX: Signal to Navbar to close menu
+      if (onComplete) onComplete();
     },
-    [router]
+    [router, onComplete]
   );
 
   const handleSearch = () => {
@@ -142,6 +145,8 @@ export default function SearchForm() {
     } else {
       router.push(`/products?search=${encodeURIComponent(search)}`);
       setIsOpen(false);
+      // 🌟 FIX: Signal to Navbar to close menu
+      if (onComplete) onComplete();
     }
   };
 
@@ -273,6 +278,8 @@ export default function SearchForm() {
                 onClick={() => {
                   router.push(`/products?search=${encodeURIComponent(search)}`);
                   setIsOpen(false);
+                  // 🌟 FIX: Signal to Navbar to close menu
+                  if (onComplete) onComplete();
                 }}
                 className="w-full bg-gray-50 py-3 text-sm font-semibold text-red-600 hover:bg-gray-100"
               >
