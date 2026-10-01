@@ -10,6 +10,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 // 🌟 Correct path for app/context/EnquiryContext
 import { EnquiryProvider } from "@/app/context/EnquiryContext";
 import EnquiryDrawer from "@/components/common/EnquiryDrawer";
+import { Analytics } from "@vercel/analytics/next";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -51,6 +52,8 @@ export default function RootLayout({
           <EnquiryDrawer />
 
         </EnquiryProvider>
+
+        <Analytics />
 
       </body>
     </html>
