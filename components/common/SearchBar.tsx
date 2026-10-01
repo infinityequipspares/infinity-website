@@ -6,10 +6,9 @@ import { useState, useEffect } from "react";
 export default function SearchBar() {
   const router = useRouter();
   const [search, setSearch] = useState("");
-  const [recentSearches, setRecentSearches] = useState([]);
+  const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const [showDropdown, setShowDropdown] = useState(false);
 
-  // Browser memory (localStorage) se purane searches nikalna
   useEffect(() => {
     const stored = localStorage.getItem("recentSearches");
     if (stored) {
@@ -17,15 +16,13 @@ export default function SearchBar() {
     }
   }, []);
 
-  // Naya search save karna (maximum 6 items tak)
-  function saveSearch(keyword) {
+  function saveSearch(keyword: string) {
     const updatedSearches = [keyword, ...recentSearches.filter((item) => item !== keyword)].slice(0, 6);
     setRecentSearches(updatedSearches);
     localStorage.setItem("recentSearches", JSON.stringify(updatedSearches));
   }
 
-  // Search handle karna (button click ya list item click dono ke liye)
-  function handleSearch(overrideKeyword) {
+  function handleSearch(overrideKeyword?: string) {
     const keyword = typeof overrideKeyword === "string" ? overrideKeyword.trim() : search.trim();
 
     if (!keyword) return;
@@ -35,7 +32,6 @@ export default function SearchBar() {
     router.push(`/products?search=${encodeURIComponent(keyword)}`);
   }
 
-  // History delete karna
   function clearHistory() {
     setRecentSearches([]);
     localStorage.removeItem("recentSearches");
@@ -57,13 +53,11 @@ export default function SearchBar() {
               if (e.key === "Enter") handleSearch();
             }}
             onFocus={() => setShowDropdown(true)}
-            // Thoda delay taaki list item par click register ho sake
             onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
             placeholder="Search by Part Number, Part Name, or Machine Model..."
             className="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-red-600"
           />
 
-          {/* RECENT SEARCH Dropdown */}
           {showDropdown && recentSearches.length > 0 && (
             <div className="absolute top-full left-0 w-full bg-white border border-gray-200 shadow-xl rounded-xl mt-2 overflow-hidden z-50">
               <div className="px-5 py-3 text-xs font-bold text-gray-500 bg-gray-50 tracking-wider">
