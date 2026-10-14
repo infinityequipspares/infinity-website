@@ -1,24 +1,26 @@
+"use client";
+
 import Link from "next/link";
 import SearchForm from "@/components/common/SearchForm";
 
 export default function Hero() {
   return (
-    <div className="relative z-0 flex flex-col bg-slate-50">
+    <div className="relative z-0 flex flex-col bg-slate-50 overflow-hidden">
       
-      {/* 🌟 1. HERO BACKGROUND SECTION 🌟 */}
+      {/* 🌟 1. HERO BACKGROUND SECTION WITH ENHANCED ZOOM ANIMATION 🌟 */}
       <section 
-        className="relative flex h-[420px] w-full flex-col items-center justify-center bg-slate-950 pb-12 md:h-[550px] md:pb-0"
+        className="relative flex h-[420px] w-full flex-col items-center justify-center bg-slate-950 pb-12 md:h-[550px] md:pb-0 overflow-hidden"
       >
         <div 
-          className="absolute inset-0 z-0 opacity-40"
+          className="absolute inset-0 z-0 opacity-60 transform scale-100 animate-hero-zoom"
           style={{
             backgroundImage: "url('/images/hero-bg.webp')",
             backgroundSize: "cover",
-            backgroundPosition: "left 10%" 
+            backgroundPosition: "center" 
           }}
         ></div>
 
-        <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/40 via-slate-900/40 to-red-900/30 backdrop-blur-[1px]"></div>
+        <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/50 via-slate-900/50 to-red-900/40 backdrop-blur-[1px]"></div>
 
         <div className="relative z-40 -mt-8 flex w-full max-w-5xl flex-col items-center px-4 text-center sm:px-6 md:-mt-20">
           
@@ -41,7 +43,6 @@ export default function Hero() {
       </section>
 
       {/* 🌟 2. UPGRADED PREMIUM 3-CARDS 🌟 */}
-      {/* FIX: Changed mb-16 to mb-6 for mobile to reduce bottom spacing, kept md:mb-16 for desktop */}
       <section className="relative z-10 mx-auto -mt-20 mb-6 w-full max-w-5xl px-3 sm:px-6 lg:px-8 md:-mt-32 md:mb-16">
         <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-5">
           
@@ -76,7 +77,6 @@ export default function Hero() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
               </svg>
             </div>
-            {/* FIX: Removed conditional rendering, made it 'Request Quote' globally */}
             <h3 className="mb-2 text-[11px] font-extrabold leading-tight text-slate-900 transition-colors group-hover:text-red-600 sm:text-xs md:text-lg">
               Request Quote
             </h3>
@@ -109,6 +109,24 @@ export default function Hero() {
 
         </div>
       </section>
+
+      {/* 🌟 Keyframes injected via global stylesheet or inline style support 🌟 */}
+      <style jsx global>{`
+        @keyframes heroZoom {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.15);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+        .animate-hero-zoom {
+          animation: heroZoom 15s ease-in-out infinite;
+        }
+      `}</style>
 
     </div>
   );

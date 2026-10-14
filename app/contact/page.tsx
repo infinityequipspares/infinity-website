@@ -65,7 +65,6 @@ export default function ContactPage() {
                   Email Address
                 </h3>
                 <div className="flex flex-col space-y-2">
-                  {/* UPDATE: Yahan bas ek official email rakhi gayi hai */}
                   <a href="mailto:contact@infinityequipspares.com" className="break-all text-[14px] font-semibold text-gray-800 transition-colors hover:text-red-600">
                     contact@infinityequipspares.com
                   </a>
@@ -144,6 +143,76 @@ export default function ContactPage() {
 
         </div>
 
+      </div>
+
+      {/* 🌟 NEW: FAQ Section 🌟 */}
+      <div className="mx-auto mt-12 max-w-6xl flex flex-col rounded-2xl border border-gray-200/80 bg-white p-6 shadow-sm sm:p-8">
+        <h2 className="mb-6 text-2xl font-extrabold tracking-tight text-gray-900">
+          Frequently Asked Questions
+        </h2>
+        <div className="divide-y divide-gray-200/80">
+          
+          <details className="group py-4">
+            <summary className="flex cursor-pointer items-center justify-between font-semibold text-gray-900 text-[15px]">
+              What types of machinery do you supply spare parts for?
+              <span className="transition duration-300 group-open:-rotate-180 text-red-600">
+                <svg fill="none" height="20" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+              </span>
+            </summary>
+            <p className="mt-3 text-[14px] text-gray-600 leading-relaxed">
+              We specialize in supplying high-quality OEM and aftermarket spare parts for Cranes, Aerial Work Platforms (AWPs), including Boom Lifts, Scissor Lifts, Telehandlers, and Spider Lifts across major brands like JLG, Genie, Skyjack, Sinoboom, JCB, Liugong, Sany, XCMG & Zoomlion.
+            </p>
+          </details>
+
+          <details className="group py-4">
+            <summary className="flex cursor-pointer items-center justify-between font-semibold text-gray-900 text-[15px]">
+              How can I ensure a spare part is exactly compatible with my machine?
+              <span className="transition duration-300 group-open:-rotate-180 text-red-600">
+                <svg fill="none" height="20" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+              </span>
+            </summary>
+            <p className="mt-3 text-[14px] text-gray-600 leading-relaxed">
+              To guarantee exact fitment, simply share your machine's brand, model, year of manufacture, and the part number. Our technical team cross-references these details in our database to ensure 100% compatibility before giving you a quote.
+            </p>
+          </details>
+
+          <details className="group py-4">
+            <summary className="flex cursor-pointer items-center justify-between font-semibold text-gray-900 text-[15px]">
+              Do you provide genuine OEM parts or aftermarket alternatives?
+              <span className="transition duration-300 group-open:-rotate-180 text-red-600">
+                <svg fill="none" height="20" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+              </span>
+            </summary>
+            <p className="mt-3 text-[14px] text-gray-600 leading-relaxed">
+              We offer both options based on your requirement. You can choose genuine OEM parts for factory-spec reliability, or our premium aftermarket parts that deliver excellent performance and durability at a highly competitive price.
+            </p>
+          </details>
+
+          <details className="group py-4">
+            <summary className="flex cursor-pointer items-center justify-between font-semibold text-gray-900 text-[15px]">
+              What is your standard shipping process and delivery timeframe?
+              <span className="transition duration-300 group-open:-rotate-180 text-red-600">
+                <svg fill="none" height="20" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+              </span>
+            </summary>
+            <p className="mt-3 text-[14px] text-gray-600 leading-relaxed">
+              We provide fast PAN India dispatch to minimize your machine downtime. Most standard parts are shipped within 24 hours of order confirmation via trusted logistics partners, ensuring safe and timely delivery to your site.
+            </p>
+          </details>
+
+          <details className="group py-4">
+            <summary className="flex cursor-pointer items-center justify-between font-semibold text-gray-900 text-[15px]">
+              I have a faulty component but cannot find the part number. Can you assist?
+              <span className="transition duration-300 group-open:-rotate-180 text-red-600">
+                <svg fill="none" height="20" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+              </span>
+            </summary>
+            <p className="mt-3 text-[14px] text-gray-600 leading-relaxed">
+              Absolutely! Our technical support team is here to help. Just send us a clear photograph of the faulty component and your machine's data plate on WhatsApp, and our experts will quickly identify the correct part for you.
+            </p>
+          </details>
+
+        </div>
       </div>
 
       {/* 🌟 UPGRADED: Premium Red Gradient CTA Banner 🌟 */}

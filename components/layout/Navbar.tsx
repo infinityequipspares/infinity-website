@@ -19,18 +19,21 @@ export default function Navbar() {
           
           <div className="flex items-center justify-between h-[80px] lg:h-[115px]">
 
-            {/* Logo on Left */}
+            {/* 🌟 Animated Logo on Left 🌟 */}
             <Link
               href="/"
-              className="flex-shrink-0 transition-transform duration-300 hover:scale-[1.02]"
+              className="group relative flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-[1.05]"
             >
+              {/* Continuous Subtle Glow that intensifies on hover */}
+              <div className="absolute inset-1 rounded-full bg-red-600/10 blur-xl animate-pulse group-hover:bg-red-600/25 group-hover:scale-125 transition-all duration-700"></div>
+              
               <Image
                 src="/images/logo.webp"
                 alt="Infinity Equipments And Spares"
                 width={105}
                 height={105}
                 priority
-                className="w-[110px] h-[70px] lg:w-[105px] lg:h-[105px] object-contain"
+                className="relative z-10 w-[110px] h-[70px] lg:w-[105px] lg:h-[105px] object-contain drop-shadow-sm group-hover:drop-shadow-lg transition-all duration-500"
               />
             </Link>
 
@@ -72,9 +75,32 @@ export default function Navbar() {
               </a>
 
               <div className="flex items-center gap-3 xl:gap-4">
-                <div className="w-[230px] xl:w-[290px] transition-all duration-300">
-                  <SearchForm />
-                </div>
+                
+                {/* Home page par Animated Trust Badge, baaki pages par Search Bar */}
+                {pathname !== "/" ? (
+                  <div className="w-[230px] xl:w-[290px] transition-all duration-300">
+                    <SearchForm />
+                  </div>
+                ) : (
+                  <div className="group flex items-center gap-3 px-4 py-2 bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-default">
+                    {/* Animated Shield Icon */}
+                    <div className="relative flex items-center justify-center">
+                      <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-25 animate-ping"></span>
+                      <svg className="relative w-6 h-6 text-green-600 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                    <div className="flex flex-col text-left">
+                      <span className="text-[11.5px] font-extrabold text-gray-900 uppercase tracking-widest leading-none mb-1 group-hover:text-green-700 transition-colors duration-300">
+                        100% Genuine
+                      </span>
+                      <span className="text-[10px] font-semibold text-gray-500 leading-none">
+                        OEM & Aftermarket Parts
+                      </span>
+                    </div>
+                  </div>
+                )}
+
                 <a
                   href="https://wa.me/919167867476?text=Hello%20Infinity%20Equipments%20And%20Spares,%20I%20need%20a%20quotation."
                   target="_blank"
@@ -119,10 +145,11 @@ export default function Navbar() {
               </button>
             </div>
 
-            <div className="px-4 py-3 border-b">
-              {/* 🌟 FIX: Yahan 'onComplete' trigger add kar diya jo search hone par menu band kar dega */}
-              <SearchForm onComplete={() => setMenuOpen(false)} />
-            </div>
+            {pathname !== "/" && (
+              <div className="px-4 py-3 border-b">
+                <SearchForm onComplete={() => setMenuOpen(false)} />
+              </div>
+            )}
 
             <nav className="flex flex-col p-3">
               {navigation.map((item, index) => {

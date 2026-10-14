@@ -34,7 +34,6 @@ const escapeRegExp = (str: string) =>
 const normalize = (str: string) =>
   String(str || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 
-// 🌟 FIX: Yahan 'onComplete' prop add kiya gaya hai
 export default function SearchForm({ onComplete }: { onComplete?: () => void }) {
   const router = useRouter();
 
@@ -43,9 +42,40 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
   const [activeIndex, setActiveIndex] = useState(-1);
   const [isOpen, setIsOpen] = useState(false);
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
+  
+  // 🌟 NEW: Recent Searches State
+  const [recentSearches, setRecentSearches] = useState<string[]>([]);
 
   const wrapperRef = useRef<HTMLDivElement>(null);
   const resultsRef = useRef<(HTMLButtonElement | null)[]>([]);
+
+  // 🌟 NEW: Load recent searches from memory on load
+  useEffect(() => {
+    const saved = localStorage.getItem("infinityRecentSearches");
+    if (saved) {
+      try {
+        setRecentSearches(JSON.parse(saved));
+      } catch (e) {
+        console.error("Failed to load recent searches", e);
+      }
+    }
+  }, []);
+
+  // 🌟 NEW: Save search to memory
+  const saveSearchToMemory = (keyword: string) => {
+    const kwd = keyword.trim();
+    if (!kwd) return;
+    let updatedSearches = [kwd, ...recentSearches.filter((item) => item !== kwd)];
+    updatedSearches = updatedSearches.slice(0, 5); // Keep only last 5
+    setRecentSearches(updatedSearches);
+    localStorage.setItem("infinityRecentSearches", JSON.stringify(updatedSearches));
+  };
+
+  const clearHistory = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setRecentSearches([]);
+    localStorage.removeItem("infinityRecentSearches");
+  };
 
   useEffect(() => {
     const handler = setTimeout(() => {
@@ -130,7 +160,6 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
       setIsOpen(false);
       setActiveIndex(-1);
       setImageErrors({});
-      // 🌟 FIX: Signal to Navbar to close menu
       if (onComplete) onComplete();
     },
     [router, onComplete]
@@ -138,6 +167,9 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
 
   const handleSearch = () => {
     if (!search.trim()) return;
+    
+    saveSearchToMemory(search); // 🌟 NEW: Save on search
+
     if (activeIndex >= 0 && activeIndex < suggestions.length) {
       openProduct(suggestions[activeIndex]);
     } else if (suggestions.length > 0) {
@@ -145,13 +177,12 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
     } else {
       router.push(`/products?search=${encodeURIComponent(search)}`);
       setIsOpen(false);
-      // 🌟 FIX: Signal to Navbar to close menu
       if (onComplete) onComplete();
     }
   };
 
   const handleKeyDown = (e: KeyboardEvent) => {
-    if (!isOpen || suggestions.length === 0) {
+    if (!isOpen || (suggestions.length === 0 && !search.trim())) {
       if (e.key === "Enter") handleSearch();
       return;
     }
@@ -202,6 +233,8 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
     );
   };
 
+  const showDropdown = isOpen && (search.trim() || recentSearches.length > 0);
+
   return (
     <div className="relative z-50 w-full" ref={wrapperRef}>
       <div className="flex items-center gap-2">
@@ -226,70 +259,116 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
         </button>
       </div>
 
-      {isOpen && search.trim() && (
+      {showDropdown && (
         <div className="absolute left-0 right-0 z-50 mt-2 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-2xl">
-          {suggestions.length > 0 ? (
-            <>
-              {suggestions.map((product, index) => {
-                const allParts = [
-                  product.partNumber,
-                  product.alternatePartNumbers,
-                  product.alternatePartNumbers1,
-                  product.alternatePartNumbers2,
-                  product.alternatePartNumbers3,
-                ].filter(Boolean);
-                const splitParts = allParts.flatMap((p) =>
-                  String(p).split(/[;,|/]/).map((s) => s.trim()).filter(Boolean)
-                );
-                const displayPartNumbers = [...new Set(splitParts)].join(" / ");
+          
+          {search.trim() ? (
+            /* ================= LIVE SUGGESTIONS ================= */
+            suggestions.length > 0 ? (
+              <>
+                {suggestions.map((product, index) => {
+                  const allParts = [
+                    product.partNumber,
+                    product.alternatePartNumbers,
+                    product.alternatePartNumbers1,
+                    product.alternatePartNumbers2,
+                    product.alternatePartNumbers3,
+                  ].filter(Boolean);
+                  const splitParts = allParts.flatMap((p) =>
+                    String(p).split(/[;,|/]/).map((s) => s.trim()).filter(Boolean)
+                  );
+                  const displayPartNumbers = [...new Set(splitParts)].join(" / ");
 
-                return (
-                  <button
-                    key={`search-${product.id || product.partNumber || index}`}
-                    ref={(el) => { resultsRef.current[index] = el; }}
-                    onClick={() => openProduct(product)}
-                    className={`flex w-full items-center gap-4 border-b border-gray-100 p-3 text-left ${
-                      index === activeIndex ? "bg-red-50" : "hover:bg-gray-50"
-                    }`}
-                  >
-                    <Image
-                      src={getImageUrl(product)}
-                      alt={product.name || ""}
-                      width={60}
-                      height={60}
-                      className="h-14 w-14 rounded border bg-white object-contain"
-                      unoptimized
-                    />
-                    <div className="min-w-0 flex-1">
-                      <p className="truncate text-sm font-bold">
-                        <HighlightedText text={product.name || ""} highlight={debouncedSearch} />
-                      </p>
-                      <p className="text-xs font-semibold text-red-600">
-                        <HighlightedText text={displayPartNumbers} highlight={debouncedSearch} />
-                      </p>
-                      <p className="text-xs text-gray-500">
-                        {product.brand} • {product.category}
-                      </p>
-                    </div>
-                  </button>
-                );
-              })}
-              <button
-                onClick={() => {
-                  router.push(`/products?search=${encodeURIComponent(search)}`);
-                  setIsOpen(false);
-                  // 🌟 FIX: Signal to Navbar to close menu
-                  if (onComplete) onComplete();
-                }}
-                className="w-full bg-gray-50 py-3 text-sm font-semibold text-red-600 hover:bg-gray-100"
-              >
-                View all results for "{search}"
-              </button>
-            </>
+                  return (
+                    <button
+                      key={`search-${product.id || product.partNumber || index}`}
+                      ref={(el) => { resultsRef.current[index] = el; }}
+                      onClick={() => {
+                        saveSearchToMemory(search); // 🌟 Save on click
+                        openProduct(product);
+                      }}
+                      className={`flex w-full items-center gap-4 border-b border-gray-100 p-3 text-left ${
+                        index === activeIndex ? "bg-red-50" : "hover:bg-gray-50"
+                      }`}
+                    >
+                      <Image
+                        src={getImageUrl(product)}
+                        alt={product.name || ""}
+                        width={60}
+                        height={60}
+                        className="h-14 w-14 rounded border bg-white object-contain"
+                        unoptimized
+                      />
+                      <div className="min-w-0 flex-1">
+                        <p className="truncate text-sm font-bold">
+                          <HighlightedText text={product.name || ""} highlight={debouncedSearch} />
+                        </p>
+                        <p className="text-xs font-semibold text-red-600">
+                          <HighlightedText text={displayPartNumbers} highlight={debouncedSearch} />
+                        </p>
+                        <p className="text-xs text-gray-500">
+                          {product.brand} • {product.category}
+                        </p>
+                      </div>
+                    </button>
+                  );
+                })}
+                <button
+                  onClick={() => {
+                    saveSearchToMemory(search); // 🌟 Save on click
+                    router.push(`/products?search=${encodeURIComponent(search)}`);
+                    setIsOpen(false);
+                    if (onComplete) onComplete();
+                  }}
+                  className="w-full bg-gray-50 py-3 text-sm font-semibold text-red-600 hover:bg-gray-100"
+                >
+                  View all results for "{search}"
+                </button>
+              </>
+            ) : (
+              <div className="p-4 text-center text-sm text-gray-500">
+                No products found
+              </div>
+            )
           ) : (
-            <div className="p-4 text-center text-sm text-gray-500">
-              No products found
-            </div>
+            /* ================= RECENT SEARCHES ================= */
+            recentSearches.length > 0 && (
+              <div>
+                <div className="flex items-center justify-between px-4 py-3 bg-gray-50 border-b border-gray-100">
+                  <span className="text-[11px] font-bold text-gray-500 uppercase tracking-widest">
+                    Recent Searches
+                  </span>
+                  <button 
+                    onClick={clearHistory} 
+                    className="text-[11px] font-bold text-red-500 hover:text-red-700 uppercase tracking-widest transition-colors"
+                  >
+                    Clear All
+                  </button>
+                </div>
+                <ul className="max-h-60 overflow-y-auto">
+                  {recentSearches.map((item, index) => (
+                    <li key={index}>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setSearch(item);
+                          saveSearchToMemory(item);
+                          router.push(`/products?search=${encodeURIComponent(item)}`);
+                          setIsOpen(false);
+                          if (onComplete) onComplete();
+                        }}
+                        className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-gray-50 transition-colors text-[14px] text-gray-700 font-medium border-b border-gray-50 last:border-0"
+                      >
+                        <svg className="w-4 h-4 text-gray-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span className="truncate">{item}</span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
           )}
         </div>
       )}
