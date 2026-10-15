@@ -19,12 +19,11 @@ export default function Navbar() {
           
           <div className="flex items-center justify-between h-[80px] lg:h-[115px]">
 
-            {/* 🌟 Animated Logo on Left 🌟 */}
+            {/* Logo on Left */}
             <Link
               href="/"
-              className="group relative flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-[1.05]"
+              className="group relative flex-shrink-0 flex items-center justify-center transition-all duration-500 hover:scale-[1.02]"
             >
-              {/* Continuous Subtle Glow that intensifies on hover */}
               <div className="absolute inset-1 rounded-full bg-red-600/10 blur-xl animate-pulse group-hover:bg-red-600/25 group-hover:scale-125 transition-all duration-700"></div>
               
               <Image
@@ -76,14 +75,12 @@ export default function Navbar() {
 
               <div className="flex items-center gap-3 xl:gap-4">
                 
-                {/* Home page par Animated Trust Badge, baaki pages par Search Bar */}
                 {pathname !== "/" ? (
                   <div className="w-[230px] xl:w-[290px] transition-all duration-300">
                     <SearchForm />
                   </div>
                 ) : (
                   <div className="group flex items-center gap-3 px-4 py-2 bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-default">
-                    {/* Animated Shield Icon */}
                     <div className="relative flex items-center justify-center">
                       <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-25 animate-ping"></span>
                       <svg className="relative w-6 h-6 text-green-600 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -112,14 +109,27 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setMenuOpen(true)}
-              className="lg:hidden flex items-center justify-center w-11 h-11 rounded-lg text-gray-700 hover:text-red-600 hover:bg-red-50 transition-colors flex-shrink-0"
-              aria-label="Open Menu"
-            >
-              <span className="text-3xl font-extrabold leading-none">☰</span>
-            </button>
+            {/* Mobile Right Side (Compact Trust Badge + Menu Button) */}
+            <div className="flex items-center gap-2 lg:hidden">
+              {pathname === "/" && (
+                <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-gray-50 border border-gray-200 rounded-lg">
+                  <svg className="w-4 h-4 text-green-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                  <span className="text-[9px] font-extrabold text-gray-900 uppercase tracking-tight leading-none">
+                    100% Genuine
+                  </span>
+                </div>
+              )}
+
+              <button
+                onClick={() => setMenuOpen(true)}
+                className="flex items-center justify-center w-11 h-11 rounded-lg text-gray-700 hover:text-red-600 hover:bg-red-50 transition-colors flex-shrink-0"
+                aria-label="Open Menu"
+              >
+                <span className="text-3xl font-extrabold leading-none">☰</span>
+              </button>
+            </div>
 
           </div>
         </div>
