@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
       desc: "Reliable genuine & aftermarket products.",
       icon: (
         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
         </svg>
       ),
     },
@@ -59,29 +59,29 @@ export default function WhyChooseUs() {
             </span>
           </h2>
 
-          {/* Updated Punchy Copywriting Here */}
           <p className="mt-5 text-lg md:text-xl font-medium text-slate-700 max-w-3xl mx-auto">
             Empowering your fleet operations with reliable OEM parts, expert technical guidance, and seamless PAN India delivery.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        {/* Updated grid for 2x2 on mobile and 4 columns on desktop */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 lg:gap-8">
           {features.map((item, index) => (
             <div
               key={`${item.title}-${index}`}
-              className="group relative flex flex-col rounded-2xl border border-slate-200 bg-white p-7 md:p-8 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1.5 hover:shadow-xl overflow-hidden"
+              className="group relative flex flex-col rounded-xl sm:rounded-2xl border border-slate-200 bg-white p-4 sm:p-7 md:p-8 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1.5 hover:shadow-xl overflow-hidden"
             >
               <div className="absolute top-0 left-0 h-1.5 w-full bg-slate-200 transition-colors duration-300 group-hover:bg-red-600"></div>
 
-              <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full bg-red-50 text-red-600 transition-transform duration-500 ease-out group-hover:scale-110">
+              <div className="mb-4 sm:mb-6 inline-flex h-10 w-10 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-red-50 text-red-600 transition-transform duration-500 ease-out group-hover:scale-110">
                 {item.icon}
               </div>
 
-              <h3 className="font-extrabold text-lg md:text-xl text-slate-900 mb-2.5">
+              <h3 className="font-extrabold text-sm sm:text-lg md:text-xl text-slate-900 mb-1.5 sm:mb-2.5">
                 {item.title}
               </h3>
 
-              <p className="text-base leading-relaxed text-slate-600">
+              <p className="text-xs sm:text-base leading-relaxed text-slate-600">
                 {item.desc}
               </p>
             </div>
