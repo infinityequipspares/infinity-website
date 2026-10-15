@@ -46,7 +46,7 @@ export default function InquiryForm() {
             required
             value={formData.name}
             onChange={handleChange}
-            placeholder="e.g. Amar Akbar Anthony"
+            placeholder="Enter your full name"
             className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none text-[13px] transition-all bg-gray-50 focus:bg-white"
           />
         </div>

@@ -5,7 +5,7 @@ import brands from "@/data/brands.json";
 const brandImageMap: { [key: string]: string } = {
   jlg: "JLG.png",
   genie: "Genie.png",
-  haulotte: "Haulotte.png",
+  dingli: "Dingli.png",
   sany: "Sany.png",
   xcmg: "XCMG.png",
   jcb: "JCB.png",
