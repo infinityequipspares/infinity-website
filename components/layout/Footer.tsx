@@ -9,18 +9,57 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#f8f9fa] font-sans mt-10 border-t border-slate-200">
+      <div className="max-w-[1200px] mx-auto px-4 lg:px-8 pt-10">
+        <div className="bg-white rounded-xl p-6 lg:p-8 border border-slate-200 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div className="text-center lg:text-left w-full lg:w-1/2">
+            <h3 className="text-[17px] font-bold text-slate-900 mb-1.5 tracking-tight">
+              {/* Yahan 'block sm:inline' lagaya hai mobile line break ke liye */}
+              Stay Updated with <span className="block sm:inline text-red-600">Infinity Equipments And Spares</span>
+            </h3>
+            <p className="text-[13.5px] text-slate-600 font-medium leading-relaxed">
+              Join our network of industry professionals. Get priority access to real-time stock alerts, exclusive B2B pricing, and expert maintenance insights to keep your machines running.
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row w-full lg:w-auto gap-3">
+            <form action="https://api.web3forms.com/submit" method="POST" className="flex w-full sm:w-auto">
+              <input type="hidden" name="access_key" value="41ce1b14-f5ea-4bca-ba66-de45459fb813" />
+              <input type="hidden" name="subject" value="New Subscriber for Infinity Equipments And Spares" />
+              <input type="hidden" name="redirect" value="https://infinityequipspares.com" />
+
+              <input 
+                type="email" 
+                name="email"
+                placeholder="Enter your email" 
+                required
+                className="px-4 py-2.5 bg-[#f8f9fa] border border-slate-300 border-r-0 rounded-l-lg text-[13.5px] font-medium text-slate-700 focus:outline-none focus:border-red-500 w-full sm:w-[220px]" 
+              />
+              <button type="submit" className="bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded-r-lg text-[13.5px] font-bold transition-colors">
+                Subscribe
+              </button>
+            </form>
+            
+            <a 
+              href="https://whatsapp.com/channel/0029VaNVcfR4Spk7xdMq3J2k" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebd5a] text-white px-5 py-2.5 rounded-lg text-[13.5px] font-bold whitespace-nowrap transition-colors shadow-sm w-full sm:w-auto"
+            >
+              <svg className="w-[18px] h-[18px]" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Join our WhatsApp Channel
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="max-w-[1200px] mx-auto px-4 lg:px-8 pt-10 pb-4 lg:pb-12">
-        
-        {/* Main Grid: 1 Column on Mobile, 4 Columns on Desktop */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-0 lg:gap-10">
-          
-          {/* Column 1: Company Logo & About */}
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left lg:col-span-1 mb-8 lg:mb-0">
             <Link href="/" className="inline-block mb-4">
               <img
                 src="/images/logo.webp"
                 alt="Infinity Equipments And Spares"
-                className="w-[160px] h-auto object-contain"
+                className="w-[85px] lg:w-[110px] h-auto object-contain"
               />
             </Link>
             <p className="text-[13px] leading-relaxed text-slate-600 font-medium max-w-[320px]">
@@ -28,10 +67,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Accordion / Links Section (Spans 2 columns on Desktop) */}
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-0 lg:gap-10 lg:col-span-2 w-full border-t border-slate-300 lg:border-none">
-            
-            {/* Quick Links */}
             <div className="flex flex-col border-b border-slate-300 lg:border-none">
               <button 
                 onClick={() => setQuickLinksOpen(!quickLinksOpen)}
@@ -44,7 +80,6 @@ export default function Footer() {
                   {quickLinksOpen ? "−" : "+"}
                 </span>
               </button>
-              
               <ul className={`flex flex-col gap-y-3 text-[13.5px] font-medium text-slate-600 overflow-hidden transition-all duration-300 lg:mt-5 ${quickLinksOpen ? "max-h-[500px] pb-4 lg:pb-0" : "max-h-0 lg:max-h-auto lg:overflow-visible"}`}>
                 {["Home", "Products", "About Us", "Contact"].map((link) => (
                   <li key={link}>
@@ -58,7 +93,6 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Top Categories */}
             <div className="flex flex-col border-b border-slate-300 lg:border-none">
               <button 
                 onClick={() => setCategoriesOpen(!categoriesOpen)}
@@ -71,22 +105,18 @@ export default function Footer() {
                   {categoriesOpen ? "−" : "+"}
                 </span>
               </button>
-              
               <ul className={`flex flex-col gap-y-3 text-[13.5px] font-medium text-slate-600 overflow-hidden transition-all duration-300 lg:mt-5 ${categoriesOpen ? "max-h-[500px] pb-4 lg:pb-0" : "max-h-0 lg:max-h-auto lg:overflow-visible"}`}>
                 <li><Link href="/products/category/joysticks" className="hover:text-red-700 transition-colors">Joysticks</Link></li>
                 <li><Link href="/products/category/electronic-modules" className="hover:text-red-700 transition-colors">Electronic Modules</Link></li>
                 <li><Link href="/products/category/hydraulic-parts" className="hover:text-red-700 transition-colors">Hydraulic Parts</Link></li>
                 <li><Link href="/products/category/safety-maintenance" className="hover:text-red-700 transition-colors">Safety & Maintenance</Link></li>
                 <li><Link href="/products/category/starters-alternators" className="hover:text-red-700 transition-colors">Starters & Alternators</Link></li>
+                <li><Link href="/products/category/filters" className="hover:text-red-700 transition-colors">Filters</Link></li>
               </ul>
             </div>
-            
           </div>
 
-          {/* Contact Us Section */}
           <div className="flex flex-col items-center lg:items-start w-full mt-2 lg:mt-0 pb-6 lg:pb-0 border-b border-slate-300 lg:border-none">
-            
-            {/* Divider with Text (Mobile only) */}
             <div className="flex items-center w-full mb-6 lg:mb-5 mt-4 lg:mt-0">
               <div className="flex-1 border-t border-slate-300 lg:hidden"></div>
               <h3 className="px-4 lg:px-0 text-[13px] font-bold uppercase tracking-wider text-slate-900">
@@ -95,14 +125,9 @@ export default function Footer() {
               <div className="flex-1 border-t border-slate-300 lg:hidden"></div>
             </div>
 
-            {/* Contact Details Wrapper */}
             <div className="text-[13.5px] text-slate-600 font-medium flex flex-col items-center lg:items-start gap-4 w-full">
-              
-              {/* Phones: Inline on Mobile, Stacked on Desktop */}
               <div className="flex items-center gap-2.5 w-full justify-center lg:justify-start">
                 <svg className="w-[16px] h-[16px] text-red-600 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                
-                {/* Mobile View: Standard size text, inline with / */}
                 <div className="lg:hidden flex items-center justify-center gap-1.5 whitespace-nowrap text-[12px] sm:text-[13px] font-medium text-slate-600 overflow-x-auto max-w-full">
                   <a href="tel:+919167867476" className="hover:text-red-700 transition-colors">+91 916 786 7476</a>
                   <span className="text-slate-400">/</span>
@@ -110,8 +135,6 @@ export default function Footer() {
                   <span className="text-slate-400">/</span>
                   <a href="tel:+919167867472" className="hover:text-red-700 transition-colors">+91 916 786 7472</a>
                 </div>
-                
-                {/* Desktop View: Stacked */}
                 <div className="hidden lg:flex lg:flex-col lg:gap-1 text-left text-[13.5px]">
                   <a href="tel:+919167867476" className="hover:text-red-700 transition-colors">+91 916 786 7476</a>
                   <a href="tel:+919167867176" className="hover:text-red-700 transition-colors">+91 916 786 7176</a>
@@ -119,7 +142,6 @@ export default function Footer() {
                 </div>
               </div>
 
-              {/* Email */}
               <div className="flex items-center gap-2.5 w-full justify-center lg:justify-start">
                 <svg className="w-[16px] h-[16px] text-red-600 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                 <a href="mailto:contact@infinityequipspares.com" className="hover:text-red-700 transition-colors break-all text-[13px] lg:text-[13.5px]">
@@ -127,22 +149,17 @@ export default function Footer() {
                 </a>
               </div>
 
-              {/* Location */}
               <div className="flex items-start gap-2.5 w-full justify-center lg:justify-start">
                 <svg className="w-[16px] h-[16px] mt-[3px] text-red-600 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                 <span className="text-center lg:text-left text-[13px] lg:text-[13.5px]">Navi Mumbai, Maharashtra, India</span>
               </div>
-
             </div>
           </div>
-          
         </div>
       </div>
 
-      {/* Bottom Legal & Social Bar */}
       <div className="border-t border-slate-300 bg-[#f8f9fa]">
         <div className="max-w-[1200px] mx-auto px-4 lg:px-8 py-6 flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0">
-          
           <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-4 text-[12px] font-semibold text-slate-500 text-center lg:text-left">
             <span>© {new Date().getFullYear()} Infinity Equipments And Spares.</span>
             <div className="hidden lg:block w-1 h-1 rounded-full bg-slate-400"></div>

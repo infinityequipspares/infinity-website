@@ -33,10 +33,10 @@ export default function AboutSection() {
 
           <h2
             id="about-heading"
-            className="mt-3 md:mt-4 text-[1.35rem] sm:text-3xl md:text-4xl lg:text-[2.25rem] xl:text-[2.5rem] font-extrabold text-slate-900 leading-[1.15] md:leading-[1.1] tracking-tight w-full"
+            className="mt-3 md:mt-4 text-[19px] sm:text-3xl md:text-4xl lg:text-[2.25rem] xl:text-[2.5rem] font-extrabold text-slate-900 leading-[1.15] md:leading-[1.1] tracking-tight w-full"
           >
-            India's Trusted Supplier of OEM & Aftermarket
-            <span className="block mt-1 md:mt-2 text-red-600 drop-shadow-sm">
+            <span className="block sm:inline">India's Trusted Supplier of OEM & Aftermarket</span>{" "}
+            <span className="block sm:inline sm:ml-2 text-red-600 drop-shadow-sm mt-1 sm:mt-0">
               Aerial Work Platforms And Crane Parts
             </span>
           </h2>

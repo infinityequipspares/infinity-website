@@ -52,9 +52,9 @@ export default function WhyChooseUs() {
             </span>
           </div>
 
-          <h2 className="mt-5 text-3xl sm:text-4xl md:text-[2.5rem] font-extrabold text-slate-900 leading-[1.25] tracking-tight">
-            Why Choose{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-800">
+          <h2 className="mt-5 text-[21px] sm:text-3xl md:text-[2.5rem] font-extrabold text-slate-900 leading-[1.25] tracking-tight">
+            <span className="block sm:inline">Why Choose</span>{" "}
+            <span className="block sm:inline whitespace-nowrap sm:whitespace-normal text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-800">
               Infinity Equipments And Spares?
             </span>
           </h2>
@@ -64,7 +64,6 @@ export default function WhyChooseUs() {
           </p>
         </div>
 
-        {/* Updated grid for 2x2 on mobile and 4 columns on desktop */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 lg:gap-8">
           {features.map((item, index) => (
             <div

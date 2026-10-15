@@ -16,6 +16,10 @@ export const navigation = [
     href: "/machine-sales",
   },
   {
+    name: "Blog",
+    href: "/blog",
+  },
+  {
     name: "About Us",
     href: "/about",
   },
