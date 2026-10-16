@@ -3,13 +3,30 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import ShareButton from '../../../components/ShareButton';
 
+// Yeh function WhatsApp aur baaki social media par proper image aur title bhejne ka kaam karega
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const blog = blogs.find((b) => b.slug === slug);
+  
   if (!blog) return { title: 'Post Not Found' };
+  
   return {
     title: `${blog.title} | Infinity Equipments And Spares`,
     description: blog.excerpt,
+    openGraph: {
+      title: blog.title,
+      description: blog.excerpt,
+      url: `https://infinityequipspares.com/blog/${blog.slug}`,
+      images: [
+        {
+          url: `https://infinityequipspares.com${blog.image}`,
+          width: 1200,
+          height: 630,
+          alt: blog.title,
+        },
+      ],
+      type: 'article',
+    },
   };
 }
 
@@ -33,7 +50,6 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
       <div className="bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-gray-100">
         
-        {/* Image sizing fix ki hai: Height kam ki aur object-cover rakha */}
         {blog.image && (
           <div className="w-full h-[250px] md:h-[400px] mb-8 rounded-xl overflow-hidden border border-gray-100">
             <img 
