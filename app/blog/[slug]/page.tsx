@@ -1,6 +1,7 @@
 import blogs from '../../../data/blogs.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import ShareButton from '../../../components/ShareButton';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -21,28 +22,40 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   }
 
   return (
-    <div className="container mx-auto px-4 py-12 max-w-5xl">
+    <div className="container mx-auto px-4 py-10 max-w-4xl">
       
-      {/* Back Button */}
       <Link 
         href="/blog" 
-        className="inline-flex items-center text-red-600 hover:text-red-800 font-bold mb-8 transition-colors hover:-translate-x-1"
+        className="inline-flex items-center text-red-600 hover:text-red-800 font-bold mb-6 transition-colors hover:-translate-x-1 text-sm"
       >
         <span className="mr-2">←</span> Back to Blogs
       </Link>
 
-      {/* Blog Content */}
-      <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900 leading-tight">{blog.title}</h1>
-        <p className="text-gray-500 mb-10 border-b pb-6 font-medium">Published on {blog.date}</p>
+      <div className="bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-gray-100">
         
-        <div className="text-gray-800 leading-relaxed text-lg md:text-xl space-y-8">
+        {/* Image sizing fix ki hai: Height kam ki aur object-cover rakha */}
+        {blog.image && (
+          <div className="w-full h-[250px] md:h-[400px] mb-8 rounded-xl overflow-hidden border border-gray-100">
+            <img 
+              src={blog.image} 
+              alt={blog.title} 
+              className="w-full h-full object-cover"
+            />
+          </div>
+        )}
+
+        <h1 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900 leading-tight">{blog.title}</h1>
+        <p className="text-gray-500 mb-8 border-b pb-4 font-medium text-sm">Published on {blog.date}</p>
+        
+        <div className="text-gray-800 leading-relaxed text-base md:text-lg space-y-6">
           {blog.content.split('\n').map((paragraph: string, index: number) => (
             <p key={index}>{paragraph}</p>
           ))}
         </div>
-      </div>
 
+        <ShareButton title={blog.title} />
+
+      </div>
     </div>
   );
 }

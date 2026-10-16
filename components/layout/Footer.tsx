@@ -129,16 +129,16 @@ export default function Footer() {
               <div className="flex items-center gap-2.5 w-full justify-center lg:justify-start">
                 <svg className="w-[16px] h-[16px] text-red-600 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                 <div className="lg:hidden flex items-center justify-center gap-1.5 whitespace-nowrap text-[12px] sm:text-[13px] font-medium text-slate-600 overflow-x-auto max-w-full">
-                  <a href="tel:+919167867476" className="hover:text-red-700 transition-colors">+91 916 786 7476</a>
+                  <a href="tel:+919167867476" className="hover:text-red-700 transition-colors">+91 9167867476</a>
                   <span className="text-slate-400">/</span>
-                  <a href="tel:+919167867176" className="hover:text-red-700 transition-colors">+91 916 786 7176</a>
+                  <a href="tel:+919167867176" className="hover:text-red-700 transition-colors">+91 9167867176</a>
                   <span className="text-slate-400">/</span>
-                  <a href="tel:+919167867472" className="hover:text-red-700 transition-colors">+91 916 786 7472</a>
+                  <a href="tel:+919167867472" className="hover:text-red-700 transition-colors">+91 9167867472</a>
                 </div>
                 <div className="hidden lg:flex lg:flex-col lg:gap-1 text-left text-[13.5px]">
-                  <a href="tel:+919167867476" className="hover:text-red-700 transition-colors">+91 916 786 7476</a>
-                  <a href="tel:+919167867176" className="hover:text-red-700 transition-colors">+91 916 786 7176</a>
-                  <a href="tel:+919167867472" className="hover:text-red-700 transition-colors">+91 916 786 7472</a>
+                  <a href="tel:+919167867476" className="hover:text-red-700 transition-colors">+91 9167867476</a>
+                  <a href="tel:+919167867176" className="hover:text-red-700 transition-colors">+91 9167867176</a>
+                  <a href="tel:+919167867472" className="hover:text-red-700 transition-colors">+91 9167867472</a>
                 </div>
               </div>
 
