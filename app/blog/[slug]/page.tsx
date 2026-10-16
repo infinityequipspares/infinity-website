@@ -1,7 +1,7 @@
 import blogs from '../../../data/blogs.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import ShareButton from '../../../components/ShareButton';
+import BlogInteraction from '../../../components/BlogInteraction';
 
 // Yeh function WhatsApp aur baaki social media par proper image aur title bhejne ka kaam karega
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
@@ -69,7 +69,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           ))}
         </div>
 
-        <ShareButton title={blog.title} />
+        {/* Share, Like and Comment Section */}
+        <BlogInteraction slug={blog.slug} title={blog.title} />
 
       </div>
     </div>
