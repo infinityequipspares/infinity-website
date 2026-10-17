@@ -9,9 +9,13 @@ import ProductFilters from "@/components/products/ProductFilters";
 function ProductsContent() {
   const searchParams = useSearchParams();
 
+  // URL se category ya brand uthakar initial state mein set kar rahe hain
+  const initialCategory = searchParams.get("category") || "";
+  const initialBrand = searchParams.get("brand") || "";
+
   const [filters, setFilters] = useState({
-    brand: "",
-    category: "",
+    brand: initialBrand,
+    category: initialCategory,
     type: "",
   });
 
