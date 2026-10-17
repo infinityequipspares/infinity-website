@@ -14,8 +14,14 @@ export default function BlogInteraction({ slug, title }: { slug: string, title: 
   const [commentText, setCommentText] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Fetch Likes
+  // 1. Fetch Likes & Check Local Storage
   useEffect(() => {
+    // Check if user already liked this post in the past
+    const checkLiked = localStorage.getItem(`liked_${slug}`);
+    if (checkLiked === 'true') {
+      setHasLiked(true);
+    }
+
     const docRef = doc(db, 'blog_stats', slug);
     const unsubscribe = onSnapshot(docRef, (docSnap) => {
       if (docSnap.exists()) {
@@ -25,7 +31,7 @@ export default function BlogInteraction({ slug, title }: { slug: string, title: 
     return () => unsubscribe();
   }, [slug]);
 
-  // Fetch Comments
+  // 2. Fetch Comments
   useEffect(() => {
     const q = query(collection(db, 'blogs', slug, 'comments'), orderBy('timestamp', 'desc'));
     const unsubscribe = onSnapshot(q, (snapshot) => {
@@ -34,15 +40,17 @@ export default function BlogInteraction({ slug, title }: { slug: string, title: 
     return () => unsubscribe();
   }, [slug]);
 
-  // Handle Like Button
+  // 3. Handle Like (Saves to Firebase AND Local Storage)
   const handleLike = async () => {
     if (hasLiked) return;
+    
     setHasLiked(true);
+    localStorage.setItem(`liked_${slug}`, 'true'); // Save in browser memory
+    
     const docRef = doc(db, 'blog_stats', slug);
     await setDoc(docRef, { likes: increment(1) }, { merge: true });
   };
 
-  // Handle Native Share Button
   const handleShare = async () => {
     if (navigator.share) {
       try {
@@ -56,7 +64,6 @@ export default function BlogInteraction({ slug, title }: { slug: string, title: 
     }
   };
 
-  // Handle Comment Submit
   const submitComment = async (e: FormEvent) => {
     e.preventDefault();
     if (!name || !commentText) return;
@@ -79,40 +86,40 @@ export default function BlogInteraction({ slug, title }: { slug: string, title: 
   return (
     <div className="mt-8 border-t border-gray-200 pt-8">
       
-      {/* Side-by-Side Action Bar (Share + Like) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+      {/* Side-by-Side Action Bar */}
+      <div className="grid grid-cols-2 gap-2 md:gap-4 mb-10">
         
         {/* Share Box */}
-        <div className="bg-gray-50 p-5 rounded-xl border border-gray-200 flex items-center justify-between shadow-sm">
-          <span className="font-bold text-gray-800 text-sm">Share this guide:</span>
+        <div className="bg-gray-50 p-3 md:p-5 rounded-xl border border-gray-200 flex flex-col xl:flex-row items-center justify-center xl:justify-between gap-2.5 md:gap-0 shadow-sm text-center">
+          <span className="font-bold text-gray-800 text-xs md:text-sm">Share guide:</span>
           <button
             onClick={handleShare}
-            className="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-800 transition-colors flex items-center gap-2 shadow-sm"
+            className="bg-gray-900 text-white px-3 py-2 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-semibold hover:bg-gray-800 transition-colors flex items-center justify-center gap-1.5 shadow-sm w-full xl:w-auto"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-3.5 h-3.5 md:w-4 md:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
             </svg>
-            Share Article
+            <span>Share</span>
           </button>
         </div>
 
         {/* Like Box */}
-        <div className="bg-gray-50 p-5 rounded-xl border border-gray-200 flex items-center justify-between shadow-sm">
+        <div className="bg-gray-50 p-3 md:p-5 rounded-xl border border-gray-200 flex flex-col xl:flex-row items-center justify-center xl:justify-between gap-2.5 md:gap-0 shadow-sm text-center">
            <div>
-              <h4 className="text-gray-900 font-bold text-sm">Was this helpful?</h4>
+              <h4 className="text-gray-900 font-bold text-xs md:text-sm">Helpful?</h4>
             </div>
           
           <button 
             onClick={handleLike}
             disabled={hasLiked}
-            className={`group flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-semibold transition-all border ${
+            className={`group flex items-center justify-center gap-1.5 px-3 py-2 md:px-4 md:py-2 rounded-lg font-semibold transition-all border w-full xl:w-auto ${
               hasLiked 
                 ? 'bg-green-50 border-green-200 text-green-700 cursor-default' 
                 : 'bg-white border-gray-300 text-gray-700 hover:bg-red-50 hover:border-red-600 hover:text-red-700 shadow-sm'
             }`}
           >
-            <span className="text-sm">{hasLiked ? '✓ Helpful' : '👍 Yes, It Helped'}</span>
-            <span className={`px-2 py-0.5 rounded text-xs font-bold transition-colors ${
+            <span className="text-xs md:text-sm">{hasLiked ? '✓ Yes' : '👍 Yes'}</span>
+            <span className={`px-1.5 py-0.5 rounded text-[10px] md:text-xs font-bold transition-colors ${
               hasLiked 
                 ? 'bg-green-100 text-green-800' 
                 : 'bg-gray-100 text-gray-600 group-hover:bg-red-100 group-hover:text-red-700'
@@ -128,7 +135,7 @@ export default function BlogInteraction({ slug, title }: { slug: string, title: 
         <div className="bg-gray-50 px-6 py-4 border-b border-gray-200">
           <h3 className="text-gray-800 font-bold text-base">Join the Discussion</h3>
         </div>
-        <div className="p-6">
+        <div className="p-4 md:p-6">
           <form onSubmit={submitComment} className="mb-10">
               <div className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

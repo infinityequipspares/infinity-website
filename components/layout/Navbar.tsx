@@ -140,10 +140,17 @@ export default function Navbar() {
         </div>
       </header>
       
-      {/* Mobile Menu */}
+      {/* Mobile Menu - FIXED OUTSIDE CLICK */}
       {menuOpen && (
-        <div className="fixed inset-0 z-[999] bg-black/50 lg:hidden backdrop-blur-sm transition-opacity">
-          <div className="absolute right-0 top-0 h-full w-[260px] max-w-full bg-white shadow-2xl overflow-y-auto">
+        <div className="fixed inset-0 z-[999] lg:hidden">
+          {/* Background overlay (Clicking this closes the menu) */}
+          <div 
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity" 
+            onClick={() => setMenuOpen(false)}
+          ></div>
+
+          {/* Sliding Menu Panel */}
+          <div className="absolute right-0 top-0 h-full w-[260px] max-w-full bg-white shadow-2xl overflow-y-auto z-10 flex flex-col">
             
             <div className="flex items-center justify-between border-b px-4 py-3 bg-gray-50">
               <div>
@@ -154,7 +161,7 @@ export default function Navbar() {
               </div>
               <button
                 onClick={() => setMenuOpen(false)}
-                className="text-2xl leading-none text-gray-500 hover:text-red-600 transition-colors"
+                className="text-2xl leading-none text-gray-500 hover:text-red-600 transition-colors px-2 py-1"
               >
                 ×
               </button>
@@ -190,7 +197,7 @@ export default function Navbar() {
               })}
             </nav>
 
-            <div className="p-4 border-t bg-gray-50 flex flex-col gap-2">
+            <div className="p-4 border-t bg-gray-50 flex flex-col gap-2 mt-auto">
               <a 
                 href="tel:+919167867476"
                 className="w-full flex items-center justify-center bg-white border border-gray-300 text-gray-700 hover:text-red-600 py-2.5 rounded-md text-sm font-bold transition-all duration-200 shadow-sm"

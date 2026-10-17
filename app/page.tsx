@@ -1,6 +1,7 @@
 import Hero from "@/components/home/Hero";
 import CategorySection from "@/components/home/CategorySection";
 import BrandSection from "@/components/home/BrandsSection";
+import PartnersSection from "@/components/home/PartnersSection"; // <-- Yeh nayi line import ki hai
 import AboutSection from "@/components/home/AboutSection";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 
@@ -20,6 +21,9 @@ export default function Home() {
 
       {/* Browse By Brand */}
       <BrandSection />
+
+      {/* Our Trusted Partners - Yeh Brand section ke theek niche aayega */}
+      <PartnersSection />
 
       {/* About Infinity */}
       <AboutSection />

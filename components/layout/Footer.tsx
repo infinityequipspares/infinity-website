@@ -13,7 +13,6 @@ export default function Footer() {
         <div className="bg-white rounded-xl p-6 lg:p-8 border border-slate-200 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-6">
           <div className="text-center lg:text-left w-full lg:w-1/2">
             <h3 className="text-[17px] font-bold text-slate-900 mb-1.5 tracking-tight">
-              {/* Yahan 'block sm:inline' lagaya hai mobile line break ke liye */}
               Stay Updated with <span className="block sm:inline text-red-600">Infinity Equipments And Spares</span>
             </h3>
             <p className="text-[13.5px] text-slate-600 font-medium leading-relaxed">
@@ -54,15 +53,16 @@ export default function Footer() {
 
       <div className="max-w-[1200px] mx-auto px-4 lg:px-8 pt-10 pb-4 lg:pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-0 lg:gap-10">
-          <div className="flex flex-col items-center text-center lg:items-start lg:text-left lg:col-span-1 mb-8 lg:mb-0">
-            <Link href="/" className="inline-block mb-4">
+          
+          <div className="flex flex-col items-center text-center lg:col-span-1 mb-8 lg:mb-0">
+            <Link href="/" className="inline-block mb-4 mx-auto">
               <img
                 src="/images/logo.webp"
                 alt="Infinity Equipments And Spares"
-                className="w-[85px] lg:w-[110px] h-auto object-contain"
+                className="w-[85px] lg:w-[110px] h-auto object-contain mx-auto"
               />
             </Link>
-            <p className="text-[13px] leading-relaxed text-slate-600 font-medium max-w-[320px]">
+            <p className="text-[13px] leading-relaxed text-slate-600 font-medium max-w-[320px] mx-auto">
               India's trusted supplier of genuine and aftermarket spare parts for heavy machinery and aerial work platforms.
             </p>
           </div>
@@ -160,16 +160,24 @@ export default function Footer() {
 
       <div className="border-t border-slate-300 bg-[#f8f9fa]">
         <div className="max-w-[1200px] mx-auto px-4 lg:px-8 py-6 flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0">
-          <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-4 text-[12px] font-semibold text-slate-500 text-center lg:text-left">
-            <span>© {new Date().getFullYear()} Infinity Equipments And Spares.</span>
-            <div className="hidden lg:block w-1 h-1 rounded-full bg-slate-400"></div>
-            <div className="flex gap-4 mt-1 lg:mt-0">
-                <Link href="/privacy-policy" className="hover:text-red-700 transition-colors">Privacy Policy</Link>
-                <Link href="/terms" className="hover:text-red-700 transition-colors">Terms of Service</Link>
+          
+          {/* Copyright & Legal Disclaimer Block */}
+          <div className="flex flex-col text-center lg:text-left">
+            <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-4 text-[12px] font-semibold text-slate-500 mb-2">
+              <span>© {new Date().getFullYear()} Infinity Equipments And Spares.</span>
+              <div className="hidden lg:block w-1 h-1 rounded-full bg-slate-400"></div>
+              <div className="flex gap-4">
+                  <Link href="/privacy-policy" className="hover:text-red-700 transition-colors">Privacy Policy</Link>
+                  <Link href="/terms" className="hover:text-red-700 transition-colors">Terms of Service</Link>
+              </div>
             </div>
+            {/* Disclaimer Text */}
+            <p className="text-[10px] text-slate-400 max-w-2xl font-medium leading-snug">
+              All product names, logos, and brands are property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names, logos, and brands does not imply endorsement.
+            </p>
           </div>
 
-          <div className="flex items-center gap-5 mt-2 lg:mt-0">
+          <div className="flex items-center gap-5 mt-4 lg:mt-0 flex-shrink-0">
               <a href="https://whatsapp.com/channel/0029VaNVcfR4Spk7xdMq3J2k" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-green-600 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></a>
               <a href="https://www.facebook.com/share/19za4G3tW2/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
               <a href="https://instagram.com/infinityequipspares?obrf=MWxmdG8yY2h6NHgwbQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-pink-600 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
