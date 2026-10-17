@@ -1,7 +1,6 @@
 "use client";
 
 export default function PartnersSection() {
-  // Apne 8 logos ki list
   const partnerLogos = [
     "/images/partners/partner-1.png",
     "/images/partners/partner-2.png",
@@ -16,23 +15,22 @@ export default function PartnersSection() {
   return (
     <section className="py-6 md:py-8 bg-white overflow-hidden">
       
-      {/* Slider ki Animation ke liye Custom CSS */}
+      {/* GPU Optimized Animation CSS */}
       <style>{`
-        @keyframes infinite-scroll {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+        @keyframes infinite-scroll-partners {
+          from { transform: translate3d(0, 0, 0); }
+          to { transform: translate3d(-100%, 0, 0); }
         }
         .animate-infinite-scroll-partners {
-          animation: infinite-scroll 30s linear infinite;
-          width: max-content;
+          animation: infinite-scroll-partners 30s linear infinite;
+          will-change: transform;
         }
-        .animate-infinite-scroll-partners:hover {
+        .slider-container:hover .animate-infinite-scroll-partners {
           animation-play-state: paused;
         }
       `}</style>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4 md:mb-6">
-        {/* Header Section */}
         <div className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto">
           <div className="inline-flex items-center px-3 py-1 md:px-4 md:py-1.5 rounded-md border border-red-200/60 bg-red-50/80 backdrop-blur-sm mb-4 md:mb-5">
             <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-red-700">
@@ -50,39 +48,42 @@ export default function PartnersSection() {
         </div>
       </div>
 
-      {/* Infinite Logo Slider Section */}
-      <div className="relative w-full max-w-7xl mx-auto overflow-hidden bg-white py-4 md:py-6 flex items-center">
+      <div className="relative w-full max-w-7xl mx-auto overflow-hidden bg-white py-4 md:py-6 flex slider-container">
         
-        {/* Left aur Right Fading Effect */}
-        <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
-        {/* Scrolling Track */}
-        <div className="animate-infinite-scroll-partners flex gap-16 md:gap-28 items-center pl-16 md:pl-28">
+        {/* Perfect Loop Track */}
+        <div className="flex">
           
-          {/* Pehla Set - Mobile me color, Desktop me hover par color */}
-          {partnerLogos.map((logo, index) => (
-            <img 
-              key={index} 
-              src={logo} 
-              alt={`Partner ${index + 1}`} 
-              className="h-[60px] md:h-[110px] w-auto max-w-[200px] object-contain md:grayscale md:opacity-60 hover:grayscale-0 hover:opacity-100 hover:scale-105 transition-all duration-300 cursor-pointer" 
-            />
-          ))}
+          {/* Pehla Set */}
+          <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28 animate-infinite-scroll-partners min-w-max">
+            {partnerLogos.map((logo, index) => (
+              <img 
+                key={index} 
+                src={logo} 
+                alt={`Partner ${index + 1}`} 
+                className="h-[60px] md:h-[110px] w-auto max-w-[200px] object-contain hover:scale-105 transition-all duration-300 cursor-pointer" 
+                draggable={false}
+              />
+            ))}
+          </div>
 
           {/* Doosra Set */}
-          {partnerLogos.map((logo, index) => (
-            <img 
-              key={`dup-${index}`} 
-              src={logo} 
-              alt={`Partner duplicate ${index + 1}`} 
-              className="h-[60px] md:h-[110px] w-auto max-w-[200px] object-contain md:grayscale md:opacity-60 hover:grayscale-0 hover:opacity-100 hover:scale-105 transition-all duration-300 cursor-pointer" 
-            />
-          ))}
+          <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28 animate-infinite-scroll-partners min-w-max" aria-hidden="true">
+            {partnerLogos.map((logo, index) => (
+              <img 
+                key={`dup-${index}`} 
+                src={logo} 
+                alt={`Partner duplicate ${index + 1}`} 
+                className="h-[60px] md:h-[110px] w-auto max-w-[200px] object-contain hover:scale-105 transition-all duration-300 cursor-pointer" 
+                draggable={false}
+              />
+            ))}
+          </div>
           
         </div>
       </div>
-
     </section>
   );
 }
