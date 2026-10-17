@@ -3,20 +3,25 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import BlogInteraction from '../../../components/BlogInteraction';
 
-// Yeh function WhatsApp aur baaki social media par proper image aur title bhejne ka kaam karega
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const blog = blogs.find((b) => b.slug === slug);
   
   if (!blog) return { title: 'Post Not Found' };
   
+  // Canonical URL setup for perfect SEO indexing
+  const canonicalUrl = `https://infinityequipspares.com/blog/${blog.slug}`;
+  
   return {
     title: `${blog.title} | Infinity Equipments And Spares`,
     description: blog.excerpt,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: blog.title,
       description: blog.excerpt,
-      url: `https://infinityequipspares.com/blog/${blog.slug}`,
+      url: canonicalUrl,
       images: [
         {
           url: `https://infinityequipspares.com${blog.image}`,
@@ -26,6 +31,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         },
       ],
       type: 'article',
+    },
+    robots: {
+      index: true,
+      follow: true,
     },
   };
 }
@@ -51,11 +60,11 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       <div className="bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-gray-100">
         
         {blog.image && (
-          <div className="w-full h-[250px] md:h-[400px] mb-8 rounded-xl overflow-hidden border border-gray-100">
+          <div className="w-full mb-8 rounded-xl overflow-hidden border border-gray-100 bg-gray-50 flex items-center justify-center">
             <img 
               src={blog.image} 
               alt={blog.title} 
-              className="w-full h-full object-cover"
+              className="w-full h-auto max-h-[350px] md:max-h-[500px] object-contain"
             />
           </div>
         )}
@@ -63,10 +72,15 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900 leading-tight">{blog.title}</h1>
         <p className="text-gray-500 mb-8 border-b pb-4 font-medium text-sm">Published on {blog.date}</p>
         
+        {/* Smart Renderer: Supports both Legacy Text and New HTML for SEO */}
         <div className="text-gray-800 leading-relaxed text-base md:text-lg space-y-6">
-          {blog.content.split('\n').map((paragraph: string, index: number) => (
-            <p key={index}>{paragraph}</p>
-          ))}
+          {blog.content.includes('<') ? (
+            <div dangerouslySetInnerHTML={{ __html: blog.content }} className="space-y-4" />
+          ) : (
+            blog.content.split('\n').map((paragraph: string, index: number) => (
+              <p key={index}>{paragraph}</p>
+            ))
+          )}
         </div>
 
         {/* Share, Like and Comment Section */}
