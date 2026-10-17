@@ -15,16 +15,25 @@ export default function PartnersSection() {
   return (
     <section className="py-6 md:py-8 bg-white overflow-hidden">
       
+      {/* Ultimate Cross-Browser (Safari/Chrome/Edge) Marquee CSS */}
       <style>{`
+        @-webkit-keyframes marquee-partners {
+          0% { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+          100% { -webkit-transform: translate3d(-100%, 0, 0); transform: translate3d(-100%, 0, 0); }
+        }
         @keyframes marquee-partners {
           0% { transform: translate3d(0, 0, 0); }
-          100% { transform: translate3d(-50%, 0, 0); }
+          100% { transform: translate3d(-100%, 0, 0); }
         }
         .animate-marquee-partners {
+          -webkit-animation: marquee-partners 30s linear infinite;
           animation: marquee-partners 30s linear infinite;
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
           will-change: transform;
         }
         .slider-container:hover .animate-marquee-partners {
+          -webkit-animation-play-state: paused;
           animation-play-state: paused;
         }
       `}</style>
@@ -52,36 +61,30 @@ export default function PartnersSection() {
         <div className="absolute left-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
         <div className="absolute right-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
-        {/* Parent Track */}
-        <div className="flex w-max animate-marquee-partners">
-          
-          {/* Set 1 */}
-          <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28">
-            {partnerLogos.map((logo, index) => (
-              <img 
-                key={index} 
-                src={logo} 
-                alt={`Partner ${index + 1}`} 
-                className="h-[60px] md:h-[110px] w-auto max-w-[200px] object-contain hover:scale-105 transition-transform duration-300 cursor-pointer" 
-                draggable={false}
-              />
-            ))}
-          </div>
-
-          {/* Set 2 (Exact Clone) */}
-          <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28" aria-hidden="true">
-            {partnerLogos.map((logo, index) => (
-              <img 
-                key={`dup-${index}`} 
-                src={logo} 
-                alt={`Partner duplicate ${index + 1}`} 
-                className="h-[60px] md:h-[110px] w-auto max-w-[200px] object-contain hover:scale-105 transition-transform duration-300 cursor-pointer" 
-                draggable={false}
-              />
-            ))}
-          </div>
-          
+        <div className="flex shrink-0 animate-marquee-partners items-center gap-16 md:gap-28 pr-16 md:pr-28">
+          {partnerLogos.map((logo, index) => (
+            <img 
+              key={index} 
+              src={logo} 
+              alt={`Partner ${index + 1}`} 
+              className="h-[60px] md:h-[110px] w-auto max-w-[200px] object-contain hover:scale-105 transition-transform duration-300 cursor-pointer" 
+              draggable={false}
+            />
+          ))}
         </div>
+
+        <div aria-hidden="true" className="flex shrink-0 animate-marquee-partners items-center gap-16 md:gap-28 pr-16 md:pr-28">
+          {partnerLogos.map((logo, index) => (
+            <img 
+              key={`dup-${index}`} 
+              src={logo} 
+              alt={`Partner duplicate ${index + 1}`} 
+              className="h-[60px] md:h-[110px] w-auto max-w-[200px] object-contain hover:scale-105 transition-transform duration-300 cursor-pointer" 
+              draggable={false}
+            />
+          ))}
+        </div>
+        
       </div>
     </section>
   );
