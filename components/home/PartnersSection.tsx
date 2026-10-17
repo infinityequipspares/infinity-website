@@ -15,17 +15,16 @@ export default function PartnersSection() {
   return (
     <section className="py-6 md:py-8 bg-white overflow-hidden">
       
-      {/* GPU Optimized Animation CSS */}
       <style>{`
-        @keyframes infinite-scroll-partners {
-          from { transform: translate3d(0, 0, 0); }
-          to { transform: translate3d(-100%, 0, 0); }
+        @keyframes marquee-partners {
+          0% { transform: translate3d(0, 0, 0); }
+          100% { transform: translate3d(-50%, 0, 0); }
         }
-        .animate-infinite-scroll-partners {
-          animation: infinite-scroll-partners 30s linear infinite;
+        .animate-marquee-partners {
+          animation: marquee-partners 30s linear infinite;
           will-change: transform;
         }
-        .slider-container:hover .animate-infinite-scroll-partners {
+        .slider-container:hover .animate-marquee-partners {
           animation-play-state: paused;
         }
       `}</style>
@@ -53,30 +52,30 @@ export default function PartnersSection() {
         <div className="absolute left-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
         <div className="absolute right-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
-        {/* Perfect Loop Track */}
-        <div className="flex">
+        {/* Parent Track */}
+        <div className="flex w-max animate-marquee-partners">
           
-          {/* Pehla Set */}
-          <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28 animate-infinite-scroll-partners min-w-max">
+          {/* Set 1 */}
+          <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28">
             {partnerLogos.map((logo, index) => (
               <img 
                 key={index} 
                 src={logo} 
                 alt={`Partner ${index + 1}`} 
-                className="h-[60px] md:h-[110px] w-auto max-w-[200px] object-contain hover:scale-105 transition-all duration-300 cursor-pointer" 
+                className="h-[60px] md:h-[110px] w-auto max-w-[200px] object-contain hover:scale-105 transition-transform duration-300 cursor-pointer" 
                 draggable={false}
               />
             ))}
           </div>
 
-          {/* Doosra Set */}
-          <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28 animate-infinite-scroll-partners min-w-max" aria-hidden="true">
+          {/* Set 2 (Exact Clone) */}
+          <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28" aria-hidden="true">
             {partnerLogos.map((logo, index) => (
               <img 
                 key={`dup-${index}`} 
                 src={logo} 
                 alt={`Partner duplicate ${index + 1}`} 
-                className="h-[60px] md:h-[110px] w-auto max-w-[200px] object-contain hover:scale-105 transition-all duration-300 cursor-pointer" 
+                className="h-[60px] md:h-[110px] w-auto max-w-[200px] object-contain hover:scale-105 transition-transform duration-300 cursor-pointer" 
                 draggable={false}
               />
             ))}
