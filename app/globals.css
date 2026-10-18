@@ -1,13 +1,11 @@
 @import "tailwindcss";
 
 /* Smooth Scroll */
-
 html {
   scroll-behavior: smooth;
 }
 
 /* Body */
-
 body {
   background: #ffffff;
   color: #1f2937;
@@ -15,27 +13,57 @@ body {
 }
 
 /* Selection */
-
 ::selection {
   background: #dc2626;
   color: white;
 }
 
 /* Images */
-
 img {
   user-select: none;
   -webkit-user-drag: none;
 }
 
 /* Buttons */
-
 button {
   cursor: pointer;
 }
 
 /* Links */
-
 a {
   transition: all 0.3s ease;
+}
+
+/* 🌟 Global Animations 🌟 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* 🌟 Custom Premium Scrollbar 🌟 */
+::-webkit-scrollbar {
+  width: 8px; /* Patla aur sleek */
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc; /* Light gray background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1; /* Normal color */
+  border-radius: 10px; /* Gol edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626; /* Hover karne par tumhara signature Infinity Red */
 }

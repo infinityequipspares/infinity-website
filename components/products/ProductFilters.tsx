@@ -19,85 +19,46 @@ export default function ProductFilters({
   categories,
   onFilter,
 }: Props) {
+  
+  // Sleek inline select styling (No labels needed)
   const selectClass =
-    "h-14 w-full rounded-2xl border border-gray-200 bg-white px-5 text-[15px] font-medium text-gray-800 shadow-sm outline-none appearance-none transition-all duration-300 hover:border-red-300 hover:shadow-md focus:border-red-600 focus:ring-4 focus:ring-red-100 cursor-pointer";
-
-  const labelClass =
-    "mb-2 block text-[11px] font-bold uppercase tracking-[0.15em] text-gray-500";
+    "h-10 md:h-12 w-full rounded-lg border border-gray-200 bg-gray-50/50 px-2 md:px-3 text-[11px] md:text-[13px] font-bold text-gray-700 shadow-sm outline-none appearance-none transition-all duration-300 hover:border-red-300 hover:bg-white focus:border-red-500 focus:bg-white focus:ring-2 focus:ring-red-100 text-center md:text-left truncate cursor-pointer";
 
   return (
-    <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+    <div className="grid grid-cols-3 gap-2 md:gap-3">
 
       {/* Brand */}
-      <div>
-        <label className={labelClass}>
-          Brand
-        </label>
-
-        <select
-          onChange={(e) =>
-            onFilter((prev) => ({
-              ...prev,
-              brand: e.target.value,
-            }))
-          }
-          className={selectClass}
-        >
-          <option value="">All Brands</option>
-
-          {brands.map((brand) => (
-            <option key={brand} value={brand}>
-              {brand}
-            </option>
-          ))}
-        </select>
-      </div>
+      <select
+        onChange={(e) => onFilter((prev) => ({ ...prev, brand: e.target.value }))}
+        className={selectClass}
+      >
+        <option value="">All Brands</option>
+        {brands.map((brand) => (
+          <option key={brand} value={brand}>{brand}</option>
+        ))}
+      </select>
 
       {/* Category */}
-      <div>
-        <label className={labelClass}>
-          Category
-        </label>
-
-        <select
-          onChange={(e) =>
-            onFilter((prev) => ({
-              ...prev,
-              category: e.target.value,
-            }))
-          }
-          className={selectClass}
-        >
-          <option value="">All Categories</option>
-
-          {categories.map((category) => (
-            <option key={category} value={category}>
-              {category}
-            </option>
-          ))}
-        </select>
-      </div>
+      <select
+        onChange={(e) => onFilter((prev) => ({ ...prev, category: e.target.value }))}
+        className={selectClass}
+      >
+        <option value="">All Categories</option>
+        {categories.map((category) => (
+          <option key={category} value={category}>{category}</option>
+        ))}
+      </select>
 
       {/* Product Type */}
-      <div>
-        <label className={labelClass}>
-          Product Type
-        </label>
-
-        <select
-          onChange={(e) =>
-            onFilter((prev) => ({
-              ...prev,
-              type: e.target.value,
-            }))
-          }
-          className={selectClass}
-        >
-          <option value="">OEM / Aftermarket</option>
-          <option value="OEM">OEM</option>
-          <option value="Aftermarket">Aftermarket</option>
-        </select>
-      </div>
+      <select
+        onChange={(e) => onFilter((prev) => ({ ...prev, type: e.target.value }))}
+        className={selectClass}
+      >
+        <option value="">All Types</option>
+        <option value="Genuine">Genuine</option>
+        <option value="OEM">OEM</option>
+        <option value="Aftermarket">Aftermarket</option>
+      </select>
 
     </div>
   );
