@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function AboutPage() {
   const stats = [
     { value: "15+", label: "Years of Experience" },
-    { value: "5,000+", label: "Spare Parts Inventory" },
+    { value: "1,000+", label: "Spare Parts Inventory" },
     { value: "20+", label: "Global Brands Covered" },
     { value: "100%", label: "Pan-India Delivery" }
   ];
@@ -88,7 +88,7 @@ export default function AboutPage() {
             <ul className="space-y-4">
               <li className="flex gap-3 text-[14px] text-gray-600 leading-relaxed">
                 <span className="text-red-600 shrink-0 mt-0.5">✔</span>
-                <span>Wide inventory covering international brands like JLG, Genie, Haulotte, JCB, SANY, and more.</span>
+                <span>Wide inventory covering international brands like JLG, Genie, Dingli, JCB, SANY, and more.</span>
               </li>
               <li className="flex gap-3 text-[14px] text-gray-600 leading-relaxed">
                 <span className="text-red-600 shrink-0 mt-0.5">✔</span>
@@ -126,21 +126,30 @@ export default function AboutPage() {
           </div>
           
           <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto relative z-10">
+            
             {/* Ishaq Ahemad Khan - Founder Card */}
             <div className="group relative bg-white rounded-3xl p-1 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(220,38,38,0.12)]">
               <div className="absolute inset-0 bg-gradient-to-br from-gray-200 via-gray-100 to-gray-200 rounded-3xl opacity-100 group-hover:from-red-200 group-hover:via-red-100 group-hover:to-red-200 transition-colors duration-500"></div>
-              <div className="relative h-full bg-white rounded-[22px] p-7 flex flex-col sm:flex-row items-center sm:items-start gap-6 overflow-hidden">
+              
+              <div className="relative h-full bg-white rounded-[22px] p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-red-50 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                <div className="w-28 h-28 shrink-0 rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-md flex items-center justify-center relative z-10 transform group-hover:scale-105 transition-transform duration-500">
-                   <span className="text-gray-400 text-[10px] font-semibold text-center uppercase tracking-widest leading-relaxed">Image<br/>Pending</span>
+                
+                {/* 🌟 Rounded Square (Square with rounded corners) Shape 🌟 */}
+                <div className="w-28 h-28 sm:w-32 sm:h-36 shrink-0 rounded-2xl overflow-hidden bg-gray-50 border-[2px] border-gray-100 shadow-md flex items-center justify-center relative z-10 transform group-hover:scale-105 transition-all duration-500 ring-1 ring-gray-200">
+                  <img 
+                    src="/images/founders/ishaq.jpg" 
+                    alt="Ishaq Ahemad Khan" 
+                    className="w-full h-full object-cover" 
+                  />
                 </div>
-                <div className="text-center sm:text-left relative z-10 flex-1">
+                
+                <div className="text-center sm:text-left relative z-10 flex-1 flex flex-col justify-center">
                   <h3 className="text-2xl font-black text-gray-900 mb-1 tracking-tight">Ishaq Ahemad Khan</h3>
-                  <div className="inline-block border-b-2 border-red-600 pb-1 mb-3">
+                  <div className="inline-block border-b-2 border-red-600 pb-1 mb-3 self-center sm:self-start">
                     <p className="text-red-600 font-bold text-[12px] tracking-[0.2em] uppercase">Founder</p>
                   </div>
                   <p className="text-[14px] text-gray-600 leading-relaxed font-medium">
-                    With a deep understanding of the heavy machinery sector, Ishaq drives the strategic vision of the company. His strict commitment to part quality, brand trust, and unbiased B2B solutions forms the core foundation of Infinity Equipments And Spares.
+                    With a deep understanding of the heavy machinery sector, Ishaq Ahemad drives the strategic vision of the company. His strict commitment to part quality, brand trust, and unbiased B2B solutions forms the core foundation of Infinity Equipments And Spares.
                   </p>
                 </div>
               </div>
@@ -149,22 +158,31 @@ export default function AboutPage() {
             {/* Ankit Raj - Co-Founder Card */}
             <div className="group relative bg-white rounded-3xl p-1 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(220,38,38,0.12)]">
               <div className="absolute inset-0 bg-gradient-to-br from-gray-200 via-gray-100 to-gray-200 rounded-3xl opacity-100 group-hover:from-red-200 group-hover:via-red-100 group-hover:to-red-200 transition-colors duration-500"></div>
-              <div className="relative h-full bg-white rounded-[22px] p-7 flex flex-col sm:flex-row items-center sm:items-start gap-6 overflow-hidden">
+              
+              <div className="relative h-full bg-white rounded-[22px] p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-red-50 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                <div className="w-28 h-28 shrink-0 rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-md flex items-center justify-center relative z-10 transform group-hover:scale-105 transition-transform duration-500">
-                  <span className="text-gray-400 text-[10px] font-semibold text-center uppercase tracking-widest leading-relaxed">Image<br/>Pending</span>
+                
+                {/* 🌟 Rounded Square (Square with rounded corners) Shape 🌟 */}
+                <div className="w-28 h-28 sm:w-32 sm:h-36 shrink-0 rounded-2xl overflow-hidden bg-gray-50 border-[2px] border-gray-100 shadow-md flex items-center justify-center relative z-10 transform group-hover:scale-105 transition-all duration-500 ring-1 ring-gray-200">
+                  <img 
+                    src="/images/founders/ankit.jpg" 
+                    alt="Ankit Raj" 
+                    className="w-full h-full object-cover" 
+                  />
                 </div>
-                <div className="text-center sm:text-left relative z-10 flex-1">
+                
+                <div className="text-center sm:text-left relative z-10 flex-1 flex flex-col justify-center">
                   <h3 className="text-2xl font-black text-gray-900 mb-1 tracking-tight">Ankit Raj</h3>
-                  <div className="inline-block border-b-2 border-red-600 pb-1 mb-3">
+                  <div className="inline-block border-b-2 border-red-600 pb-1 mb-3 self-center sm:self-start">
                      <p className="text-red-600 font-bold text-[12px] tracking-[0.2em] uppercase">Co-Founder</p>
                   </div>
                   <p className="text-[14px] text-gray-600 leading-relaxed font-medium">
-                    Ankit spearheads nationwide operations and client relations, ensuring that every contractor and equipment owner receives the exact part on time. His expertise in supply chain and fast sourcing keeps client machinery running seamlessly.
+                    Ankit Raj spearheads nationwide operations and client relations, ensuring that every contractor and equipment owner receives the exact part on time. His expertise in supply chain and fast sourcing keeps client machinery running seamlessly.
                   </p>
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
 

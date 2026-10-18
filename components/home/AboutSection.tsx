@@ -101,7 +101,7 @@ export default function AboutSection() {
             <dl className="mt-4 grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3">
               {[
                 { value: "15+", label: "Years Experience" },
-                { value: "5000+", label: "Spare Parts" },
+                { value: "1000+", label: "Spare Parts" },
                 { value: "PAN", label: "India Supply" },
                 { value: "24/7", label: "Technical Support" },
               ].map((stat, index) => (

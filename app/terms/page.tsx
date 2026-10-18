@@ -34,7 +34,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-bold text-slate-900 mb-3 border-b pb-2">2. Products and Spare Parts</h2>
             <p>
-              We supply genuine and aftermarket spare parts for heavy machinery and aerial work platforms (such as JLG, Genie, Dingli, Haulotte, etc.). 
+              We supply genuine and aftermarket spare parts for heavy machinery and aerial work platforms (such as JLG, Genie, Dingli, XCMG, etc.). 
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
               <li>All product specifications, part numbers, and cross-references provided on the website are for reference purposes only. It is the buyer's responsibility to verify part compatibility before purchase.</li>

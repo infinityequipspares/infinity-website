@@ -1,7 +1,7 @@
 export default function WhyChooseUs() {
   const features = [
     {
-      title: "5000+ Spare Parts",
+      title: "1000+ Spare Parts",
       desc: "Large inventory of OEM & aftermarket parts.",
       icon: (
         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor">

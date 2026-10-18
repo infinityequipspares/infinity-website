@@ -3,7 +3,7 @@ import Link from "next/link";
 const brands = [
   "JLG",
   "Genie",
-  "Haulotte",
+  "Dingli",
   "SANY",
   "XCMG",
   "JCB",
