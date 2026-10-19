@@ -11,6 +11,11 @@ export default function Navbar() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const hideSearch = 
+    pathname === "/" || 
+    pathname === "/products" || 
+    pathname.startsWith("/products/category");
+
   return (
     <>
       <header className="sticky top-0 z-[999] bg-white border-b border-gray-200 shadow-sm">
@@ -75,11 +80,13 @@ export default function Navbar() {
 
               <div className="flex items-center gap-3 xl:gap-4">
                 
-                {pathname !== "/" ? (
+                {!hideSearch && (
                   <div className="w-[230px] xl:w-[290px] transition-all duration-300">
                     <SearchForm />
                   </div>
-                ) : (
+                )}
+
+                {pathname === "/" && (
                   <div className="group flex items-center gap-3 px-4 py-2 bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-default">
                     <div className="relative flex items-center justify-center">
                       <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-25 animate-ping"></span>
@@ -109,7 +116,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* Mobile Right Side (Compact Trust Badge + Menu Button) */}
+            {/* Mobile Right Side */}
             <div className="flex items-center gap-2 lg:hidden">
               {pathname === "/" && (
                 <div className="flex items-center gap-1.5 px-2 py-1 bg-gray-50 border border-gray-200 rounded-md shadow-sm">
@@ -140,16 +147,14 @@ export default function Navbar() {
         </div>
       </header>
       
-      {/* Mobile Menu - FIXED OUTSIDE CLICK */}
+      {/* Mobile Menu */}
       {menuOpen && (
         <div className="fixed inset-0 z-[999] lg:hidden">
-          {/* Background overlay (Clicking this closes the menu) */}
           <div 
             className="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity" 
             onClick={() => setMenuOpen(false)}
           ></div>
 
-          {/* Sliding Menu Panel */}
           <div className="absolute right-0 top-0 h-full w-[260px] max-w-full bg-white shadow-2xl overflow-y-auto z-10 flex flex-col">
             
             <div className="flex items-center justify-between border-b px-4 py-3 bg-gray-50">
@@ -167,7 +172,7 @@ export default function Navbar() {
               </button>
             </div>
 
-            {pathname !== "/" && (
+            {!hideSearch && (
               <div className="px-4 py-3 border-b">
                 <SearchForm onComplete={() => setMenuOpen(false)} />
               </div>

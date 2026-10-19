@@ -1,12 +1,12 @@
 "use client";
 
 import { Suspense, useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import products from "@/data/products.json";
 import ProductCard from "@/components/products/ProductCard";
 import ProductFilters from "@/components/products/ProductFilters";
 
-// 🌟 NAYA SKELETON LOADING COMPONENT 🌟
+// 🌟 UPDATED SKELETON LOADING COMPONENT (Layout Matching) 🌟
 function ProductsSkeletonFallback() {
   return (
     <section className="antialiased bg-gray-50/30 overflow-hidden min-h-screen">
@@ -18,13 +18,18 @@ function ProductsSkeletonFallback() {
         </div>
 
         <div className="mx-auto max-w-[1440px] px-2 md:px-4 lg:px-6">
-          {/* Skeleton Filter Bar */}
+          {/* Skeleton Filter & Search Bar */}
           <div className="mb-6 mx-auto max-w-5xl bg-white rounded-xl border border-gray-200 shadow-sm p-2 flex flex-col md:flex-row items-center gap-2 md:gap-3">
-            <div className="w-full md:w-32 h-10 md:h-12 bg-gray-100 rounded-lg animate-pulse"></div>
+            {/* Mobile Row Skeleton (Badge + Search) */}
+            <div className="flex w-full md:w-auto items-center gap-2">
+              <div className="w-24 md:w-32 h-10 md:h-12 bg-gray-100 rounded-lg animate-pulse"></div>
+              <div className="flex-1 md:w-56 lg:w-64 h-10 md:h-12 bg-gray-100 rounded-lg animate-pulse"></div>
+            </div>
+            {/* Filters Skeleton */}
             <div className="flex-1 w-full h-10 md:h-12 bg-gray-100 rounded-lg animate-pulse"></div>
           </div>
 
-          {/* Skeleton Grid (12 Dummy Cards jo chamkenge) */}
+          {/* Skeleton Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 md:gap-4 mb-12">
             {[...Array(12)].map((_, i) => (
               <div key={i} className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm p-3 animate-pulse flex flex-col h-full">
@@ -44,6 +49,8 @@ function ProductsSkeletonFallback() {
 // MAIN PRODUCTS COMPONENT
 function ProductsContent() {
   const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
 
   const initialCategory = searchParams.get("category") || "";
   const initialBrand = searchParams.get("brand") || "";
@@ -55,6 +62,18 @@ function ProductsContent() {
   });
 
   const keyword = (searchParams.get("search") || "").toLowerCase();
+
+  // Search Update Function
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value;
+    const params = new URLSearchParams(searchParams.toString());
+    if (val) {
+      params.set("search", val);
+    } else {
+      params.delete("search");
+    }
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+  };
 
   const brands = useMemo(
     () => [...new Set(products.map((p: any) => String(p.brand || "")))],
@@ -101,15 +120,36 @@ function ProductsContent() {
 
         <div className="mx-auto max-w-[1440px] px-2 md:px-4 lg:px-6">
           
-          {/* 2. Single Line Filter Bar */}
+          {/* 2. Filter Bar + Search Layout (Responsive) */}
           <div className="mb-6 mx-auto max-w-5xl bg-white rounded-xl border border-gray-200 shadow-sm p-2 flex flex-col md:flex-row items-center gap-2 md:gap-3">
             
-            {/* Inline Badge */}
-            <div className="flex shrink-0 items-center justify-center rounded-lg bg-red-50 px-4 py-2 border border-red-100 w-full md:w-auto h-10 md:h-12">
-              <span className="text-lg md:text-xl font-black text-red-600 mr-2">{filteredProducts.length}</span>
-              <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-red-500/80 mt-0.5">Products</span>
+            {/* NEW LAYOUT: Badge and Search Bar side-by-side on Mobile, inline on Desktop */}
+            <div className="flex w-full md:w-auto items-center gap-2">
+              
+              {/* Inline Badge (Resized for mobile fitting) */}
+              <div className="flex shrink-0 items-center justify-center rounded-lg bg-red-50 px-3 md:px-4 py-2 border border-red-100 w-auto h-10 md:h-12 min-w-[90px]">
+                <span className="text-base md:text-xl font-black text-red-600 mr-1 md:mr-2">{filteredProducts.length}</span>
+                <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-red-500/80 mt-0.5">Products</span>
+              </div>
+
+              {/* Search Bar */}
+              <div className="relative flex-1 md:w-56 lg:w-64 h-10 md:h-12">
+                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                  </svg>
+                </div>
+                <input
+                  type="search"
+                  defaultValue={searchParams.get("search") || ""}
+                  onChange={handleSearchChange}
+                  className="block w-full h-full pl-9 pr-3 text-[13px] md:text-[14px] text-gray-900 bg-gray-50/50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-red-600 transition-all placeholder-gray-400 outline-none"
+                  placeholder="Search by part number, name, brand, category..."
+                />
+              </div>
+
             </div>
-            
+
             {/* Filters */}
             <div className="flex-1 w-full">
               <ProductFilters
@@ -120,7 +160,7 @@ function ProductsContent() {
             </div>
           </div>
 
-          {/* 3. Products Grid (6 columns on extra large screens) */}
+          {/* 3. Products Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 md:gap-4 mb-12">
             {filteredProducts.map((product: any, index: number) => (
               <ProductCard
