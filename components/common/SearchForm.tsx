@@ -43,13 +43,11 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
   const [isOpen, setIsOpen] = useState(false);
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
   
-  // 🌟 NEW: Recent Searches State
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
 
   const wrapperRef = useRef<HTMLDivElement>(null);
   const resultsRef = useRef<(HTMLButtonElement | null)[]>([]);
 
-  // 🌟 NEW: Load recent searches from memory on load
   useEffect(() => {
     const saved = localStorage.getItem("infinityRecentSearches");
     if (saved) {
@@ -61,12 +59,11 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
     }
   }, []);
 
-  // 🌟 NEW: Save search to memory
   const saveSearchToMemory = (keyword: string) => {
     const kwd = keyword.trim();
     if (!kwd) return;
     let updatedSearches = [kwd, ...recentSearches.filter((item) => item !== kwd)];
-    updatedSearches = updatedSearches.slice(0, 5); // Keep only last 5
+    updatedSearches = updatedSearches.slice(0, 5);
     setRecentSearches(updatedSearches);
     localStorage.setItem("infinityRecentSearches", JSON.stringify(updatedSearches));
   };
@@ -131,7 +128,7 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
         if (pA !== pB) return pA - pB;
         return String(a.partNumber).localeCompare(String(b.partNumber));
       })
-      .slice(0, 8);
+      .slice(0, 10);
   }, [debouncedSearch]);
 
   useEffect(() => {
@@ -168,7 +165,7 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
   const handleSearch = () => {
     if (!search.trim()) return;
     
-    saveSearchToMemory(search); // 🌟 NEW: Save on search
+    saveSearchToMemory(search);
 
     if (activeIndex >= 0 && activeIndex < suggestions.length) {
       openProduct(suggestions[activeIndex]);
@@ -236,7 +233,8 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
   const showDropdown = isOpen && (search.trim() || recentSearches.length > 0);
 
   return (
-    <div className="relative z-50 w-full" ref={wrapperRef}>
+    /* 🌟 Added high z-index and relative positioning to prevent overlap issues 🌟 */
+    <div className="relative z-[9999] w-full" ref={wrapperRef}>
       <div className="flex items-center gap-2">
         <input
           type="text"
@@ -253,77 +251,83 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
         />
         <button
           onClick={handleSearch}
-          className="h-11 rounded-lg bg-red-600 px-5 font-semibold text-white hover:bg-red-700"
+          className="h-11 rounded-lg bg-[#e60000] px-5 font-semibold text-white hover:bg-[#cc0000]"
         >
           Search
         </button>
       </div>
 
       {showDropdown && (
-        <div className="absolute left-0 right-0 z-50 mt-2 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-2xl">
+        /* 🌟 Added absolute positioning with extreme z-index to break out of hero clipping 🌟 */
+        <div className="absolute left-0 right-0 z-[10000] mt-2 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-2xl drop-shadow-2xl">
           
           {search.trim() ? (
             /* ================= LIVE SUGGESTIONS ================= */
             suggestions.length > 0 ? (
               <>
-                {suggestions.map((product, index) => {
-                  const allParts = [
-                    product.partNumber,
-                    product.alternatePartNumbers,
-                    product.alternatePartNumbers1,
-                    product.alternatePartNumbers2,
-                    product.alternatePartNumbers3,
-                  ].filter(Boolean);
-                  const splitParts = allParts.flatMap((p) =>
-                    String(p).split(/[;,|/]/).map((s) => s.trim()).filter(Boolean)
-                  );
-                  const displayPartNumbers = [...new Set(splitParts)].join(" / ");
+                <div className="max-h-[300px] md:max-h-[400px] overflow-y-auto custom-scroll">
+                  {suggestions.map((product, index) => {
+                    const allParts = [
+                      product.partNumber,
+                      product.alternatePartNumbers,
+                      product.alternatePartNumbers1,
+                      product.alternatePartNumbers2,
+                      product.alternatePartNumbers3,
+                    ].filter(Boolean);
+                    const splitParts = allParts.flatMap((p) =>
+                      String(p).split(/[;,|/]/).map((s) => s.trim()).filter(Boolean)
+                    );
+                    const displayPartNumbers = [...new Set(splitParts)].join(" / ");
 
-                  return (
-                    <button
-                      key={`search-${product.id || product.partNumber || index}`}
-                      ref={(el) => { resultsRef.current[index] = el; }}
-                      onClick={() => {
-                        saveSearchToMemory(search); // 🌟 Save on click
-                        openProduct(product);
-                      }}
-                      className={`flex w-full items-center gap-4 border-b border-gray-100 p-3 text-left ${
-                        index === activeIndex ? "bg-red-50" : "hover:bg-gray-50"
-                      }`}
-                    >
-                      <Image
-                        src={getImageUrl(product)}
-                        alt={product.name || ""}
-                        width={60}
-                        height={60}
-                        className="h-14 w-14 rounded border bg-white object-contain"
-                        unoptimized
-                      />
-                      <div className="min-w-0 flex-1">
-                        <p className="truncate text-sm font-bold">
-                          <HighlightedText text={product.name || ""} highlight={debouncedSearch} />
-                        </p>
-                        <p className="text-xs font-semibold text-red-600">
-                          <HighlightedText text={displayPartNumbers} highlight={debouncedSearch} />
-                        </p>
-                        <p className="text-xs text-gray-500">
-                          {product.brand} • {product.category}
-                        </p>
-                      </div>
-                    </button>
-                  );
-                })}
-                <button
-                  onClick={() => {
-                    saveSearchToMemory(search); // 🌟 Save on click
-                    router.push(`/products?search=${encodeURIComponent(search)}`);
-                    setIsOpen(false);
-                    if (onComplete) onComplete();
-                  }}
-                  className="w-full bg-gray-50 py-3 text-sm font-semibold text-red-600 hover:bg-gray-100"
-                >
-                  View all results for "{search}"
-                </button>
+                    return (
+                      <button
+                        key={`search-${product.id || product.partNumber || index}`}
+                        ref={(el) => { resultsRef.current[index] = el; }}
+                        onClick={() => {
+                          saveSearchToMemory(search);
+                          openProduct(product);
+                        }}
+                        className={`flex w-full items-center gap-3 md:gap-4 border-b border-gray-100 p-2 md:p-3 text-left ${
+                          index === activeIndex ? "bg-red-50" : "hover:bg-gray-50 transition-colors"
+                        }`}
+                      >
+                        <Image
+                          src={getImageUrl(product)}
+                          alt={product.name || ""}
+                          width={60}
+                          height={60}
+                          className="h-12 w-12 md:h-14 md:w-14 shrink-0 rounded border bg-white object-contain"
+                          unoptimized
+                        />
+                        <div className="min-w-0 flex-1">
+                          <p className="truncate text-[12px] md:text-sm font-bold text-gray-900">
+                            <HighlightedText text={product.name || ""} highlight={debouncedSearch} />
+                          </p>
+                          <p className="text-[11px] md:text-xs font-semibold text-[#e60000] mt-0.5">
+                            <HighlightedText text={displayPartNumbers} highlight={debouncedSearch} />
+                          </p>
+                          <p className="text-[10px] md:text-xs text-gray-500 mt-0.5">
+                            {product.brand} • {product.category}
+                          </p>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+                
+                <div className="border-t border-gray-200">
+                  <button
+                    onClick={() => {
+                      saveSearchToMemory(search);
+                      router.push(`/products?search=${encodeURIComponent(search)}`);
+                      setIsOpen(false);
+                      if (onComplete) onComplete();
+                    }}
+                    className="w-full bg-gray-50 py-3 text-[13px] md:text-sm font-bold text-[#e60000] hover:bg-gray-100 transition-colors"
+                  >
+                    View all results for "{search}"
+                  </button>
+                </div>
               </>
             ) : (
               <div className="p-4 text-center text-sm text-gray-500">
@@ -345,7 +349,7 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
                     Clear All
                   </button>
                 </div>
-                <ul className="max-h-60 overflow-y-auto">
+                <ul className="max-h-[250px] md:max-h-[350px] overflow-y-auto custom-scroll">
                   {recentSearches.map((item, index) => (
                     <li key={index}>
                       <button
@@ -357,7 +361,7 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
                           setIsOpen(false);
                           if (onComplete) onComplete();
                         }}
-                        className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-gray-50 transition-colors text-[14px] text-gray-700 font-medium border-b border-gray-50 last:border-0"
+                        className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-gray-50 transition-colors text-[13px] md:text-[14px] text-gray-700 font-medium border-b border-gray-50 last:border-0"
                       >
                         <svg className="w-4 h-4 text-gray-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -372,6 +376,24 @@ export default function SearchForm({ onComplete }: { onComplete?: () => void }) 
           )}
         </div>
       )}
+
+      {/* 🌟 CSS FOR CUSTOM MINIMAL SCROLLBAR 🌟 */}
+      <style jsx>{`
+        .custom-scroll::-webkit-scrollbar {
+          width: 5px;
+        }
+        .custom-scroll::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 10px;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
+          background: #c1c1c1;
+          border-radius: 10px;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb:hover {
+          background: #a8a8a8;
+        }
+      `}</style>
     </div>
   );
 }

@@ -5,20 +5,25 @@ import SearchForm from "@/components/common/SearchForm";
 
 export default function Hero() {
   return (
-    <div className="relative z-0 flex flex-col bg-slate-50 overflow-hidden">
+    // Yaaha overflow-visible use kiya taki dropdown limit na ho
+    <div className="relative z-0 flex flex-col bg-slate-50 overflow-visible">
       
       {/* 🌟 1. HERO BACKGROUND SECTION 🌟 */}
+      {/* Yaha bhi overflow-visible lagaya, overflow-hidden hta diya gaya hai taaki cut off na ho */}
       <section 
-        className="relative flex h-[390px] sm:h-[420px] md:h-[520px] w-full flex-col items-center justify-center bg-slate-950 overflow-hidden"
+        className="relative flex h-[390px] sm:h-[420px] md:h-[520px] w-full flex-col items-center justify-center bg-slate-950 overflow-visible"
       >
-        <div 
-          className="absolute inset-0 z-0 opacity-60 transform scale-100 animate-hero-zoom"
-          style={{
-            backgroundImage: "url('/images/hero-bg.webp')",
-            backgroundSize: "cover",
-            backgroundPosition: "center" 
-          }}
-        ></div>
+        {/* Is naye wrapper mein overflow-hidden diya taaki zoom sirf image par ho aur bahar na jae */}
+        <div className="absolute inset-0 z-0 overflow-hidden rounded-b-none">
+           <div 
+            className="absolute inset-0 opacity-60 transform scale-100 animate-hero-zoom"
+            style={{
+              backgroundImage: "url('/images/hero-bg.webp')",
+              backgroundSize: "cover",
+              backgroundPosition: "center" 
+            }}
+          ></div>
+        </div>
 
         <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/70 via-slate-900/70 to-red-900/60 backdrop-blur-[1px]"></div>
 
@@ -29,15 +34,18 @@ export default function Hero() {
             India's Ultimate Solution
           </span>
           
-          <h1 className="mb-3 md:mb-4 w-full text-[28px] sm:text-4xl lg:text-[54px] xl:text-[60px] font-extrabold tracking-tight text-white drop-shadow-xl leading-tight">
-            Find Premium Equipment <span className="text-red-500 inline-block md:inline">Spare Parts</span>
+          {/* 🌟 29% Increased Mobile Text Size and Perfectly Fitted to 1 Line 🌟 */}
+          <h1 className="mb-3 md:mb-4 w-full flex justify-center items-center gap-1 sm:gap-2 text-[5vw] min-[400px]:text-[24px] sm:text-4xl lg:text-[54px] xl:text-[60px] font-extrabold tracking-tight text-white drop-shadow-xl leading-tight whitespace-nowrap overflow-hidden text-ellipsis sm:overflow-visible sm:whitespace-normal">
+            Find Premium Equipment <span className="text-red-500">Spare Parts</span>
           </h1>
           
+          {/* Tumhari purani description wapas */}
           <p className="mb-5 md:mb-8 max-w-3xl text-[13px] md:text-[17px] font-medium leading-relaxed text-slate-200 drop-shadow-md opacity-90 px-1">
             Minimize machine downtime with India's most trusted catalog of 100% verified Genuine and premium Aftermarket components for AWPs and Cranes. Fast sourcing, exact fit, and Pan-India delivery.
           </p>
 
-          <div className="relative z-50 w-full max-w-3xl rounded-xl md:rounded-3xl bg-white/95 p-1.5 md:p-2 shadow-2xl backdrop-blur-sm border border-white/20 transition-transform hover:scale-[1.01] duration-300">
+          {/* Search container ko high z-index deke visible kiya */}
+          <div className="relative z-[99999] w-full max-w-3xl rounded-xl md:rounded-3xl bg-white/95 p-1.5 md:p-2 shadow-2xl backdrop-blur-sm border border-white/20 transition-transform hover:scale-[1.01] duration-300">
             <SearchForm />
           </div>
         </div>
@@ -45,6 +53,7 @@ export default function Hero() {
 
       {/* 🌟 2. UPGRADED PREMIUM 3-CARDS 🌟 */}
       {/* Cards ko upar kheencha (md:-mt-28) taaki wo red background par properly overlap karein */}
+      {/* Cards container ka z-index kam rakha taki search ke peeche rahe */}
       <section className="relative z-10 mx-auto -mt-10 sm:-mt-12 md:-mt-28 mb-8 w-full max-w-5xl px-3 sm:px-6 lg:px-8 md:mb-16">
         <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6">
           

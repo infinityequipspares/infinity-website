@@ -78,11 +78,16 @@ export default function Navbar() {
             </nav>
 
             {/* 3. Desktop Right Side */}
-            <div className="hidden lg:flex lg:flex-[1.2] items-center justify-end gap-4 flex-shrink-0">
+            <div className="hidden lg:flex lg:flex-[1.3] items-center justify-end gap-2.5 flex-shrink-0">
               
               {!hideSearch ? (
-                <div className="w-[200px] xl:w-[240px] transition-all duration-300">
-                  <SearchForm />
+                <div className="flex items-center gap-2 transition-all duration-300">
+                  <span className="text-[9px] font-black text-gray-400 uppercase tracking-wider whitespace-nowrap">
+                    Quick Search:
+                  </span>
+                  <div className="w-[240px] xl:w-[290px]">
+                    <SearchForm />
+                  </div>
                 </div>
               ) : (
                 <div className="flex items-center gap-4 pr-1 lg:pr-2">
@@ -150,20 +155,20 @@ export default function Navbar() {
 
           <div className="absolute right-0 top-0 h-full w-[280px] max-w-full bg-white shadow-2xl overflow-y-auto z-10 flex flex-col transition-transform duration-300">
             
-            {/* Mobile Menu Header with Company Name on Top & Menu below */}
+            {/* Mobile Menu Header with Larger Company Name & Menu below */}
             <div className="flex items-start justify-between border-b px-5 py-4 bg-gray-50/80">
-              <div className="flex flex-col gap-2">
-                {/* Company Name on Top */}
+              <div className="flex flex-col gap-2.5">
+                {/* 🌟 Larger & Bold Company Name in Mobile Menu 🌟 */}
                 <div className="flex flex-col">
-                   <span className="text-[11px] uppercase text-gray-900 tracking-wider leading-tight font-[900]">
+                   <span className="text-[13px] uppercase text-gray-900 tracking-wider leading-tight font-[900]">
                      Infinity Equipments
                    </span>
-                   <span className="text-[10px] uppercase text-[#e60000] tracking-widest leading-none mt-0.5 font-[900]">
+                   <span className="text-[12px] uppercase text-[#e60000] tracking-widest leading-none mt-1 font-[900]">
                      And Spares
                    </span>
                 </div>
                 {/* Menu Heading below */}
-                <h2 className="text-sm font-black text-gray-500 uppercase tracking-wider mt-1">Menu</h2>
+                <h2 className="text-xs font-black text-gray-400 uppercase tracking-widest mt-0.5">Menu</h2>
               </div>
 
               <button
