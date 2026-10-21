@@ -8,12 +8,12 @@ export const navigation = [
     href: "/products",
   },
   {
-    name: "Machine Rental",
-    href: "/machine-rental",
+    name: "Equipment Rental",
+    href: "/equipment-rental",
   },
   {
-    name: "Machine Sales",
-    href: "/machine-sales",
+    name: "Equipment Sales",
+    href: "/equipment-sales",
   },
   {
     name: "Blog",

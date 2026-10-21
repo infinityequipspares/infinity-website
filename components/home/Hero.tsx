@@ -101,7 +101,7 @@ export default function Hero() {
 
           {/* Card 3: Equipment */}
           <Link 
-            href="/machine-sales" 
+            href="/equipment-sales" 
             className="group flex h-full cursor-pointer flex-col items-center rounded-xl md:rounded-2xl border border-slate-100 border-t-[3px] border-t-red-600 bg-white p-2.5 text-center shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_8px_30px_rgb(220,38,38,0.12)] hover:border-red-200 md:border-t-4 md:p-6"
           >
             <div className="mb-2 md:mb-4 rounded-xl md:rounded-2xl bg-red-50 p-2 md:p-3 text-red-600 transition-transform duration-500 group-hover:scale-110 group-hover:bg-red-100">
@@ -134,7 +134,7 @@ export default function Hero() {
           }
         }
         .animate-hero-zoom {
-          animation: heroZoom 15s ease-in-out infinite;
+          animation: heroZoom 15s infinite;
         }
       `}</style>
 

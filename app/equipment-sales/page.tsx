@@ -39,15 +39,15 @@ export default function MachineSales() {
         
         <div className="text-center mb-14 flex flex-col items-center">
           <span className="inline-flex items-center rounded-full bg-red-50 px-4 py-1.5 text-[10.5px] font-bold uppercase tracking-[0.25em] text-red-700 ring-1 ring-inset ring-red-600/20 mb-5 transition-all hover:bg-red-100 cursor-default">
-            MACHINE SALES & SERVICES
+            EQUIPMENT SALES & SERVICES
           </span>
           
           <h1 className="text-[28px] sm:text-4xl lg:text-[54px] xl:text-[60px] font-extrabold text-gray-900 tracking-tight leading-tight lg:whitespace-nowrap mx-auto w-full">
-            New & Used <span className="text-red-600">Aerial Work Platforms</span>
+            New & Used <span className="text-red-600">Heavy Equipment</span>
           </h1>
           
           <p className="mt-5 text-[15px] md:text-base text-gray-500 max-w-2xl mx-auto leading-relaxed opacity-90">
-            Infinity Equipments And Spares offers a curated selection of premium Boom Lifts and Scissor Lifts, engineered for reliability and heavy-duty performance.
+            Explore our curated selection of Boom Lifts, Scissor Lifts, Cranes, Tower Cranes and other heavy equipment, engineered for reliability and performance.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ export default function MachineSales() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {machines.map((machine: any, index: number) => (
               <Link 
-                href={`/machine-sales/${machine.slug ? machine.slug : machine.id}`} 
+                href={`/equipment-sales/${machine.slug ? machine.slug : machine.id}`} 
                 key={machine.id || index} 
                 className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-[0_8px_30px_rgb(220,38,38,0.12)] hover:border-red-200 hover:-translate-y-1 transition-all duration-300 flex flex-col lg:flex-col group"
               >
