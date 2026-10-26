@@ -1,6 +1,14 @@
-"use client";
-
+import { Metadata } from "next";
 import Link from "next/link";
+
+// Yeh raha SEO Canonical Tag jo Google ka confusion door karega
+export const metadata: Metadata = {
+  title: "Machine Rental Services | Infinity Equipments And Spares",
+  description: "Aerial Work Platform rental solutions across India. Boom Lift, Scissor Lift, and Spider Lift rentals.",
+  alternates: {
+    canonical: "https://www.infinityequipspares.com/equipment-rental",
+  },
+};
 
 export default function MachineRentalPage() {
   return (
