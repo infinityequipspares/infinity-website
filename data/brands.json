@@ -1,46 +1,26 @@
 [
   {
-    "Brand Name": "JLG",
-    "image": "JLG.png"
+    "Brand Name": "JLG"
   },
   {
-    "Brand Name": "Genie",
-    "image": "Genie.png"
+    "Brand Name": "Genie"
   },
   {
-    "Brand Name": "Dingli",
-    "image": "Dingli.png"
+    "Brand Name": "Haulotte"
   },
   {
-    "Brand Name": "JCB",
-    "image": "JCB.png"
+    "Brand Name": "JCB"
   },
   {
-    "Brand Name": "XCMG",
-    "image": "XCMG.png"
+    "Brand Name": "XCMG"
   },
   {
-    "Brand Name": "Zoomlion",
-    "image": "Zoomlion.png"
+    "Brand Name": "Zoomlion"
   },
   {
-    "Brand Name": "Sany",
-    "image": "Sany.png"
+    "Brand Name": "Sany"
   },
   {
-    "Brand Name": "Liugong",
-    "image": "Liugong.png"
-  },
-  {
-    "Brand Name": "Sinoboom",
-    "image": "Sinoboom.png"
-  },
-  {
-    "Brand Name": "Skyjack",
-    "image": "Skyjack.png"
-  },
-  {
-    "Brand Name": "Snorkel",
-    "image": "Snorkel.png"
+    "Brand Name": "Liugong"
   }
 ]
