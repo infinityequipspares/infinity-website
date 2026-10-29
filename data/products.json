@@ -93,7 +93,7 @@
     "brand": "JLG",
     "name": "CONTROLLER, JOYSTICK",
     "category": "Joysticks",
-    "machines": "260MRT, 330CRT, 400CRT, 3369LE, 4069LE, 3394RT, 4394RT, M3369, M4069",
+    "machines": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
     "type": "Aftermarket",
     "stock": "In Stock",
     "image": "1600308.jpeg",
@@ -10149,7 +10149,7 @@
     "slug": "1600307"
   },
   {
-    "id": "599",
+    "id": "598",
     "partNumber": "1001186466",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10166,7 +10166,7 @@
     "slug": "1001186466"
   },
   {
-    "id": "600",
+    "id": "599",
     "partNumber": "4360622",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10183,7 +10183,7 @@
     "slug": "4360622"
   },
   {
-    "id": "601",
+    "id": "600",
     "partNumber": "1001306146",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10200,7 +10200,7 @@
     "slug": "1001306146"
   },
   {
-    "id": "602",
+    "id": "601",
     "partNumber": "7011757",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10217,7 +10217,7 @@
     "slug": "7011757"
   },
   {
-    "id": "603",
+    "id": "602",
     "partNumber": "1001154242",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10234,7 +10234,7 @@
     "slug": "1001154242"
   },
   {
-    "id": "604",
+    "id": "603",
     "partNumber": "4923036",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10251,7 +10251,7 @@
     "slug": "4923036"
   },
   {
-    "id": "605",
+    "id": "604",
     "partNumber": "1001200629",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10268,7 +10268,7 @@
     "slug": "1001200629"
   },
   {
-    "id": "606",
+    "id": "605",
     "partNumber": "2910895",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10285,7 +10285,7 @@
     "slug": "2910895"
   },
   {
-    "id": "607",
+    "id": "606",
     "partNumber": "4360469",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10302,7 +10302,7 @@
     "slug": "4360469"
   },
   {
-    "id": "608",
+    "id": "607",
     "partNumber": "3841143",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10319,7 +10319,7 @@
     "slug": "3841143"
   },
   {
-    "id": "609",
+    "id": "608",
     "partNumber": "2940088",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10336,7 +10336,7 @@
     "slug": "2940088"
   },
   {
-    "id": "610",
+    "id": "609",
     "partNumber": "3580302",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10353,7 +10353,7 @@
     "slug": "3580302"
   },
   {
-    "id": "611",
+    "id": "610",
     "partNumber": "0920118",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10370,7 +10370,7 @@
     "slug": "0920118"
   },
   {
-    "id": "612",
+    "id": "611",
     "partNumber": "4360387",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10387,7 +10387,7 @@
     "slug": "4360387"
   },
   {
-    "id": "613",
+    "id": "612",
     "partNumber": "1001110226",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10404,7 +10404,7 @@
     "slug": "1001110226"
   },
   {
-    "id": "614",
+    "id": "613",
     "partNumber": "4160184",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10421,7 +10421,7 @@
     "slug": "4160184"
   },
   {
-    "id": "615",
+    "id": "614",
     "partNumber": "2940124",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10438,7 +10438,7 @@
     "slug": "2940124"
   },
   {
-    "id": "616",
+    "id": "615",
     "partNumber": "1670829",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10455,7 +10455,7 @@
     "slug": "1670829"
   },
   {
-    "id": "617",
+    "id": "616",
     "partNumber": "4460873",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10472,7 +10472,7 @@
     "slug": "4460873"
   },
   {
-    "id": "618",
+    "id": "617",
     "partNumber": "45363",
     "alternatePartNumbers1": "45363GT",
     "alternatePartNumbers2": "",
@@ -10489,7 +10489,7 @@
     "slug": "45363"
   },
   {
-    "id": "619",
+    "id": "618",
     "partNumber": "237072",
     "alternatePartNumbers1": "237072GT",
     "alternatePartNumbers2": "",
@@ -10506,7 +10506,7 @@
     "slug": "237072"
   },
   {
-    "id": "620",
+    "id": "619",
     "partNumber": "2120217",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10523,7 +10523,7 @@
     "slug": "2120217"
   },
   {
-    "id": "621",
+    "id": "620",
     "partNumber": "2120210",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10540,7 +10540,7 @@
     "slug": "2120210"
   },
   {
-    "id": "622",
+    "id": "621",
     "partNumber": "01180195",
     "alternatePartNumbers1": "DTZ01175928",
     "alternatePartNumbers2": "",
@@ -10557,7 +10557,7 @@
     "slug": "01180195"
   },
   {
-    "id": "623",
+    "id": "622",
     "partNumber": "70002231",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10574,7 +10574,7 @@
     "slug": "70002231"
   },
   {
-    "id": "624",
+    "id": "623",
     "partNumber": "7023918",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10591,7 +10591,7 @@
     "slug": "7023918"
   },
   {
-    "id": "625",
+    "id": "624",
     "partNumber": "7012975",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10608,7 +10608,7 @@
     "slug": "7012975"
   },
   {
-    "id": "626",
+    "id": "625",
     "partNumber": "7023985",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10625,7 +10625,7 @@
     "slug": "7023985"
   },
   {
-    "id": "627",
+    "id": "626",
     "partNumber": "7023986",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10642,7 +10642,7 @@
     "slug": "7023986"
   },
   {
-    "id": "628",
+    "id": "627",
     "partNumber": "10837580",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10659,7 +10659,7 @@
     "slug": "10837580"
   },
   {
-    "id": "629",
+    "id": "628",
     "partNumber": "7023921",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10676,7 +10676,7 @@
     "slug": "7023921"
   },
   {
-    "id": "630",
+    "id": "629",
     "partNumber": "4640807",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10693,7 +10693,7 @@
     "slug": "4640807"
   },
   {
-    "id": "631",
+    "id": "630",
     "partNumber": "1001097777",
     "alternatePartNumbers1": "1001307751",
     "alternatePartNumbers2": "",
@@ -10710,7 +10710,7 @@
     "slug": "1001097777"
   },
   {
-    "id": "632",
+    "id": "631",
     "partNumber": "1001187631",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10727,7 +10727,7 @@
     "slug": "1001187631"
   },
   {
-    "id": "633",
+    "id": "632",
     "partNumber": "70001117",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10744,7 +10744,7 @@
     "slug": "70001117"
   },
   {
-    "id": "634",
+    "id": "633",
     "partNumber": "1600135",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10761,7 +10761,7 @@
     "slug": "1600135"
   },
   {
-    "id": "635",
+    "id": "634",
     "partNumber": "1600302",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10778,7 +10778,7 @@
     "slug": "1600302"
   },
   {
-    "id": "636",
+    "id": "635",
     "partNumber": "1600292",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10795,7 +10795,7 @@
     "slug": "1600292"
   },
   {
-    "id": "637",
+    "id": "636",
     "partNumber": "226127",
     "alternatePartNumbers1": "226127GT",
     "alternatePartNumbers2": "",
@@ -10812,7 +10812,7 @@
     "slug": "226127"
   },
   {
-    "id": "638",
+    "id": "637",
     "partNumber": "4132166",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10829,7 +10829,7 @@
     "slug": "4132166"
   },
   {
-    "id": "639",
+    "id": "638",
     "partNumber": "139351",
     "alternatePartNumbers1": "139351GT",
     "alternatePartNumbers2": "",
@@ -10846,7 +10846,7 @@
     "slug": "139351"
   },
   {
-    "id": "640",
+    "id": "639",
     "partNumber": "73736",
     "alternatePartNumbers1": "73736GT",
     "alternatePartNumbers2": "",
@@ -10863,7 +10863,7 @@
     "slug": "73736"
   },
   {
-    "id": "641",
+    "id": "640",
     "partNumber": "71787",
     "alternatePartNumbers1": "71787GT",
     "alternatePartNumbers2": "",
@@ -10880,7 +10880,7 @@
     "slug": "71787"
   },
   {
-    "id": "642",
+    "id": "641",
     "partNumber": "119830",
     "alternatePartNumbers1": "119830GT",
     "alternatePartNumbers2": "",
@@ -10897,7 +10897,7 @@
     "slug": "119830"
   },
   {
-    "id": "643",
+    "id": "642",
     "partNumber": "128009",
     "alternatePartNumbers1": "128009GT",
     "alternatePartNumbers2": "110573GT",
@@ -10914,7 +10914,7 @@
     "slug": "128009"
   },
   {
-    "id": "644",
+    "id": "643",
     "partNumber": "216061",
     "alternatePartNumbers1": "216061GT",
     "alternatePartNumbers2": "",
@@ -10931,7 +10931,7 @@
     "slug": "216061"
   },
   {
-    "id": "645",
+    "id": "644",
     "partNumber": "70004183",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10948,7 +10948,7 @@
     "slug": "70004183"
   },
   {
-    "id": "646",
+    "id": "645",
     "partNumber": "1600352",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -10965,7 +10965,7 @@
     "slug": "1600352"
   },
   {
-    "id": "647",
+    "id": "646",
     "partNumber": "1268314",
     "alternatePartNumbers1": "1268314GT",
     "alternatePartNumbers2": "",
@@ -10982,7 +10982,7 @@
     "slug": "1268314"
   },
   {
-    "id": "648",
+    "id": "647",
     "partNumber": "56057",
     "alternatePartNumbers1": "56057GT",
     "alternatePartNumbers2": "",
@@ -10999,7 +10999,7 @@
     "slug": "56057"
   },
   {
-    "id": "649",
+    "id": "648",
     "partNumber": "146396",
     "alternatePartNumbers1": "146396GT",
     "alternatePartNumbers2": "",
@@ -11016,7 +11016,7 @@
     "slug": "146396"
   },
   {
-    "id": "650",
+    "id": "649",
     "partNumber": "107737",
     "alternatePartNumbers1": "107737GT",
     "alternatePartNumbers2": "",
@@ -11033,7 +11033,7 @@
     "slug": "107737"
   },
   {
-    "id": "651",
+    "id": "650",
     "partNumber": "106187",
     "alternatePartNumbers1": "106187GT",
     "alternatePartNumbers2": "",
@@ -11050,7 +11050,7 @@
     "slug": "106187"
   },
   {
-    "id": "652",
+    "id": "651",
     "partNumber": "1660203",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -11067,7 +11067,7 @@
     "slug": "1660203"
   },
   {
-    "id": "653",
+    "id": "652",
     "partNumber": "1001147542",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -11084,7 +11084,7 @@
     "slug": "1001147542"
   },
   {
-    "id": "654",
+    "id": "653",
     "partNumber": "7012955",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -11101,7 +11101,7 @@
     "slug": "7012955"
   },
   {
-    "id": "655",
+    "id": "654",
     "partNumber": "70002972",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -11118,7 +11118,7 @@
     "slug": "70002972"
   },
   {
-    "id": "656",
+    "id": "655",
     "partNumber": "102710",
     "alternatePartNumbers1": "102710GT",
     "alternatePartNumbers2": "",
@@ -11135,7 +11135,7 @@
     "slug": "102710"
   },
   {
-    "id": "657",
+    "id": "656",
     "partNumber": "101644",
     "alternatePartNumbers1": "101644GT",
     "alternatePartNumbers2": "",
@@ -11152,7 +11152,7 @@
     "slug": "101644"
   },
   {
-    "id": "658",
+    "id": "657",
     "partNumber": "3160300",
     "alternatePartNumbers1": "3160350",
     "alternatePartNumbers2": "",
@@ -11169,7 +11169,7 @@
     "slug": "3160300"
   },
   {
-    "id": "659",
+    "id": "658",
     "partNumber": "215728",
     "alternatePartNumbers1": "215728GT",
     "alternatePartNumbers2": "",
@@ -11186,7 +11186,7 @@
     "slug": "215728"
   },
   {
-    "id": "660",
+    "id": "659",
     "partNumber": "70007941",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -11203,7 +11203,7 @@
     "slug": "70007941"
   },
   {
-    "id": "661",
+    "id": "660",
     "partNumber": "1600333",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -11220,7 +11220,7 @@
     "slug": "1600333"
   },
   {
-    "id": "662",
+    "id": "661",
     "partNumber": "1001091965",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -11237,7 +11237,7 @@
     "slug": "1001091965"
   },
   {
-    "id": "663",
+    "id": "662",
     "partNumber": "1600387",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -11254,7 +11254,7 @@
     "slug": "1600387"
   },
   {
-    "id": "664",
+    "id": "663",
     "partNumber": "70001976",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -11271,7 +11271,7 @@
     "slug": "70001976"
   },
   {
-    "id": "665",
+    "id": "664",
     "partNumber": "7012774",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
@@ -11288,7 +11288,7 @@
     "slug": "7012774"
   },
   {
-    "id": "666",
+    "id": "665",
     "partNumber": "4640737",
     "alternatePartNumbers1": "",
     "alternatePartNumbers2": "",
