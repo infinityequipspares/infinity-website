@@ -20,6 +20,11 @@ export default function ProductFilters({
   onFilter,
 }: Props) {
   
+  // Logic to force "Used Spares" to the top of the list
+  const usedCategory = categories.find(c => c === "Used Spares");
+  const otherCategories = categories.filter(c => c !== "Used Spares");
+  const orderedCategories = usedCategory ? [usedCategory, ...otherCategories] : categories;
+
   // Sleek inline select styling (No labels needed)
   const selectClass =
     "h-10 md:h-12 w-full rounded-lg border border-gray-200 bg-gray-50/50 px-2 md:px-3 text-[11px] md:text-[13px] font-bold text-gray-700 shadow-sm outline-none appearance-none transition-all duration-300 hover:border-red-300 hover:bg-white focus:border-red-500 focus:bg-white focus:ring-2 focus:ring-red-100 text-center md:text-left truncate cursor-pointer";
@@ -44,7 +49,7 @@ export default function ProductFilters({
         className={selectClass}
       >
         <option value="">All Categories</option>
-        {categories.map((category) => (
+        {orderedCategories.map((category) => (
           <option key={category} value={category}>{category}</option>
         ))}
       </select>
@@ -58,6 +63,8 @@ export default function ProductFilters({
         <option value="Genuine">Genuine</option>
         <option value="OEM">OEM</option>
         <option value="Aftermarket">Aftermarket</option>
+        {/* Naya Used option add ho gaya */}
+        <option value="Used">Used</option> 
       </select>
 
     </div>
